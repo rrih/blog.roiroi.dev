@@ -4,12 +4,11 @@ import DatePicker from "react-datepicker";
 import { RrihTodoType } from "./models/interfaces";
 import "react-datepicker/dist/react-datepicker.css";
 import './App.scss';
-export const apiUrl = 'https://kyugyo-back.herokuapp.com/api/rrih-todo'
+const domain = 'https://kyugyo-back.herokuapp.com';
+export const apiUrl = 'http://localhost:8000/api/rrih-todo'
 
 function App() {
-  // const userNameWithGitHub = <a href="https://github.com/rrih" className="text-decoration-none text-light">rrih</a>;
   const [userName, setUserName] = useState<JSX.Element>();
-  // const [isLogin, setIsLogin] = useState<Boolean>(false);
   const [avatarIcon, setAvatarIcon] = useState<JSX.Element>();
   const [date, setDate] = useState<Date>();
   const [todoText, setTodoText] = useState<String>('');
@@ -47,15 +46,42 @@ function App() {
     if (todoText != null && date != null) {
       const todo = {
         text: todoText,
-        date: date.toString().split('T')[0]
+        date: date
       };
       axios.post(apiUrl, todo).then((e) => {
         window.location.reload();
       })
     }
     else {
+      // TODO バリデーションエラー時の処理
       throw new Error('Validation Error');
     }
+    // e.preventDefault();
+  }
+
+  const updateTodo = (todo) => {
+    if (todo == null) {
+      return null;
+    }
+    const updateTodo = {
+      text: todoText,
+      date: date
+    };
+    axios.put(`${apiUrl}/${todo._id}`, updateTodo)
+      .then((res) => {
+        setAllTodos(res.data);
+      });
+    // e.preventDefault();
+  };
+
+  const deleteTodo = (todo) => {
+    if (todo == null) {
+      return null;
+    }
+    axios.delete(`${apiUrl}/${todo._id}`, { data: todo })
+    .then((e) => {
+      window.location.reload();
+    });
     // e.preventDefault();
   }
 
@@ -69,20 +95,15 @@ function App() {
       </nav>
       <div className="rrih-w mx-md-auto container pt-md-2">
         <div className="d-md-flex">
-          <div className="ml-md-5">
-            {/* <div className="border rounded py-md-3 px-md-5 my-md-2">
-              いつまでに？
-            </div> */}
+          <div className="mx-auto">
             <form className="form-group" method="post">
               <div>
                 <label>期日</label>
                 <DatePicker
-                  // dateFormat="Pp"
                   dateFormat="yyyy/MM/dd"
                   selected={date}
                   showTimeSelect
                   onChange={handleDateChange}
-                  // customInput={CustomInput}
                 />
               </div>
               <div>
@@ -109,19 +130,27 @@ function App() {
                 
         <ul className="list-group mb-5">
           {allTodos.map((todo, i) => {
-            return <li key={i} className="list-group-item list-group-item-light text-dark my-1 d-flex justify-content-between">
-              {/* date: {todo.date}text: {todo.text} */}
-              
-              {/* <DatePicker
-                // dateFormat="Pp"
-                dateFormat="yyyy/MM/dd"
-                selected={todo.date}
-                showTimeSelect
-                onChange={(e) => handleDateChange(e)}
-                // customInput={CustomInput}
-              /> */}
-              <div className="">{todo.text}</div>
-              <div className="">{todo.date}</div>
+            return <li key={i} className="list-group-item list-group-item-light text-dark my-1">
+              <div className="d-flex justify-content-between">
+                <div className="">{todo.text}</div>
+                <div className="">{todo.date.toString().split('T')[0]}</div>
+              </div>
+              <div className="text-right">
+                <button
+                  type="button"
+                  className="btn btn-outline-primary rrih-menu-button py-1 px-2 rounded-pill"
+                  // onClick={() => {updateTodo(todo)}}
+                >
+                  update
+                </button>
+                <button
+                  type="button"
+                  className="btn btn-outline-danger rrih-menu-button py-1 px-2 rounded-pill ml-2"
+                  onClick={() => {deleteTodo(todo)}}
+                >
+                  delete
+                </button>
+              </div>
             </li>;
           })}
         </ul>
