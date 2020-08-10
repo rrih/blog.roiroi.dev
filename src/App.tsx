@@ -5,7 +5,7 @@ import { RrihTodoType } from "./models/interfaces";
 import "react-datepicker/dist/react-datepicker.css";
 import './App.scss';
 const domain = 'https://kyugyo-back.herokuapp.com';
-export const apiUrl = 'http://localhost:8000/api/rrih-todo'
+export const apiUrl = `${domain}/api/rrih-todo`;
 
 function App() {
   const [userName, setUserName] = useState<JSX.Element>();
