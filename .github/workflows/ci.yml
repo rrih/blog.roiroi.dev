@@ -13,20 +13,24 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-    - name: Install dependencies
-      run: |
-        yarn install
+    - uses: actions/checkout@v2
+    - name: use node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - uses: actions/checkout@v2
+    - name: find package.json
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+    - name: i yarn lock
+      run: yarn --frozen-lockfile
     - name: Print dependencies
       run: |
         echo -n "node " && node -v
         echo -n "npm " && npm -v
         yarn list --depth=0
-    - name: find package.json
-      run: |
-        ls
-        ls -a
-        ls package.json
-        cat package.json
+    
     - name: yarn run build
       run: |
         yarn run build
