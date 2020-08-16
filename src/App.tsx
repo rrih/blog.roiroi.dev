@@ -59,20 +59,20 @@ function App() {
     // e.preventDefault();
   }
 
-  const updateTodo = (todo) => {
-    if (todo == null) {
-      return null;
-    }
-    const updateTodo = {
-      text: todoText,
-      date: date
-    };
-    axios.put(`${apiUrl}/${todo._id}`, updateTodo)
-      .then((res) => {
-        setAllTodos(res.data);
-      });
-    // e.preventDefault();
-  };
+  // const updateTodo = (todo) => {
+  //   if (todo == null) {
+  //     return null;
+  //   }
+  //   const updateTodo = {
+  //     text: todoText,
+  //     date: date
+  //   };
+  //   axios.put(`${apiUrl}/${todo._id}`, updateTodo)
+  //     .then((res) => {
+  //       setAllTodos(res.data);
+  //     });
+  //   // e.preventDefault();
+  // };
 
   const deleteTodo = (todo) => {
     if (todo == null) {
@@ -88,74 +88,24 @@ function App() {
   return (
     <div>
       <nav className="navbar bg-success text-light">
-        <div>{userName}のTODO</div>
+        <div>rrih</div>
         <div>
-          ただ {userName} {avatarIcon} がやることを並べるだけのサイト
+          <a href="https://github.com/rrih">{avatarIcon}</a>
         </div>
       </nav>
       <div className="rrih-w mx-md-auto container pt-md-2">
-        <div className="d-md-flex">
+        <div className="text-center">
           <div className="mx-auto">
-            <form className="form-group" method="post">
-              <div>
-                <label>期日</label>
-                <DatePicker
-                  dateFormat="yyyy/MM/dd"
-                  selected={date}
-                  showTimeSelect
-                  onChange={handleDateChange}
-                />
-              </div>
-              <div>
-                <label>内容</label>
-                <input
-                  type="text"
-                  placeholder="todo"
-                  className="input todo..."
-                  name="todo"
-                  onChange={(e) => {setTodoText(e.target.value)}}
-                />
-              </div>
-              <button
-                type="button"
-                className="btn btn-outline-success"
-                onClick={handleTodoSubmit}
-              >
-                TODOを生成する
-              </button>
-            </form>
-            
+            <div className="rrih-top-icon m-3">
+              {avatarIcon}
+            </div>
+            <a className="btn btn-outline-dark rounded-pill" href="//twitter.com/share" data-text="rrih" data-url="https://rrih.github.io" data-lang="ja">
+              <i className="fab fa-twitter"></i> ツイートする
+            </a>
           </div>
         </div>
-                
-        <ul className="list-group mb-5">
-          {allTodos.map((todo, i) => {
-            return <li key={i} className="list-group-item list-group-item-light text-dark my-1">
-              <div className="d-flex justify-content-between">
-                <div className="">{todo.text}</div>
-                <div className="">{todo.date.toString().split('T')[0]}</div>
-              </div>
-              <div className="text-right">
-                <button
-                  type="button"
-                  className="btn btn-outline-primary rrih-menu-button py-1 px-2 rounded-pill"
-                  // onClick={() => {updateTodo(todo)}}
-                >
-                  update
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-outline-danger rrih-menu-button py-1 px-2 rounded-pill ml-2"
-                  onClick={() => {deleteTodo(todo)}}
-                >
-                  delete
-                </button>
-              </div>
-            </li>;
-          })}
-        </ul>
       </div>
-      {/* <footer className="bg-success text-light text-center fixed-bottom">&copy; {userName}</footer> */}
+      {/* <footer className="bg-success text-light text-center">&copy; {userName}</footer> */}
     </div>
   );
 }
