@@ -18,17 +18,16 @@ jobs:
       run: |
         git config --global user.name "rrih"
         git config --global user.name "rsklv@icloud.com"
-        git remote add origin https://rrih:${{ secrets.SSH_PASSWORD }}@github.com/rrih/rrih.github.io.git
     - name: use node.js
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
     - uses: actions/checkout@v2
-    - name: find package.json
+    - name: dependencies
       uses: actions/setup-node@v1
       with:
         node-version: '12.x'
-    - name: i yarn lock
+    - name: install dependencies
       run: yarn --frozen-lockfile
     - name: Print dependencies
       run: |
@@ -36,7 +35,9 @@ jobs:
         echo -n "npm " && npm -v
         yarn list --depth=0
     
-    - name: yarn run build
+    - name: build and deploy
+      with:
+        password: ${{ secrets.SSH_PASSWORD }}
       run: |
         yarn run build
         yarn run deploy
