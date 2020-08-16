@@ -99,7 +99,7 @@ function App() {
             <div className="rrih-top-icon m-3">
               {avatarIcon}
             </div>
-            <a className="btn btn-outline-dark rounded-pill" href="//twitter.com/share" data-text="rrih" data-url="https://rrih.github.io" data-lang="ja">
+            <a className="btn btn-outline-dark rounded-pill py-3 px-4 font-weight-bold" href="//twitter.com/share" data-text="rrih" data-url="https://rrih.github.io" data-lang="ja">
               <i className="fab fa-twitter"></i> ツイートする
             </a>
           </div>
