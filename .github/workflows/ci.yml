@@ -36,9 +36,10 @@ jobs:
         yarn list --depth=0
     
     - name: build and deploy
-      with:
-        password: ${{ secrets.SSH_PASSWORD }}
       run: |
         yarn run build
-        yarn run deploy
-      
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.SSH_PASSWORD }}
+        publish_dir: ./build
