@@ -23,6 +23,8 @@ jobs:
         yarn list --depth=0
     - name: find package.json
       run: |
+        ls
+        ls -a
         ls package.json
         cat package.json
     - name: yarn run build
