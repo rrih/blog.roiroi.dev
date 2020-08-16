@@ -1,63 +1,63 @@
 import React, { useEffect, useState } from 'react';
 import axios from "axios";
-import DatePicker from "react-datepicker";
-import { RrihTodoType } from "./models/interfaces";
+// import DatePicker from "react-datepicker";
+// import { RrihTodoType } from "./models/interfaces";
 import "react-datepicker/dist/react-datepicker.css";
 import './App.scss';
 const domain = 'https://kyugyo-back.herokuapp.com';
 export const apiUrl = `${domain}/api/rrih-todo`;
 
 function App() {
-  const [userName, setUserName] = useState<JSX.Element>();
+  // const [userName, setUserName] = useState<JSX.Element>();
   const [avatarIcon, setAvatarIcon] = useState<JSX.Element>();
-  const [date, setDate] = useState<Date>();
-  const [todoText, setTodoText] = useState<String>('');
-  const [allTodos, setAllTodos] = useState<RrihTodoType[]>([]);
+  // const [date, setDate] = useState<Date>();
+  // const [todoText, setTodoText] = useState<String>('');
+  // const [allTodos, setAllTodos] = useState<RrihTodoType[]>([]);
 
-  const getAllTodos = async () => {
-    await axios.get(apiUrl)
-      .then((res) => {
-        console.log(res.data);
-        setAllTodos(res.data);
-      })
-  }
+  // const getAllTodos = async () => {
+  //   await axios.get(apiUrl)
+  //     .then((res) => {
+  //       console.log(res.data);
+  //       setAllTodos(res.data);
+  //     })
+  // }
 
   const getUserWithGitHub = async () => {
     await axios.get('https://api.github.com/users/rrih')
       .then((res) => {
-        const r: JSX.Element = <a href={res.data.html_url} className="text-decoration-none text-light">{res.data.name}</a>;
-        setUserName(r);
+        // const r: JSX.Element = <a href={res.data.html_url} className="text-decoration-none text-light">{res.data.name}</a>;
+        // setUserName(r);
         const au = <img src={res.data.avatar_url} alt="rrih-avatar-url" width={30}/>
         setAvatarIcon(au);
       });
   };
 
   useEffect(() => {
-    getAllTodos();
+    // getAllTodos();
     getUserWithGitHub();
     
   }, []);
 
-  const handleDateChange = date => {
-    setDate(date);
-  }
+  // const handleDateChange = date => {
+  //   setDate(date);
+  // }
 
-  const handleTodoSubmit = (e) => {
-    if (todoText != null && date != null) {
-      const todo = {
-        text: todoText,
-        date: date
-      };
-      axios.post(apiUrl, todo).then((e) => {
-        window.location.reload();
-      })
-    }
-    else {
-      // TODO バリデーションエラー時の処理
-      throw new Error('Validation Error');
-    }
-    // e.preventDefault();
-  }
+  // const handleTodoSubmit = (e) => {
+  //   if (todoText != null && date != null) {
+  //     const todo = {
+  //       text: todoText,
+  //       date: date
+  //     };
+  //     axios.post(apiUrl, todo).then((e) => {
+  //       window.location.reload();
+  //     })
+  //   }
+  //   else {
+  //     // TODO バリデーションエラー時の処理
+  //     throw new Error('Validation Error');
+  //   }
+  //   // e.preventDefault();
+  // }
 
   // const updateTodo = (todo) => {
   //   if (todo == null) {
@@ -74,16 +74,16 @@ function App() {
   //   // e.preventDefault();
   // };
 
-  const deleteTodo = (todo) => {
-    if (todo == null) {
-      return null;
-    }
-    axios.delete(`${apiUrl}/${todo._id}`, { data: todo })
-    .then((e) => {
-      window.location.reload();
-    });
-    // e.preventDefault();
-  }
+  // const deleteTodo = (todo) => {
+  //   if (todo == null) {
+  //     return null;
+  //   }
+  //   axios.delete(`${apiUrl}/${todo._id}`, { data: todo })
+  //   .then((e) => {
+  //     window.location.reload();
+  //   });
+  //   // e.preventDefault();
+  // }
 
   return (
     <div>
