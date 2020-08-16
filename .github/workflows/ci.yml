@@ -14,6 +14,10 @@ jobs:
         node-version: [12.x]
     steps:
     - uses: actions/checkout@v2
+    - name: init git
+      run: |
+        git config --local user.name "rrih"
+        git config --local user.name "rsklv@icloud.com"
     - name: use node.js
       uses: actions/setup-node@v1
       with:
