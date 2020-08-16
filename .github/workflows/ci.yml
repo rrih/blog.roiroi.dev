@@ -21,6 +21,10 @@ jobs:
         echo -n "node " && node -v
         echo -n "npm " && npm -v
         yarn list --depth=0
+    - name: find package.json
+      run: |
+        ls package.json
+        cat package.json
     - name: yarn run build
       run: |
         yarn run build
