@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build-prod:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install dependencies
+      run: yarn
+    - name: Print dependencies
+      run: |
+        echo -n "node " && node -v
+        echo -n "npm " && npm -v
+        yarn list --depth=0
+    - name: yarn build
+      run: |
+        yarn run build
+        gh-pages -d build
+      
