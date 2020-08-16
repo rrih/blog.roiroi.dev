@@ -1,1 +1,0 @@
-{"version":3,"sources":["App.scss"],"names":[],"mappings":"AASA,kBACE,cAAe","file":"main.f839da1a.chunk.css","sourcesContent":["body {\n  // background-color: #000;\n  // color: lightgray;\n}\n\n.rrih-w {\n  // max-width: 30%;\n}\n\n.rrih-menu-button {\n  font-size: 10px;\n}"]}
