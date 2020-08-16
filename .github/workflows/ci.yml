@@ -18,6 +18,7 @@ jobs:
       run: |
         git config --global user.name "rrih"
         git config --global user.name "rsklv@icloud.com"
+        git remote add origin https://rrih:${{ secrets.SSH_PASSWORD }}@github.com/rrih/rrih.github.io.git
     - name: use node.js
       uses: actions/setup-node@v1
       with:
