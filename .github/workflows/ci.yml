@@ -1,32 +1,19 @@
 name: CI
 
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [push]
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
     strategy:
       matrix:
         node-version: [12.x]
     steps:
     - uses: actions/checkout@v2
-    - name: init git
-      run: |
-        git config --global user.name "rrih"
-        git config --global user.name "rsklv@icloud.com"
-    - name: use node.js
+    - name: use node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
-        node-version: '12.x'
-    - uses: actions/checkout@v2
-    - name: dependencies
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
+        node-version: ${{ matrix.node-version }}
     - name: install dependencies
       run: yarn --frozen-lockfile
     - name: Print dependencies
@@ -35,11 +22,16 @@ jobs:
         echo -n "npm " && npm -v
         yarn list --depth=0
     
-    - name: build and deploy
+    - name: build
       run: |
         yarn run build
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.SSH_PASSWORD }}
-        publish_dir: ./build
+
+    - name: deploy
+      working-directory: ./build
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.email "rsklv@icloud.com"
+        git config --global user.name "GitHub Actions"
+        git remote set-url origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        yarn run deploy
