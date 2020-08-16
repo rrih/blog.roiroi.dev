@@ -1,3 +1,3 @@
 ## rrih.github.io
 
-なんかいい感じのサイトにしたい…
+see [https://rrih.github.io](https://rrih.github.io)

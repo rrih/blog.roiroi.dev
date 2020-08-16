@@ -19,6 +19,5 @@ jobs:
         yarn list --depth=0
     - name: yarn run build
       run: |
-        yarn run build
-        gh-pages -d build
+        yarn run deploy
       
