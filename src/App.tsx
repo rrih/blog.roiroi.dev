@@ -88,7 +88,9 @@ function App() {
   return (
     <div>
       <nav className="navbar bg-success text-light">
-        <div>rrih</div>
+        <div>
+          <a href="https://rrih.github.io" className="text-light">rrih</a>
+        </div>
         <div>
           <a href="https://github.com/rrih">{avatarIcon}</a>
         </div>
@@ -125,38 +127,47 @@ function App() {
                 <li>
                   wantedly: <a href="https://www.wantedly.com/users/43733929">リンク</a>
                 </li>
-                <li>
-                メールアドレス rsklvあっとicloud.com
-                </li>
               </ul>
 
-              "あっと"の部分を"@"に変えてください。<br/>
-              メールも一応確認していますが、最も反応が早いものはTwitterです。
+              
               </div>
+
               <div className="border-bottom">
-              <h3>web</h3>
-              <ul>
-                <li>
-                  <a href="https://rrih.github.io/kyugyo">https://rrih.github.io/kyugyo</a>
-                </li>
-                店舗の休業情報のまとめサイト
-                <li>
-                  <a href="http://rrih.github.io/sparkle-of-life">http://rrih.github.io/sparkle-of-life</a>
-                </li>
-                いのちのかがやき
-                <li>
-                  <a href="https://feel-prod.herokuapp.com">https://feel-prod.herokuapp.com</a>
-                </li>
-                お気持ちを表明するサイト
-              </ul>
+                <h3>連絡先</h3>
+                <ul>
+                  <li>
+                    メールアドレス: rsklvあっとicloud.com
+                  </li>
+                </ul>
+                "あっと"の部分を"@"に変えてください。<br/>
+                メールも一応確認していますが、最も反応が早いものはTwitterです。
               </div>
+
               <div className="border-bottom">
-              <h3>使用技術</h3>
-              <ul>
-                <li>CakePHP/PHP</li>
-                <li>MySQL</li>
-                <li>HTML/CSS/JavaScript</li>
-              </ul>
+                <h3>web</h3>
+                <ul>
+                  <li>
+                    <a href="https://rrih.github.io/kyugyo">https://rrih.github.io/kyugyo</a>
+                  </li>
+                  店舗の休業情報のまとめサイト
+                  <li>
+                    <a href="http://rrih.github.io/sparkle-of-life">http://rrih.github.io/sparkle-of-life</a>
+                  </li>
+                  いのちのかがやき
+                  <li>
+                    <a href="https://feel-prod.herokuapp.com">https://feel-prod.herokuapp.com</a>
+                  </li>
+                  お気持ちを表明するサイト
+                </ul>
+              </div>
+              
+              <div className="border-bottom">
+                <h3>使用技術</h3>
+                <ul>
+                  <li>CakePHP/PHP</li>
+                  <li>MySQL</li>
+                  <li>HTML/CSS/JavaScript</li>
+                </ul>
               </div>
               <div className="border-bottom">
                 <h3>aboutme</h3>
