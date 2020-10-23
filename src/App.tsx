@@ -87,7 +87,7 @@ function App() {
 
   return (
     <div>
-      <nav className="navbar bg-success text-light">
+      <nav className="navbar bg-dark text-light">
         <div>
           <a href="https://rrih.github.io" className="text-light">rrih</a>
         </div>
@@ -139,8 +139,6 @@ function App() {
                     メールアドレス: rsklvあっとicloud.com
                   </li>
                 </ul>
-                "あっと"の部分を"@"に変えてください。<br/>
-                メールも一応確認していますが、最も反応が早いものはTwitterです。
               </div>
 
               <div className="border-bottom">
@@ -158,6 +156,10 @@ function App() {
                     <a href="https://feel-prod.herokuapp.com">https://feel-prod.herokuapp.com</a>
                   </li>
                   お気持ちを表明するサイト
+                  <li>
+                    <a href="https://rrih.github.io/cakephp-baked-code-formatter/">https://rrih.github.io/cakephp-baked-code-formatter/</a>
+                  </li>
+                  コードを形成するやつ
                 </ul>
               </div>
               
@@ -175,7 +177,7 @@ function App() {
                   <li> 
                     <h4>居場所</h4>
                     <ul>
-                      <li>群馬</li>
+                      <li>群馬、たまに都内</li>
                     </ul>
                   </li>
                   <li>
@@ -200,47 +202,23 @@ function App() {
                           web dev
                         </a>
                       </li>
-                      <li>イラスト/絵</li>
                       <li>甘いもの</li>
-                      <li>サービス開発対象としてのSNS</li>
                       <li>珈琲</li>
                       <li><a href="https://www.monsterenergy.com/">Monster Energy</a></li>
                       <li>お酒</li>
-                      <li>
-                        漫画/アニメ/読書/ゲーム
-                        <ul>
-                          <li><a href="https://ja.wikipedia.org/wiki/NEW_GAME!">
-                          NEWGAME</a></li>
-                          <li>
-                            <a href="https://ja.wikipedia.org/wiki/%E3%83%9D%E3%82%B1%E3%83%83%E3%83%88%E3%83%A2%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%BC">
-                              Pokémon
-                            </a>
-                          </li>
-                          <li>EVANGELION</li>
-                          <li>DEATH NOTE</li>
-                          <li>Sword Art Online</li>
-                          <li>涼宮ハルヒの憂鬱</li>
-                          <li>Attack on Titan</li>
-                          <li>星新一</li>
-                          <li>鬼滅の刃</li>
-                        </ul>
-                      </li>
                       <li>Apple devise</li>
-                      <li>一人暮らし</li>
-                      <ul><li>家探し中</li></ul>
                       <li>より良い睡眠</li>
                     </ul>
                   </li>
                 </ul>
               </div>
             </div>
-            <a className="btn btn-outline-dark rounded-pill py-3 px-4 font-weight-bold" href="//twitter.com/share" data-text="rrih" data-url="https://rrih.github.io" data-lang="ja">
-              <i className="fab fa-twitter"></i> ツイートする
-            </a>
           </div>
         </div>
       </div>
-      {/* <footer className="bg-success text-light text-center">&copy; {userName}</footer> */}
+      <footer className="bg-dark text-white text-center p-2">
+        &copy; rrih 2020
+      </footer>
     </div>
   );
 }
