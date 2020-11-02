@@ -17,6 +17,7 @@ const About = () => {
                 </header>
                 <section>
                     ろいです！
+                    うえええええ
                 </section>
             </article>
         </div>
