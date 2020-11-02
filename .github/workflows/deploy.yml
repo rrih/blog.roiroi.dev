@@ -36,16 +36,13 @@ jobs:
     - name: test
       run: npm run test
 
-    # - name: build
-    #   run: npm run build
-
     - name: deploy
       uses: peaceiris/actions-gh-pages@v3
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # with:
-      #   github_token: ${GITHUB_TOKEN}
-      #   publish_dir: ./public
+      with:
+        github_token: ${GITHUB_TOKEN}
+        publish_dir: ./public
       run: |
         git config --global user.email "rsklv@icloud.com"
         git config --global user.name "GitHub Actions"
