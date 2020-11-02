@@ -1,10 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// import { rhythm, scale } from "../utils/typography"
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
@@ -34,9 +32,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr
           />
-          <footer>
-            <Bio />
-          </footer>
         </article>
 
         <nav className="d-md-block ml-md-5">
@@ -45,14 +40,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <li className="list-unstyled">
               {previous && (
                 <Link to={previous.fields.slug} rel="prev">
-                  👉 {previous.frontmatter.title}
+                  <span role="img" aria-labelledby="right">👉</span> {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li className="list-unstyled">
               {next && (
                 <Link to={next.fields.slug} rel="next">
-                  {next.frontmatter.title} 👈
+                  {next.frontmatter.title} <span role="img" aria-labelledby="left">👈</span>
                 </Link>
               )}
             </li>

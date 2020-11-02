@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import axios from "axios";
 
 // import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  // const rootPath = `${__PATH_PREFIX__}/`
   const [avatarIcon, setAvatarIcon] = useState();
   // プロフィール画像
-  const blogerImage = `https://github.com/rrih.png`;
+  // const blogerImage = `https://github.com/rrih.png`;
   const getUserWithGitHub = async () => {
     await axios.get('https://api.github.com/users/rrih')
       .then((res) => {
