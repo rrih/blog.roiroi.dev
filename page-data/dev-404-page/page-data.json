@@ -1,0 +1,19 @@
+{
+  "componentChunkName": "component---cache-dev-404-page-js",
+  "path": "/dev-404-page/",
+  "result": {
+    "data": {
+      "allSitePage": {
+        "nodes": [
+          { "path": "/php-started/" },
+          { "path": "/cakephp-mysql-deploy/" },
+          { "path": "/restart-gatsby/" },
+          { "path": "/404/" },
+          { "path": "/" },
+          { "path": "/404.html" }
+        ]
+      }
+    },
+    "pageContext": {}
+  }
+}

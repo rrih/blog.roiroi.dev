@@ -1,1 +1,27 @@
-{"componentChunkName":"component---src-templates-blog-post-js","path":"/hello-world/","result":{"data":{"site":{"siteMetadata":{"title":"ろいぶろぐ"}},"markdownRemark":{"id":"58a96bc2-73f0-5825-8d0f-3dd25fc9f05b","excerpt":"gatsby+netlify でブログを作りました\ncss でいい感じのサイトにしたい 🥺 また電子ゴミを生み出してしまったかもしれない 🤔","html":"<p>gatsby+netlify でブログを作りました\ncss でいい感じのサイトにしたい 🥺</p>\n<p>また電子ゴミを生み出してしまったかもしれない 🤔</p>","frontmatter":{"title":"ブログ開設しました","date":"2020 June 01","description":null}}},"pageContext":{"slug":"/hello-world/","previous":null,"next":{"fields":{"slug":"/nest-app-deploy-with-heroku/"},"frontmatter":{"title":"Nest.js+Herokuでapiサーバをデプロイ"}}}}}
+{
+  "componentChunkName": "component---src-templates-blog-post-js",
+  "path": "/hello-world/",
+  "result": {
+    "data": {
+      "site": { "siteMetadata": { "title": "ろいぶろぐ" } },
+      "markdownRemark": {
+        "id": "2e3d9824-c390-5385-9052-f71f9e17ceb8",
+        "excerpt": "gatsby+netlifyでブログを作りました\ncssでいい感じのサイトにしたい🥺 また電子ゴミを生み出してしまったかもしれない🤔",
+        "html": "<p>gatsby+netlifyでブログを作りました\ncssでいい感じのサイトにしたい🥺</p>\n<p>また電子ゴミを生み出してしまったかもしれない🤔</p>",
+        "frontmatter": {
+          "title": "ブログ開設しました",
+          "date": "2020 June 01",
+          "description": null
+        }
+      }
+    },
+    "pageContext": {
+      "slug": "/hello-world/",
+      "previous": null,
+      "next": {
+        "fields": { "slug": "/nest-app-deploy-with-heroku/" },
+        "frontmatter": { "title": "Nest.js+Herokuでapiサーバをデプロイ" }
+      }
+    }
+  }
+}
