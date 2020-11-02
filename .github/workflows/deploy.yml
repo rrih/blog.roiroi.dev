@@ -1,37 +1,43 @@
 name: deploy
 
-on: [push]
+on:
+  push:
+    branches:
+      - master
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [12.x]
+  build-deploy:
+    runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
-    - name: use node.js ${{ matrix.node-version }}
+
+    - name: setup node
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: install dependencies
-      run: yarn --frozen-lockfile
-    - name: Print dependencies
-      run: |
-        echo -n "node " && node -v
-        echo -n "npm " && npm -v
-        yarn list --depth=0
-    
+        node-version: '12.x'
+
+    - name: Cache dependencies
+      uses: actions/cache@v1
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+
+    - name: install
+      run: npm ci
+
+    - name: format
+      run: npm run format
+
+    - name: test
+      run: npm run test
+
     - name: build
-      run: |
-        yarn run build
+      run: npm run build
 
     - name: deploy
-      working-directory: ./build
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git config --global user.email "rsklv@icloud.com"
-        git config --global user.name "GitHub Actions"
-        git remote set-url origin https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
-        yarn run deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
