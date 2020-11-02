@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
 import axios from "axios";
-import "./blog.css"
 
 // import { rhythm, scale } from "../utils/typography"
 
