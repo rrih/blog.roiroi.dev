@@ -18,8 +18,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="container">
-        <article className="border m-3 p-3 d-md-block">
+      <div className="container px-0">
+        <article className="border my-3 m-md-3 p-3 shadow">
           <header>
             <div
               className="h2"

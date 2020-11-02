@@ -13,14 +13,18 @@ const Layout = ({ location, title, children }) => {
       <div
         className="h2"
       >
-        <Link
+        {/* <Link
           to={`/`}
           className="text-light text-decoration-none"
         >
           {title}
-        </Link>
+        </Link> */}
+        <a href="/" className="text-decoration-none text-light">
+          ろ
+        </a>
       </div>
       <div>なにもわかってない</div>
+      <div><a href="/about" className="text-decoration-none text-light">about</a></div>
     </div>
   )
 
@@ -29,7 +33,7 @@ const Layout = ({ location, title, children }) => {
       className="bg-secondary"
     >
       <header className="">{header}</header>
-      <main className="container border mt-3 bg-light shadow d-md-flex">
+      <main className="container border mt-3 bg-light shadow px-0">
         {children}
       </main>
       <footer className="text-center bg-dark text-light py-2 mt-3">

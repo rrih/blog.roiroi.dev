@@ -38,7 +38,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="" />
       <Bio />
-      <div className="flex-wrap container">
+      <div className="flex-wrap container px-0">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (

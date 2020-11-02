@@ -10,7 +10,16 @@ const About = () => {
     return (
     <Layout>
         <SEO title="about" />
-        <h1>about</h1>
+        <div className="container px-0">
+            <article className="border my-3 m-md-3 p-3 shadow">
+                <header>
+                    <div className="h2">あばうとぺーじ</div>
+                </header>
+                <section>
+                    ろいです！
+                </section>
+            </article>
+        </div>
     </Layout>
     )
 }
