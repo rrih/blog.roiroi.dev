@@ -1,30 +1,38 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
+import axios from "axios";
 import "./blog.css"
 
 // import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
+  const [avatarIcon, setAvatarIcon] = useState();
   // プロフィール画像
-  const blogerImage = `https://cdn.image.st-hatena.com/image/square/86adf29367242dfb1234b4168178df4fcee8a95b/backend=imagemagick;height=128;version=1;width=128/https%3A%2F%2Fcdn.user.blog.st-hatena.com%2Fblog_custom_icon%2F146334169%2F1590983507412455`;
+  const blogerImage = `https://github.com/rrih.png`;
+  const getUserWithGitHub = async () => {
+    await axios.get('https://api.github.com/users/rrih')
+      .then((res) => {
+        const au = <img className="mb-0" src={res.data.avatar_url} alt="rrih-avatar-url" width={30}/>
+        setAvatarIcon(au);
+      });
+  };
+  useEffect(() => {
+    getUserWithGitHub();
+  }, []);
+
   const header = (
-    <div className="bg-dark text-light text-center py-3 shadow">
+    <div className="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow">
       <div
-        className="h2"
+        className="mx-3"
       >
-        {/* <Link
-          to={`/`}
-          className="text-light text-decoration-none"
-        >
-          {title}
-        </Link> */}
         <a href="/" className="text-decoration-none text-light">
-          ろ
+          rrih
         </a>
       </div>
-      <div>なにもわかってない</div>
-      <div><a href="/about" className="text-decoration-none text-light">about</a></div>
+      <div className="mx-3">
+        {avatarIcon}
+      </div>
     </div>
   )
 
@@ -37,7 +45,7 @@ const Layout = ({ location, title, children }) => {
         {children}
       </main>
       <footer className="text-center bg-dark text-light py-2 mt-3">
-        © {new Date().getFullYear()} ろ
+      &copy; {new Date().getFullYear()} rrih
       </footer>
     </div>
   )
