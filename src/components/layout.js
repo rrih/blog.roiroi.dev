@@ -31,22 +31,8 @@ const Layout = ({ location, title, children }) => {
       <header className="">{header}</header>
       <main className="container border mt-3 bg-light shadow d-md-flex">
         {children}
-        <div className="mt-5 px-2 text-center roi-profile">
-          <div className="h3 text-center bg-dark text-light p-2">運営</div>
-          <img
-            src={blogerImage}
-            className="roi-img rounded-circle"
-          >
-          </img>
-          <p>ろい</p>
-          <div>
-            プロブロガー。
-            アフィリエイトで月100万稼いでいます！
-            <p>起業/スタバ/慶應/留学</p>
-          </div>
-        </div>
       </main>
-      <footer className="text-center bg-dark text-light py-2">
+      <footer className="text-center bg-dark text-light py-2 mt-3">
         © {new Date().getFullYear()} ろ
       </footer>
     </div>

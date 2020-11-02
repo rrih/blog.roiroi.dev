@@ -36,13 +36,13 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO />
+      <SEO title="" />
       <Bio />
-      <div className="d-md-flex flex-wrap">
+      <div className="flex-wrap container">
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
-            <article key={node.fields.slug} className="border my-3 m-md-3 p-3 shadow col-md-5 roi-article">
+            <article key={node.fields.slug} className="border my-3 m-md-3 p-3 shadow">
               <header>
                 <div
                   className="h3"
