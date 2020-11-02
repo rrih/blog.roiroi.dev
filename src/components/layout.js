@@ -20,7 +20,7 @@ const Layout = ({ location, title, children }) => {
           {title}
         </Link>
       </div>
-      <div>てきとうな備忘録</div>
+      <div>なにもわかってない</div>
     </div>
   )
 
@@ -47,7 +47,7 @@ const Layout = ({ location, title, children }) => {
         </div>
       </main>
       <footer className="text-center bg-dark text-light py-2">
-        © {new Date().getFullYear()} roirojs
+        © {new Date().getFullYear()} ろ
       </footer>
     </div>
   )

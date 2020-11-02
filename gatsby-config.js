@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `ろいぶろぐ`,
+    title: `ろ`,
     author: {
-      name: `roi`,
+      name: `rrih`,
       summary: `ろ`
     },
     description: `roi blog`,
-    siteUrl: `https://roiblog.netlify.app/`,
+    siteUrl: `https://rrih.github.io`,
     social: {
-      twitter: `roirojs`
+      twitter: `rrih_dev`
     }
   },
   plugins: [
