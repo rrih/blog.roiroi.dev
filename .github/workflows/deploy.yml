@@ -1,43 +1,43 @@
-name: deploy
+# name: deploy
 
-on:
-  push:
-    branches:
-      - master
+# on:
+#   push:
+#     branches:
+#       - master
 
-jobs:
-  build-deploy:
-    runs-on: ubuntu-18.04
-    steps:
-    - uses: actions/checkout@v2
+# jobs:
+#   build-deploy:
+#     runs-on: ubuntu-18.04
+#     steps:
+#     - uses: actions/checkout@v2
 
-    - name: setup node
-      uses: actions/setup-node@v1
-      with:
-        node-version: '12.x'
+#     - name: setup node
+#       uses: actions/setup-node@v1
+#       with:
+#         node-version: '12.x'
 
-    - name: Cache dependencies
-      uses: actions/cache@v1
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
+#     - name: Cache dependencies
+#       uses: actions/cache@v1
+#       with:
+#         path: ~/.npm
+#         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+#         restore-keys: |
+#           ${{ runner.os }}-node-
 
-    - name: install
-      run: npm ci
+#     - name: install
+#       run: npm ci
 
-    - name: format
-      run: npm run format
+#     - name: format
+#       run: npm run format
 
-    # - name: test
-    #   run: npm run test
+#     - name: test
+#       run: npm run test
 
-    - name: build
-      run: npm run build
+#     - name: build
+#       run: npm run build
 
-    - name: deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+#     - name: deploy
+#       uses: peaceiris/actions-gh-pages@v3
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         publish_dir: ./public
