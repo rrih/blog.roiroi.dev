@@ -35,7 +35,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <div className="container px-0">
-        <article className="border my-3 m-md-3 p-3 shadow blog-posts">
+        <article className="border my-3 m-md-3 p-3 shadow blog-posts rounded">
           <header className="mb-4">
             <div
               className="h2"

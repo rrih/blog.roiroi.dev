@@ -40,7 +40,7 @@ const Layout = ({ location, title, children }) => {
       className="bg-secondary mt-4 pt-4"
     >
       <header className="">{header}</header>
-      <main className="container border mt-3 bg-light shadow px-0">
+      <main className="container border mt-3 bg-light shadow px-0 rounded">
         {children}
       </main>
       <footer className="text-center bg-dark text-light py-2 mt-3">
