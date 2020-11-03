@@ -12,7 +12,7 @@ const Layout = ({ location, title, children }) => {
   const getUserWithGitHub = async () => {
     await axios.get('https://api.github.com/users/rrih')
       .then((res) => {
-        const au = <img className="mb-0" src={res.data.avatar_url} alt="rrih-avatar-url" width={30}/>
+        const au = <img className="mb-0 rounded-pill" src={res.data.avatar_url} alt="rrih-avatar-url" width={30}/>
         setAvatarIcon(au);
       });
   };
@@ -21,7 +21,7 @@ const Layout = ({ location, title, children }) => {
   }, []);
 
   const header = (
-    <div className="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow">
+    <div className="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow fixed-top">
       <div
         className="mx-3"
       >
@@ -37,14 +37,15 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div
-      className="bg-secondary"
+      className="bg-secondary mt-4 pt-4"
     >
       <header className="">{header}</header>
       <main className="container border mt-3 bg-light shadow px-0">
         {children}
       </main>
       <footer className="text-center bg-dark text-light py-2 mt-3">
-      &copy; {new Date().getFullYear()} rrih
+        &copy; {new Date().getFullYear()} rrih
+        <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="external noopener">詳しく見る</a></small></div>
       </footer>
     </div>
   )
