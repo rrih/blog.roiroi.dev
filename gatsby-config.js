@@ -1,5 +1,3 @@
-const config = require("./.data/siteConfig");
-
 module.exports = {
   siteMetadata: {
     title: `rrih`,
