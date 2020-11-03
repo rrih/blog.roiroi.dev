@@ -26,7 +26,7 @@ const Layout = ({ location, title, children }) => {
         className="mx-3"
       >
         <a href="/" className="text-decoration-none text-light">
-          rrih
+          トップ
         </a>
       </div>
       <div className="mx-3">

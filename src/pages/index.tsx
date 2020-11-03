@@ -2,10 +2,9 @@
 import React from "react"
 import { PageProps, Link, graphql } from "gatsby"
 
-// import Bio from "../components/bio"
+// import 'https://use.fontawesome.com/releases/v5.6.1/css/all.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
 type Data = {
   site: {
@@ -150,7 +149,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   {title}
                 </Link>
               
-                <small>{node.frontmatter.date}</small>
+                <small>{node.frontmatter.date} 公開</small>
               </header>
             </li>
           )

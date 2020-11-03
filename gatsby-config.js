@@ -3,9 +3,9 @@ module.exports = {
     title: `rrih`,
     author: {
       name: `rrih`,
-      summary: `ろ`
+      summary: `rrih`
     },
-    description: `roi blog`,
+    description: `rrih site`,
     siteUrl: `https://rrih.github.io`,
     social: {
       twitter: `rrih_dev`
