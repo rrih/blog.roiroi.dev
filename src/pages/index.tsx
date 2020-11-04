@@ -100,7 +100,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             <li className="list-unstyled mb-0"> 
               <div className="h4">居場所</div>
               <ul>
-                <li className="list-unstyled">群馬、たまに都内</li>
+                <li className="list-unstyled">群馬 || 都内</li>
               </ul>
             </li>
             <li className="list-unstyled">

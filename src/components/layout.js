@@ -20,12 +20,27 @@ const Layout = ({ location, title, children }) => {
     getUserWithGitHub();
   }, []);
 
+  // トップのリンクは`/articles`かを判別し、動的に返す
+  const topLinkArticles = () => {
+    switch (location.href) {
+      // origin へ返す場合
+      case `${location.origin}/`:
+      case `${location.origin}/blog`:
+        return location.origin;
+        break;
+      // `/article` へ返す場合
+      default:
+        return `${location.origin}/articles`;
+        break;
+    }
+  }
+
   const header = (
     <div className="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow fixed-top">
       <div
         className="mx-3"
       >
-        <a href="/" className="text-decoration-none text-light">
+        <a href={topLinkArticles()} className="text-decoration-none text-light">
           トップ
         </a>
       </div>
