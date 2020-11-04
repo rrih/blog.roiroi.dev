@@ -137,7 +137,8 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         </div>
       </div>
       
-      <div className="flex-wrap container px-0 pb-4 mx-md-4">
+      {/* TODO 一旦コメントアウト。トップページからは一時的に隠す。アドセンスが通ったら解除する */}
+      {/* <div className="flex-wrap container px-0 pb-4 mx-md-4">
         <div className="h3 mx-4 mx-md-0">misc</div>
         <ul>
         {posts.map(({ node }) => {
@@ -155,7 +156,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           )
         })}
         </ul>
-      </div>
+      </div> */}
     </Layout>
   )
 }
