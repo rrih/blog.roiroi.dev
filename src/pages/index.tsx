@@ -50,7 +50,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
               GitHub: <a href="https://github.com/rrih">@rrih</a>
             </li>
             <li className="list-unstyled mb-0">
-              ブログ: <a href="https://rrih.github.io/">https://rrih.github.io/</a>
+              ブログ: <Link to="/blog">{location.href}blog</Link>
             </li>
             <li className="list-unstyled mb-0">
               wantedly: <a href="https://www.wantedly.com/id/rrih">リンク</a>
