@@ -19,18 +19,18 @@ const Layout = ({ location, title, children }) => {
   useEffect(() => {
     getUserWithGitHub();
   }, []);
-
+  console.log(location.pathname)
   // トップのリンクは`/articles`かを判別し、動的に返す
   const topLinkArticles = () => {
-    switch (location.href) {
+    switch (location.pathname) {
       // origin へ返す場合
-      case `${location.origin}/`:
-      case `${location.origin}/blog`:
-        return location.origin;
+      case `/`:
+      case `/blog`:
+        return `/`;
         break;
       // `/article` へ返す場合
       default:
-        return `${location.origin}/articles`;
+        return `/articles`;
         break;
     }
   }

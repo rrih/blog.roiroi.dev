@@ -63,7 +63,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
           {/* この記事を書いた人 */}
           <div className="this-article-author my-4 border rounded shadow">
-            <div className="h5 text-center bg-dark text-light rounded-top p-2">管理者</div>
+            <div className="h5 text-center bg-dark text-light rounded-top p-2">Author</div>
             <div className="p-3 d-flex justify-content-around align-items-center">
               <div className="py-3 pl-md-3 d-sm-none">
                 <a href="https://github.com/rrih" target="_blank" className="shadow">{avatarIcon}</a>
@@ -74,9 +74,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               
               <div className="pl-3 py-3" style={{minWidth: "200px"}}>
                 <div className="h5">rrih</div>
+                {/* スマホのみ表示 */}
                 <div className="d-sm-none">
                   <small>
-                  なにもわかっていない人です。<br />
+                  某大学4年生。なにもわかっていない人です。
                   TypeScriptかPHP書いてます
                   </small>
                   <div className="d-flex my-2">
@@ -84,8 +85,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                     <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div>
                   </div>
                 </div>
+                {/* sm以上表示 */}
                 <div className="d-none d-sm-block">
-                  なにもわかっていない人です。<br />
+                  某大学4年生。なにもわかっていない人です。
                   TypeScriptかPHP書いてます
                   <div className="d-flex my-2">
                     <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
