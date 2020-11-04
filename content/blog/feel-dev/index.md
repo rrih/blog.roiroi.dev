@@ -12,3 +12,6 @@ description: ""
 インフラなにもわからない。herokuにデプロイしたらなにもわからなくてもアプリは動くよどこまでも。
 
 いずれインフラも完全に理解したいですね。
+
+#### 関連記事
+[CakePHP4+MySQL5でHerokuにデプロイ](/cakephp-mysql-deploy)

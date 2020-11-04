@@ -6,3 +6,7 @@ description: "test"
 
 わからん誰か方法教えて＞＜  
 ぺーじねーしょんしたいいいいい
+
+#### 関連記事
+- [ブログのスペックについて](/restart-gatsby)
+- [tag機能をいれたい！](/tag-function)

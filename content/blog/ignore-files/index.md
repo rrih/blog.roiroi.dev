@@ -18,3 +18,7 @@ description: ""
   github pagesで公開する際のjobでbuild時に生成されますが、公開時は不要です。
 
 以上
+
+#### 関連記事
+- [ブログのスペックについて](/restart-gatsby)
+- [tag機能をいれたい！](/tag-function)
