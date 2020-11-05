@@ -19,7 +19,7 @@ const Layout = ({ location, title, children }) => {
   useEffect(() => {
     getUserWithGitHub();
   }, []);
-  console.log(location.pathname)
+
   // トップのリンクは`/articles`かを判別し、動的に返す
   const topLinkArticles = () => {
     switch (location.pathname) {
@@ -27,11 +27,9 @@ const Layout = ({ location, title, children }) => {
       case `/`:
       case `/blog`:
         return `/`;
-        break;
       // `/article` へ返す場合
       default:
         return `/articles`;
-        break;
     }
   }
 
@@ -60,7 +58,7 @@ const Layout = ({ location, title, children }) => {
       </main>
       <footer className="text-center bg-dark text-light py-2 mt-3">
         &copy; {new Date().getFullYear()} rrih
-        <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="external noopener">詳しく見る</a></small></div>
+        <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">詳しく見る</a></small></div>
       </footer>
     </div>
   )

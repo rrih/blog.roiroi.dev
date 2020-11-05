@@ -66,10 +66,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <div className="h5 text-center bg-dark text-light rounded-top p-2">Author</div>
             <div className="p-3 d-flex justify-content-around align-items-center">
               <div className="py-3 pl-md-3 d-sm-none">
-                <a href="https://github.com/rrih" target="_blank" className="shadow">{avatarIcon}</a>
+                <a href="https://github.com/rrih" target="_blank" className="shadow" rel="noopener noreferrer">{avatarIcon}</a>
               </div>
               <div className="py-3 d-none d-sm-block">
-                <a href="https://github.com/rrih" target="_blank" className="shadow">{avatarIcon}</a>
+                <a href="https://github.com/rrih" target="_blank" className="shadow" rel="noopener noreferrer">{avatarIcon}</a>
               </div>
               
               <div className="pl-3 py-3" style={{minWidth: "200px"}}>
@@ -78,20 +78,20 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <div className="d-sm-none">
                   <small>
                   某大学4年生。なにもわかっていない人です。
-                  TypeScriptかPHP書いてます
                   </small>
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow"><small>Twitter</small></a></div>
-                    <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rstjq" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow"><small>Twitter</small></a></div>
+                    {/* 一旦 GitHub アカウントはコメントアウト */}
+                    {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div> */}
                   </div>
                 </div>
                 {/* sm以上表示 */}
                 <div className="d-none d-sm-block">
                   某大学4年生。なにもわかっていない人です。
-                  TypeScriptかPHP書いてます
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
-                    <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow">GitHub</a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rstjq" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
+                    {/* 一旦 GitHub アカウントはコメントアウト */}
+                    {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow">GitHub</a></div> */}
                   </div>
                 </div>
               </div>
