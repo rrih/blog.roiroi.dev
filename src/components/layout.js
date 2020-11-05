@@ -26,6 +26,7 @@ const Layout = ({ location, title, children }) => {
       // origin へ返す場合
       case `/`:
       case `/blog`:
+      case `/blog/`: // TODO `/` が末尾に入る場合を考慮していなかったので入れたけど、これはなんとなくいけてない気がするので後で考える
         return `/`;
       // `/article` へ返す場合
       default:
