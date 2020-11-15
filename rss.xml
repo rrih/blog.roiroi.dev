@@ -1,15 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Nov 2020 09:01:56 GMT</lastBuildDate><item><title><![CDATA[ターミナルでMySQLのクエリを見る]]></title><description><![CDATA[準備 ターミナルで MySQL コンテナに入り、接続。 設定 以下の通りにコマンド叩く。 別窓開いて 別窓開いて MySQL コンテナに入り、 これでログの流れをみれるようになる。 また、 UPDATE 部分のみ抽出して監視することもできる]]></description><link>https://rrih.github.io/mysql-query-log-watch/</link><guid isPermaLink="false">https://rrih.github.io/mysql-query-log-watch/</guid><pubDate>Sun, 15 Nov 2020 13:20:00 GMT</pubDate><content:encoded>&lt;h4&gt;準備&lt;/h4&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 15 Nov 2020 14:38:58 GMT</lastBuildDate><item><title><![CDATA[ターミナルでMySQLのクエリを見る]]></title><description><![CDATA[準備 ターミナルで MySQL コンテナに入り、接続。 設定 以下の通りにコマンド叩く。 別窓開いて 別窓開いて MySQL コンテナに入り、 これでログの流れをみれるようになる。 また、 UPDATE 部分のみ抽出して監視することもできる 以上]]></description><link>https://rrih.github.io/posts/mysql-query-log-watch/</link><guid isPermaLink="false">https://rrih.github.io/posts/mysql-query-log-watch/</guid><pubDate>Sun, 15 Nov 2020 13:20:00 GMT</pubDate><content:encoded>&lt;h4&gt;準備&lt;/h4&gt;
 &lt;p&gt;ターミナルで MySQL コンテナに入り、接続。&lt;/p&gt;
 &lt;h5&gt;設定&lt;/h5&gt;
 &lt;p&gt;以下の通りにコマンド叩く。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;SET GLOBAL general_log = &amp;#39;ON&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;SET GLOBAL general_log = &amp;#39;ON&amp;#39;;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;別窓開いて&lt;/h4&gt;
 &lt;p&gt;別窓開いて MySQL コンテナに入り、&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tail -f /var/mysql/mysql.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;tail -f /var/mysql/mysql.log&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;これでログの流れをみれるようになる。&lt;/p&gt;
 &lt;p&gt;また、&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;tail -f /var/lib/mysql/general.log | grep &amp;quot;UPDATE&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;UPDATE 部分のみ抽出して監視することもできる&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP、実装についてめも]]></title><description><![CDATA[PHP のメモ、というか業務(CakePHP4)についてのメモ 現在タスクで学んだこと 旧実装のクエリのログを見ながら再現していくイメージ Model 周りの util 的メソッドは Trait や Behavior の利用を検討 バリデーションは二度動く(patchEntity…]]></description><link>https://rrih.github.io/cakephp-memo/</link><guid isPermaLink="false">https://rrih.github.io/cakephp-memo/</guid><pubDate>Sun, 15 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;PHP のメモ、というか業務(CakePHP4)についてのメモ&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;tail -f /var/lib/mysql/general.log | grep &amp;quot;UPDATE&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;UPDATE 部分のみ抽出して監視することもできる&lt;/p&gt;
+&lt;p&gt;以上&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP、実装についてめも]]></title><description><![CDATA[PHP のメモ、というか業務(CakePHP4)についてのメモ 現在タスクで学んだこと 旧実装のクエリのログを見ながら再現していくイメージ Model 周りの util 的メソッドは Trait や Behavior の利用を検討 バリデーションは二度動く(patchEntity…]]></description><link>https://rrih.github.io/posts/cakephp-memo/</link><guid isPermaLink="false">https://rrih.github.io/posts/cakephp-memo/</guid><pubDate>Sun, 15 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;PHP のメモ、というか業務(CakePHP4)についてのメモ&lt;/p&gt;
 &lt;h3&gt;現在タスクで学んだこと&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;旧実装のクエリのログを見ながら再現していくイメージ&lt;/li&gt;
@@ -21,4 +22,6 @@ save に動くものは&lt;code class=&quot;language-text&quot;&gt;buildRules&lt
 &lt;li&gt;単一責務の原則&lt;br&gt;
 別メソッドに切り出すべきシーンでそうせずにデカい関数を書くと怒られたりする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;そもそも現在やってるタスクまだゴールしていない件…&lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;p&gt;そもそも現在やってるタスクまだゴールしていない件…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP4+MySQL5(ClearDB)の構成でHerokuにデプロイ]]></title><description><![CDATA[CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。 ソースはこちら 触りたかったのは CakePHP、MySQL なのでインフラは何も考えずにすむ Heroku(そろそろ思考停止 Heroku…]]></description><link>https://rrih.github.io/posts/cakephp-mysql-app-deploy-heroku/</link><guid isPermaLink="false">https://rrih.github.io/posts/cakephp-mysql-app-deploy-heroku/</guid><pubDate>Sun, 15 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。&lt;br&gt;
+ソースは&lt;a href=&quot;https://github.com/rrih/feel&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;触りたかったのは CakePHP、MySQL なのでインフラは何も考えずにすむ Heroku(そろそろ思考停止 Heroku やめたいにゃんね)(インフラは別途時間ある時に手を出していきたい)。&lt;/p&gt;</content:encoded></item></channel></rss>
