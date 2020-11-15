@@ -20,17 +20,17 @@ const Layout = ({ location, title, children }) => {
     getUserWithGitHub();
   }, []);
 
-  // トップのリンクは`/articles`かを判別し、動的に返す
-  const topLinkArticles = () => {
+  // トップのリンクは`/posts`かを判別し、動的に返す
+  const topLinkPosts = () => {
     switch (location.pathname) {
       // origin へ返す場合
       case `/`:
       case `/blog`:
       case `/blog/`: // TODO `/` が末尾に入る場合を考慮していなかったので入れたけど、これはなんとなくいけてない気がするので後で考える
         return `/`;
-      // `/article` へ返す場合
+      // `/posts` へ返す場合
       default:
-        return `/articles`;
+        return `/posts`;
     }
   }
 
@@ -39,7 +39,7 @@ const Layout = ({ location, title, children }) => {
       <div
         className="mx-3"
       >
-        <a href={topLinkArticles()} className="text-decoration-none text-light">
+        <a href={topLinkPosts()} className="text-decoration-none text-light">
           トップ
         </a>
       </div>
@@ -57,7 +57,7 @@ const Layout = ({ location, title, children }) => {
       <main className="container border mt-3 bg-light shadow px-0 rounded">
         {children}
       </main>
-      <footer className="text-center bg-dark text-light py-2 mt-3">
+      <footer className="text-center bg-dark text-light py-2 mt-3 py-5">
         &copy; {new Date().getFullYear()} rrih
         <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">詳しく見る</a></small></div>
       </footer>

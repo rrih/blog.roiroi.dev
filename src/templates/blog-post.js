@@ -37,7 +37,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <div className="container px-0">
         <article className="border my-3 m-md-3 p-3 shadow blog-posts rounded">
           <header className="">
-            <small>> <a href="/articles">記事一覧</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
+            <small>> <a href="/posts">記事一覧</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
             <div
               className="h2"
             >
@@ -129,7 +129,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </div>
         </nav>
         <div className="text-center pb-2">
-          <a href="/articles">記事一覧へ戻る</a>
+          <a href="/posts">記事一覧へ戻る</a>
         </div>
       </div>
     </Layout>

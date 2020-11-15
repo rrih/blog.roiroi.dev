@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Data } from "."
 
-const Articles = ({ data, location }: PageProps<Data>) => {
+const Posts = ({ data, location }: PageProps<Data>) => {
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
 
@@ -34,7 +34,7 @@ const Articles = ({ data, location }: PageProps<Data>) => {
     )
 }
 
-export default Articles
+export default Posts
 
 export const pageQuery = graphql`
   query {
