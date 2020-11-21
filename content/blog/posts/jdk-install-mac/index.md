@@ -14,16 +14,26 @@ Mac Catalina
 
 これでよい
 ```bash
-$ brew tap AdoptOpenJDK/openjdk 
-$ brew cask install adoptopenjdk14
+% brew tap AdoptOpenJDK/openjdk 
+% brew cask install adoptopenjdk14
+```
+
+#### バージョン確認
+```bash
+% javac -version
+javac 14.0.2
+% java -version
+openjdk version "14.0.2" 2020-07-14
+OpenJDK Runtime Environment AdoptOpenJDK (build 14.0.2+12)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 14.0.2+12, mixed mode, sharing)
 ```
 
 #### 試しに実行
 ```bash
-$ mkdir java-sample
-$ cd java-sample
-$ touch Sample.java
-$ vi Sample.java # てきとうにJavaコードを書く
+% mkdir java-sample
+% cd java-sample
+% touch Sample.java
+% vi Sample.java # てきとうにJavaコードを書く
 ```
 ```java
 // Sample.java
@@ -34,8 +44,8 @@ public class Sample {
 }
 ```
 ```bash
-$ javac Sample.java # コンパイル
-$ java Sample # 実行
+% javac Sample.java # コンパイル
+% java Sample # 実行
 hoge
 ```
 参考文献は[こちら](https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961)
