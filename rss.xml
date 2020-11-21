@@ -1,24 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 21 Nov 2020 12:15:19 GMT</lastBuildDate><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい 試しに実行 参考文献はこちら]]></description><link>https://rrih.github.io/posts/jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/posts/jdk-install-mac/</guid><pubDate>Sat, 21 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 21 Nov 2020 12:26:05 GMT</lastBuildDate><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献はこちら]]></description><link>https://rrih.github.io/posts/jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/posts/jdk-install-mac/</guid><pubDate>Sat, 21 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
 &lt;p&gt;環境&lt;br&gt;
 Mac Catalina&lt;br&gt;
 バージョン 10.15.7（19H2）&lt;/p&gt;
 &lt;h4&gt;結論&lt;/h4&gt;
 &lt;p&gt;これでよい&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ brew tap AdoptOpenJDK/openjdk
-$ brew cask &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; adoptopenjdk14&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% brew tap AdoptOpenJDK/openjdk
+% brew cask &lt;span class=&quot;token function&quot;&gt;install&lt;/span&gt; adoptopenjdk14&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h4&gt;バージョン確認&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% javac -version
+javac &lt;span class=&quot;token number&quot;&gt;14.0&lt;/span&gt;.2
+% java -version
+openjdk version &lt;span class=&quot;token string&quot;&gt;&quot;14.0.2&quot;&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-07-14
+OpenJDK Runtime Environment AdoptOpenJDK &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;build &lt;span class=&quot;token number&quot;&gt;14.0&lt;/span&gt;.2+12&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+OpenJDK &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;-Bit Server VM AdoptOpenJDK &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;build &lt;span class=&quot;token number&quot;&gt;14.0&lt;/span&gt;.2+12, mixed mode, sharing&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;h4&gt;試しに実行&lt;/h4&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; java-sample
-$ &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; java-sample
-$ &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; Sample.java
-$ &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; Sample.java &lt;span class=&quot;token comment&quot;&gt;# てきとうにJavaコードを書く&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% &lt;span class=&quot;token function&quot;&gt;mkdir&lt;/span&gt; java-sample
+% &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; java-sample
+% &lt;span class=&quot;token function&quot;&gt;touch&lt;/span&gt; Sample.java
+% &lt;span class=&quot;token function&quot;&gt;vi&lt;/span&gt; Sample.java &lt;span class=&quot;token comment&quot;&gt;# てきとうにJavaコードを書く&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;java&quot;&gt;&lt;pre class=&quot;language-java&quot;&gt;&lt;code class=&quot;language-java&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Sample.java&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Sample&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token keyword&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token class-name&quot;&gt;String&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; args&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
         &lt;span class=&quot;token class-name&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;out&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;println&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&quot;hoge&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ javac Sample.java &lt;span class=&quot;token comment&quot;&gt;# コンパイル&lt;/span&gt;
-$ java Sample &lt;span class=&quot;token comment&quot;&gt;# 実行&lt;/span&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% javac Sample.java &lt;span class=&quot;token comment&quot;&gt;# コンパイル&lt;/span&gt;
+% java Sample &lt;span class=&quot;token comment&quot;&gt;# 実行&lt;/span&gt;
 hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;参考文献は&lt;a href=&quot;https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[研究は疲れた]]></title><description><![CDATA[お疲れ様です。最近は研究の比重多めの日々です。 が、まだ終わってないんですけど正直研究にはもう飽きてます。 早く卒業したい。ただそれだけになっている今日この頃。 C や C…]]></description><link>https://rrih.github.io/posts/research-tired/</link><guid isPermaLink="false">https://rrih.github.io/posts/research-tired/</guid><pubDate>Sat, 21 Nov 2020 19:38:00 GMT</pubDate><content:encoded>&lt;p&gt;お疲れ様です。最近は研究の比重多めの日々です。&lt;br&gt;
 が、まだ終わってないんですけど正直研究にはもう飽きてます。&lt;/p&gt;
