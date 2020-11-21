@@ -27,6 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   useEffect(() => {
     getUserWithGitHub();
   }, []);
+  console.log(location)
   // console.log(location.href)
   return (
     <Layout location={location} title={siteTitle} className="d-md-block">
