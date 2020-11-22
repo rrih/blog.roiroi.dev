@@ -27,8 +27,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   useEffect(() => {
     getUserWithGitHub();
   }, []);
-  console.log(location)
-  // console.log(location.href)
   return (
     <Layout location={location} title={siteTitle} className="d-md-block">
       <SEO
@@ -54,7 +52,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <div className="h5 text-center bg-dark text-light m-0 p-2 rounded-top">シェアする</div>
             <div className="border rounded-bottom px-2 px-md-5 py-2 text-center">
               <div>
-                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev&hashtags=なにもわからない&hashtags=人生ﾁｮｯﾄﾃﾞｷﾙ`}>Twitter</a>
+                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev&hashtags=なにもわからない`}>Twitter</a>
               </div>
               <div>
                 <a className="btn btn-outline-dark rounded-pill w-100 my-2 shadow" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href !== 'undefined' ? location.href : null}&t=${post.frontmatter.title}`}>Facebook</a>

@@ -5,6 +5,7 @@ import { PageProps, Link, graphql } from "gatsby"
 // import 'https://use.fontawesome.com/releases/v5.6.1/css/all.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import styled from "styled-components";
 
 export type Data = {
   site: {
@@ -29,6 +30,11 @@ export type Data = {
   }
 }
 
+const H2Title = styled.div`
+  color: dark;
+  font-size: 50px;
+`
+
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -38,9 +44,9 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
       <SEO title="" />
       <div className="mx-4">
         <div className="border-bottom">
-          <div className="h2">
+          <H2Title>
             rrih
-          </div>
+          </H2Title>
           紙を折り続けて死ぬ
         </div>
         <div className="border-bottom">
@@ -109,28 +115,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                 <li className="list-unstyled mb-0">2017年4月〜2021年3月 東京電機大学理工学部理工学科</li>
                 <li className="list-unstyled mb-0">2019年3月〜2020年7月 某社 webエンジニア, インターン</li>
                 <li className="list-unstyled mb-0">2020年9月〜現在 某社, 開発部 インターン</li>
-              </ul>
-            </li>
-            
-            <li className="list-unstyled mb-0">
-              <div className="h4">興味/関心/趣味領域</div>
-              <ul>
-                <li className="list-unstyled mb-0">
-                  <a href="https://www.origami-noa.jp/%E3%81%8A%E3%82%8A%E3%81%8C%E3%81%BF%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6/%E3%81%8A%E3%82%8A%E3%81%8C%E3%81%BFq-a/#:~:text=%E8%BF%91%E5%B9%B4%E3%81%AF%E3%80%81%E6%96%B0%E3%81%97%E3%81%84%E6%8A%98%E3%82%8A%E6%96%B9,%E5%89%B5%E4%BD%9C%E6%8A%98%E3%82%8A%E7%B4%99%E3%80%8D%E3%81%A8%E3%81%84%E3%81%84%E3%81%BE%E3%81%99%E3%80%82">
-                    創作折り紙
-                  </a>
-                </li>
-                <li className="list-unstyled mb-0">
-                  <a href="https://ja.wikipedia.org/wiki/Web%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0#%E3%82%B5%E3%83%BC%E3%83%90%E3%82%B5%E3%82%A4%E3%83%89">
-                    web dev
-                  </a>
-                </li>
-                <li className="list-unstyled mb-0">甘いもの</li>
-                <li className="list-unstyled mb-0">珈琲</li>
-                <li className="list-unstyled mb-0"><a href="https://www.monsterenergy.com/">Monster Energy</a></li>
-                <li className="list-unstyled mb-0">お酒</li>
-                <li className="list-unstyled mb-0">Apple devise</li>
-                <li className="list-unstyled mb-0">より良い睡眠</li>
               </ul>
             </li>
           </ul>
