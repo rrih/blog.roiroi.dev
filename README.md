@@ -1,6 +1,4 @@
 ## rrih.github.io
-see https://rrih.github.io
-
 ## 開発環境
 ```bash
 $ node -v
