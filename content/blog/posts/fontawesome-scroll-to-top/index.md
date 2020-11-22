@@ -4,6 +4,9 @@ date: "2020-11-23T06:17:00.284Z"
 description: ""
 ---
 
+深夜に寝る前に思いつきで追加したのでてきとうすぎです。
+
+#### 手順
 先に必要なパッケージをインストールしておく
 ```bash
 $ npm i react-scroll
@@ -31,3 +34,9 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 .
 ```
 このような感じ。
+
+当サイトの該当コードは[こちら](https://github.com/rrih/rrih.github.io/blob/master/src/components/layout.js#L87)
+
+#### 参考文献
+- [React-Scrollでsmoothなスクロールを実装してみた。](https://qiita.com/takk0715/items/6b82d7b4d13134d717eb)
+- [GatsbyJSでfontawesomeを使う](https://www.corylog.com/gatsby/gatsby014/)
