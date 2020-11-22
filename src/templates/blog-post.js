@@ -27,6 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   useEffect(() => {
     getUserWithGitHub();
   }, []);
+  console.log(location)
   // console.log(location.href)
   return (
     <Layout location={location} title={siteTitle} className="d-md-block">
@@ -53,10 +54,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <div className="h5 text-center bg-dark text-light m-0 p-2 rounded-top">シェアする</div>
             <div className="border rounded-bottom px-2 px-md-5 py-2 text-center">
               <div>
-                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow" href={`http://twitter.com/intent/tweet?url=${location.href}&text=${post.frontmatter.title}&via=rstjq&hashtags=パズドラ攻略&hashtags=ランダン`}>Twitter</a>
+                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev&hashtags=なにもわからない&hashtags=人生ﾁｮｯﾄﾃﾞｷﾙ`}>Twitter</a>
               </div>
               <div>
-                <a className="btn btn-outline-dark rounded-pill w-100 my-2 shadow" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href}&t=${post.frontmatter.title}`}>Facebook</a>
+                <a className="btn btn-outline-dark rounded-pill w-100 my-2 shadow" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href !== 'undefined' ? location.href : null}&t=${post.frontmatter.title}`}>Facebook</a>
               </div>
             </div>
           </div>
@@ -80,7 +81,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   某大学4年生。なにもわかっていない人です。
                   </small>
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rstjq" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow"><small>Twitter</small></a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow"><small>Twitter</small></a></div>
                     {/* 一旦 GitHub アカウントはコメントアウト */}
                     {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div> */}
                   </div>
@@ -89,7 +90,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <div className="d-none d-sm-block">
                   某大学4年生。なにもわかっていない人です。
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rstjq" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
                     {/* 一旦 GitHub アカウントはコメントアウト */}
                     {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow">GitHub</a></div> */}
                   </div>
