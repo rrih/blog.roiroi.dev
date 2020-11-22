@@ -1,12 +1,31 @@
 import React, { useEffect, useState } from "react"
 import axios from "axios";
 import styled from "styled-components";
+import { animateScroll as scroll } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 
 const Layout = ({ location, title, children }) => {
   const TopSquareCard = styled.div`
     border-radius: 40px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   `
+
+  const TopScrollHelper = styled.div`
+    border-radius: 50px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: #212529;
+    color: white;
+    text-align: center;
+    left: 90vw;
+    top: 90vh;
+    width: 50px;
+    height: 50px;
+  `
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  }
 
   const [avatarIcon, setAvatarIcon] = useState();
   const getUserWithGitHub = async () => {
@@ -61,6 +80,12 @@ const Layout = ({ location, title, children }) => {
         &copy; {new Date().getFullYear()} rrih
         <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">詳しく見る</a></small></div>
       </footer>
+      <TopScrollHelper
+        className="fixed-bottom border d-flex align-items-center justify-content-center"
+        onClick={scrollToTop}
+      >
+        <FontAwesomeIcon icon={faArrowUp} />
+      </TopScrollHelper>
     </div>
   )
 }
