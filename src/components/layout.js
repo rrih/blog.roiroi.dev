@@ -17,7 +17,7 @@ const Layout = ({ location, title, children }) => {
     background-color: #212529;
     color: white;
     text-align: center;
-    left: 90vw;
+    left: 85vw;
     top: 90vh;
     width: 50px;
     height: 50px;

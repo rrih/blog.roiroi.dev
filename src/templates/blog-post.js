@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { Link, graphql } from "gatsby"
 import axios from "axios";
-
+import styled from "styled-components";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -13,6 +13,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 // import { fab } from '@fortawesome/free-brands-svg-icons'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
+  const BlogPostSquareCard = styled.div`
+    border-radius: 40px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  `
+
+
   const [avatarIcon, setAvatarIcon] = useState();
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
@@ -34,7 +40,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <div className="container px-0">
-        <article className="border my-3 m-md-3 p-3 shadow blog-posts rounded">
+        <BlogPostSquareCard className="border my-3 m-md-3 p-3 shadow blog-posts">
           <header className="">
             <small>> <a href="/posts">記事一覧</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
             <div
@@ -97,8 +103,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               
             </div>
           </div>
-          
-        </article>
+        </BlogPostSquareCard>
 
         <nav className="d-md-flex justify-content-between p-2">
           <div className="my-2">
