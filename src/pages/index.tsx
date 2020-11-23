@@ -79,7 +79,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="" />
+      <SEO title="rrih" />
       <div className="mx-4 text-center">
         <div className="border-bottom py-3">
           <H2Title>
@@ -109,7 +109,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         </Email>
         </div>
         <div className="border-bottom py-5">
-          <div className="h3">使用技術</div>
           <div className="d-flex justify-content-around">
             <TechIcon>
               <FontAwesomeIcon icon={fab.faPhp} />

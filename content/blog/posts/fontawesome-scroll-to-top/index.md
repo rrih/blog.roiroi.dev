@@ -40,3 +40,6 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 #### 参考文献
 - [React-Scrollでsmoothなスクロールを実装してみた。](https://qiita.com/takk0715/items/6b82d7b4d13134d717eb)
 - [GatsbyJSでfontawesomeを使う](https://www.corylog.com/gatsby/gatsby014/)
+
+#### 関連記事
+[react-fontawesome(fas, far, fab)](/posts/fontawesome-perfect-understand)
