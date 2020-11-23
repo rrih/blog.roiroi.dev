@@ -9,7 +9,10 @@ const Layout = ({ location, title, children }) => {
   const TopSquareCard = styled.div`
     border-radius: 40px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    background-color: #${location.pathname === '/' ? '212529' : 'f8f9fa'};
+    color: #${location.pathname === '/' ? 'f8f9fa' : '212529'};
   `
+  // console.log(location.pathname)
 
   const TopScrollHelper = styled.div`
     border-radius: 50px;
@@ -44,12 +47,13 @@ const Layout = ({ location, title, children }) => {
     switch (location.pathname) {
       // origin へ返す場合
       case `/`:
-      case `/blog`:
-      case `/blog/`: // TODO `/` が末尾に入る場合を考慮していなかったので入れたけど、これはなんとなくいけてない気がするので後で考える
+      // トップの場合のみトップへ返す。それ以外は posts へ返す
+      // case `/privacy-policy`:
+      // case `/privacy-policy/`: 
         return `/`;
       // `/posts` へ返す場合
       default:
-        return `/posts`;
+        return `/posts/`;
     }
   }
 
@@ -73,12 +77,13 @@ const Layout = ({ location, title, children }) => {
       className="bg-secondary mt-4 pt-4"
     >
       <header>{header}</header>
-      <TopSquareCard className="container border mt-3 bg-light px-0">
+      <TopSquareCard className="container border mt-3 px-0">
         {children}
       </TopSquareCard>
       <footer className="text-center bg-dark text-light py-2 mt-3 py-5">
-        &copy; {new Date().getFullYear()} rrih
-        <div className="text-light"><small>このサイトはGoogle Analyticsを使用しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">詳しく見る</a></small></div>
+        <a href="/privacy-policy" className="text-decoration-none text-light">プライバシーポリシー</a>
+        <br />
+        &copy; {new Date().getFullYear()} rrih All Rights Reserved
       </footer>
       <TopScrollHelper
         className="fixed-bottom border d-flex align-items-center justify-content-center"

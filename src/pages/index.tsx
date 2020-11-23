@@ -1,11 +1,16 @@
 // Gatsby supports TypeScript natively!
-import React from "react"
+import React, { useRef } from "react"
 import { PageProps, Link, graphql } from "gatsby"
-
-// import 'https://use.fontawesome.com/releases/v5.6.1/css/all.css';
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+import { toast } from 'react-toastify';
+library.add(fas, far, fab)
 
 export type Data = {
   site: {
@@ -31,93 +36,94 @@ export type Data = {
 }
 
 const H2Title = styled.div`
-  color: dark;
-  font-size: 50px;
+  color: #f8f9fa;
+  font-size: 120px;
+  font-family: ヒラギノ角ゴ Std W8;
+  animation: rollkAnime 2s linear infinite;
+  @keyframes rollkAnime{
+    50% {
+      color: #f8f9fa;
+      transform: rotateX(180deg);
+    }
+    100% {
+      color: #f8f9fa;
+      transform: rotateX(360deg);
+    }
+  }
+`
+
+const LinkIcon = styled.a`
+  color: #f8f9fa;
+  font-size: 70px;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+    color: #f8f9fa;
+  }
+`
+
+const TechIcon = styled.div`
+  font-size: 70px;
+`
+
+const TechFont = styled.div`
+  font-size: 10px;
+`
+
+const Email = styled.div`
+  font-size: 30px;
 `
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title="" />
-      <div className="mx-4">
-        <div className="border-bottom">
+      <div className="mx-4 text-center">
+        <div className="border-bottom py-3">
           <H2Title>
             rrih
           </H2Title>
-          紙を折り続けて死ぬ
         </div>
-        <div className="border-bottom">
-          <div className="h3">リンク</div>
-          <ul>
-            <li className="list-unstyled mb-0">
-              GitHub: <a href="https://github.com/rrih">@rrih</a>
-            </li>
-            <li className="list-unstyled mb-0">
-              ブログ: <Link to="/posts">記事一覧</Link>
-            </li>
-            <li className="list-unstyled mb-0">
-              wantedly: <a href="https://www.wantedly.com/id/rrih">リンク</a>
-            </li>
-          </ul>
+        <div className="border-bottom py-5 d-flex justify-content-around">
+          <div>
+            <LinkIcon href="https://github.com/rrih">
+              <FontAwesomeIcon icon={fab.faGithub} />
+            </LinkIcon>
+          </div>
+          <div>
+            <LinkIcon href="https://twitter.com/rrih_dev">
+              <FontAwesomeIcon icon={fab.faTwitter} />
+            </LinkIcon>
+          </div>
+          <div>
+            <LinkIcon href="/posts">
+              <FontAwesomeIcon icon={fas.faPen} />
+            </LinkIcon>
+          </div>
         </div>
-        <div className="border-bottom">
-          <div className="h3">連絡先</div>
-          <ul>
-            <li className="list-unstyled mb-0">
-              メールアドレス: rsklvあっとicloud.com
-            </li>
-          </ul>
+        <div className="border-bottom py-5">
+        <Email>
+          <FontAwesomeIcon icon={far.faEnvelope} /> rsklv[at]icloud.com
+        </Email>
         </div>
-        <div className="border-bottom">
-          <div className="h3">web</div>
-          <ul>
-            <li className="list-unstyled mb-0">
-              <a href="https://rrih.github.io/kyugyo">https://rrih.github.io/kyugyo</a>
-            </li>
-            店舗の休業情報を集約するやつ
-            <li className="list-unstyled mb-0">
-              <a href="http://rrih.github.io/sparkle-of-life">http://rrih.github.io/sparkle-of-life</a>
-            </li>
-            いのちのかがやき
-            <li className="list-unstyled mb-0">
-              <a href="https://feel-prod.herokuapp.com">https://feel-prod.herokuapp.com</a>
-            </li>
-            お気持ちを表明するサイト
-            <li className="list-unstyled mb-0">
-              <a href="https://rrih.github.io/cakephp-baked-code-formatter/">https://rrih.github.io/cakephp-baked-code-formatter/</a>
-            </li>
-            コードを形成するやつ
-          </ul>
-        </div>
-        <div className="border-bottom">
+        <div className="border-bottom py-5">
           <div className="h3">使用技術</div>
-          <ul>
-            <li className="list-unstyled mb-0">CakePHP/PHP</li>
-            <li className="list-unstyled mb-0">MySQL</li>
-            <li className="list-unstyled mb-0">HTML/CSS/JavaScript</li>
-          </ul>
-        </div>
-        <div className="border-bottom">
-          <div className="h3">aboutme</div>
-          <ul>
-            <li className="list-unstyled mb-0"> 
-              <div className="h4">居場所</div>
-              <ul>
-                <li className="list-unstyled">群馬 || 都内</li>
-              </ul>
-            </li>
-            <li className="list-unstyled">
-              <div className="h4">career</div>
-              <ul>
-                <li className="list-unstyled mb-0">2017年4月〜2021年3月 東京電機大学理工学部理工学科</li>
-                <li className="list-unstyled mb-0">2019年3月〜2020年7月 某社 webエンジニア, インターン</li>
-                <li className="list-unstyled mb-0">2020年9月〜現在 某社, 開発部 インターン</li>
-              </ul>
-            </li>
-          </ul>
+          <div className="d-flex justify-content-around">
+            <TechIcon>
+              <FontAwesomeIcon icon={fab.faPhp} />
+            </TechIcon>
+            <TechIcon>
+              <FontAwesomeIcon icon={fab.faReact} />
+            </TechIcon>
+            <TechIcon>
+              <FontAwesomeIcon icon={fab.faNode} />
+            </TechIcon>
+            <TechIcon>
+              <FontAwesomeIcon icon={fab.faDocker} />
+            </TechIcon>
+          </div>
         </div>
       </div>
       

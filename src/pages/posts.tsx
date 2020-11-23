@@ -12,7 +12,7 @@ const Posts = ({ data, location }: PageProps<Data>) => {
     return (
         <Layout location={location} title={siteTitle}>
         <SEO title="記事一覧" />
-        <div className="flex-wrap container px-0 pb-4 mx-md-4">
+        <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-5">
             <div className="h3 mx-4 mx-md-0 text-center my-3">記事一覧</div>
             <ul>
             {posts.map(({ node }) => {
