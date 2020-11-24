@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 07:07:12 GMT</lastBuildDate><item><title><![CDATA[Gatsbyでsitemapをサーチコンソールで送信]]></title><description><![CDATA[記事を更新するたびに手でやらないといけないの？これ めんどくさそう 参考文献 Gatsby.js でサイトマップを作成する]]></description><link>https://rrih.github.io/posts/search-console-sitemap/</link><guid isPermaLink="false">https://rrih.github.io/posts/search-console-sitemap/</guid><pubDate>Tue, 24 Nov 2020 04:09:00 GMT</pubDate><content:encoded>&lt;p&gt;記事を更新するたびに手でやらないといけないの？これ&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 11:26:35 GMT</lastBuildDate><item><title><![CDATA[Gatsbyでsitemapをサーチコンソールで送信]]></title><description><![CDATA[記事を更新するたびに手でやらないといけないの？これ めんどくさそう 参考文献 Gatsby.js でサイトマップを作成する]]></description><link>https://rrih.github.io/posts/search-console-sitemap/</link><guid isPermaLink="false">https://rrih.github.io/posts/search-console-sitemap/</guid><pubDate>Tue, 24 Nov 2020 04:09:00 GMT</pubDate><content:encoded>&lt;p&gt;記事を更新するたびに手でやらないといけないの？これ&lt;/p&gt;
 &lt;p&gt;めんどくさそう&lt;/p&gt;
 &lt;h4&gt;参考文献&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;https://qiita.com/ShinKano/items/3cf3eef6320bc62181a3&quot;&gt;Gatsby.js でサイトマップを作成する&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome(fas, far, fab)]]></title><description><![CDATA[fontawesome 完全に理解した(ダニングクルーガー効果定期) これで、、が動く 関連記事 react-fontawesome+react-scroll でページトップへスクロールするやつを追加した]]></description><link>https://rrih.github.io/posts/fontawesome-perfect-understand/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-perfect-understand/</guid><pubDate>Mon, 23 Nov 2020 03:58:00 GMT</pubDate><content:encoded>&lt;p&gt;fontawesome 完全に理解した(ダニングクルーガー効果定期)&lt;/p&gt;
@@ -25,7 +25,36 @@ HUNTER×HUNTER のメルエム感がある。煉獄さんとの一騎討ちは�
 &lt;p&gt;善逸や伊之助、禰豆子の活躍も最低限あったのでまぁいいかな。義勇さんやしのぶさんなど、他の柱はほぼ出番ないので炎柱以外の柱推しの人はそこだけ注意。&lt;/p&gt;
 &lt;h4&gt;次の劇場版について&lt;/h4&gt;
 &lt;p&gt;原作の 7~8 巻にあたるわけですが、次の劇場版が予想できないのが正直なところ。遊郭編をがっつり削って尺収めるか、無限城編の一部を劇場版化するとか？いずれにしても二期のあとにはなるだろうし、前者はなさそう。どうなんだろう。全然わからないね。でも鬼滅の戦闘シーンはなかなかイケてるからできるだけ劇場版で見たいという気になってきた…&lt;/p&gt;
-&lt;p&gt;今回めちゃめちゃ売れたし、絶対いずれ劇場版やるとは思うんだよね。個人的に無一郎が推しなので刀鍛冶の里編を劇場版にしてくれてもいいですよ。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した]]></title><description><![CDATA[深夜に寝る前に思いつきで追加したのでてきとうすぎです。 手順 先に必要なパッケージをインストールしておく あとは layout.js に書くだけ。 ちなみに react-fontawesome で使用する場合、camel case…]]></description><link>https://rrih.github.io/posts/fontawesome-scroll-to-top/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-scroll-to-top/</guid><pubDate>Sat, 21 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;深夜に寝る前に思いつきで追加したのでてきとうすぎです。&lt;/p&gt;
+&lt;p&gt;今回めちゃめちゃ売れたし、絶対いずれ劇場版やるとは思うんだよね。個人的に無一郎が推しなので刀鍛冶の里編を劇場版にしてくれてもいいですよ。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した]]></title><description><![CDATA[深夜に寝る前に思いつきで追加したのでてきとうすぎです。 手順 先に必要なパッケージをインストールしておく あとは layout.js に書くだけ。 ちなみに react-fontawesome で使用する場合、camel case…]]></description><link>https://rrih.github.io/posts/fontawesome-scroll-to-top/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-scroll-to-top/</guid><pubDate>Sat, 21 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 384px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 104.05405405405406%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAAEX0lEQVQ4y4VVfUxbVRR/wET/UGNMphM24gT5LFA+ChsMs2g0+8f9Y6KJ/uPiMsMouBnjluzLYTbUQDKSKc5E2YYfmzBDXARkCAwKLbR8tHSUUkpLC+0rpbz29YO2r73Hey+tURPgJPee++4593d/555z72OYbeRC03eMbt6USMaKSe3bCyaLcVSlOUK+sd4V97ve2v7CWyfPJzE7yZ9DY/HhLiu7+giwLFpWZPHJBGZ38qxx6fq6xwsa3cK5HQFVGl0C0e0yZZrT5gjAohUca+um0583P0Xm9RZbF8Rk0Wpr2xFw6tE8BexnnblOrV4InP0SnFYbyzB7ktWWFSnwAeA+veoHfxBUBnP1joATM3MUsJP3ptintL7gJ1eA1eoXT//ye9qqmzf46puBb/gaHB4ve+Zi07PbgrX/0c/0j6go4LGx6SdXZg1GuHQNLMPjD+8ENiRc9yCsvVMjEJZKk7WO+FlY59aJkU9qcf88A6EwdTIsmNtAoQGzWqfW2Fdbgr3DEFRMgc6x9gOx42Nkvr3VsX3Ig/JJyrDlVkeqzbFmIIeP4B8RIrjrGxo7QXx0BtP2ZdM9IKe7UnYm64M4CCBEMCNxbBfnid7rHiggfjKlOnFLwNGJGWrs6h+t2giFydoox3EEBIUFAfE8T+aoYdZgaiS+TheXxOQVllKA7PwiprCkPEksOZhUVFaR1NDY/Hhs11oaqjcgDPQPoqjXj1xOJ5LLRhEEBYHYzCvs3dg5JmyCiYq2ZGpadb9Bg/WHogQ3tGCGqD+AgETu9lGGWr2RMmQdOMsisYQuzMkvfgazO19SXnm59MChzyQHqy4Xl1VcePXIm9e+amoOW5aXKe6GQY/CS2Z6BKRzcF7Hjz3yDIIxMLOUwGTliSnNzLzCpzFTNk9cCrmFJZAnlsRaKTyX+iKcOXfRFwgJQQ/nBo+HR5yHj7h4Pwx23r0aj0Z9mFTavpcwmJimPCMn/yYGhozs/CBuQjpu2BbBY6g8/LpradnOB4Ih4H1+5PV6SdBRY3cbjB994j5Z3+rerApGVCShgLkFJR9k5xdDepZIKD1QBZKKV9DLuQWQni1CxeWVYDLTUJHTtQ5r6xzOCYpydiso39u74S5nNq9e79BYYuvtnx6LsU7FbAIEFIeK8EaQJRKjnIJiSEvPQu2/daJYcePSiaAITg27bAX5+5m+nnczC/6Xz5TkvhHVa2JJhX13Shrs2bc/is8OYb3Z9u5HRWWHUH1DI7rx/U3ovN+FnOvuqHXFHjHNzwVNlmVBPWtQMD2Dcgl+VW4Yl5ZnA8Ew+vnOr9Fjxz8M19R9LJysPSVUSz+K6VPCiWqpcKn+itDT2yfYWTYSCtMypFfG5eZhZm7hLjOl1T+MX85/3dMdJRiOgNXmsOsM5o5hxeTxltv30mmgf40oK/H/om5EpalRTGmloxMaqWJyphrrWplyuhb/O6pxq5Xjb6ylsvFp6YhSXfdgeOzo2S+++c8bSO7+3//UNiotLXkbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;animal chara computer usagi&quot;
+        title=&quot;animal chara computer usagi&quot;
+        src=&quot;/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png&quot;
+        srcset=&quot;/static/82ffaa7be052f021d781441938e34f30/12f09/animal_chara_computer_usagi.png 148w,
+/static/82ffaa7be052f021d781441938e34f30/e4a3f/animal_chara_computer_usagi.png 295w,
+/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png 384w&quot;
+        sizes=&quot;(max-width: 384px) 100vw, 384px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;深夜に寝る前に思いつきで追加したのでてきとうすぎです。&lt;/p&gt;
 &lt;h4&gt;手順&lt;/h4&gt;
 &lt;p&gt;先に必要なパッケージをインストールしておく&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i react-scroll
@@ -54,12 +83,70 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i --save @fortaw
 &lt;/ul&gt;
 &lt;h4&gt;関連記事&lt;/h4&gt;
 &lt;p&gt;&lt;a href=&quot;/posts/fontawesome-perfect-understand&quot;&gt;react-fontawesome(fas, far, fab)&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[結局TODOリストって何に書けばいいんだろうね]]></title><description><![CDATA[TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
-また、大学の研究関連の TODO…]]></description><link>https://rrih.github.io/posts/where-todo/</link><guid isPermaLink="false">https://rrih.github.io/posts/where-todo/</guid><pubDate>Fri, 20 Nov 2020 01:16:00 GMT</pubDate><content:encoded>&lt;p&gt;TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
+また、大学の研究関連の TODO…]]></description><link>https://rrih.github.io/posts/where-todo/</link><guid isPermaLink="false">https://rrih.github.io/posts/where-todo/</guid><pubDate>Fri, 20 Nov 2020 01:16:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 450px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAADN0lEQVQ4y5WTd0wTcRTHfy00QAEtBBkyBAekUFBxxIALBTEIEQVFMSRiUIMa/zHGhchyYFtpKb27QntdtIySSEichahAIkFm/AOjxviHmhgZCYgU2t7zrgSccbzk7r137+Vz3/cbCNEWELgYebq7MyFa5LuIjX4yLy+e45s7l4t8fHzQf5gzi3nnHkz1DPDzzQgLCVw1D/X2dtRWRPL/jgEAxs0pW83heg65cD3AfaGXzWMhr5/r4rKOKfB4PPY/6fL29ZsLOXFrBC8uHs+EvMykmROHUuwb10YDDXqVnZ3hyjSEhoagz82Vfwbm56Q6xvEPDgrtMl61WHt0lLVXT411VFOfHuHWlYJwQBzuTsfP/f0dKqe7STTdo0MzvXoHg/HTPdpZ4NRDwtFEmWtWTz1RTg+aymH8KUn1NlynqE7SVno0C9bHRB1nerZviHVifFvjLdb8kg0avqnDMDlrgKxwZuIxtXDLVHMVvH8gs4+2V1Mf2jDKYq62WXViGKkVFTE9w6pyJ6mkkDW79t3cyW6tzy8KvzfLfawFhhrB2iyzU31Gm72vDm7XV0jm6pJmCYfxz+9Upb5pJTqpAaNj2788080qrqi4FSwUCYMwmTT4XLnI75GBCOswK+TGFgnY716i1I2F1GKizMLHiwwxNWXBc+CEo8d28FL2DSPk6sbkDdpy9kQXiZBCQVjoZxLHsUmMwL6o5Nh4TqXwQ5CswJ5FnIVY2XkqXF4EAs0N4CuKh5eJLhrZ29NJFLerFG1KA9eUA8k/jKjVaob1eh2YTI1Qa6gFHUnCDRUOgeILlJ+00B4hLbBFYkUzEZUFU3y8mIpSXwePnCOAtu4BdlImoNhtA8Li0630xpz92K70QhqN2szAmppMUF9fBzqNBqQ4BqX1N2GvugSWEiUQTauLVF0DgV4IMXUi8D51EtCm3cBKzJhBsQm6JfFb98NLU8jbNoLDAPNUKuVreuwXJKl6R+cjGEFM9BvEn+V68ejyquLHkfgVMa2ulK8oqYqqKZMuOJx7GcWl5qJt6Wt/e7BpGJtW6EKP7KZU1njWGWp9N58R+qcl5C/46zUTxLP5iclOMHoPvTLj6CvhxXWVF5OnawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;寝転がる人&quot;
+        title=&quot;寝転がる人&quot;
+        src=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png&quot;
+        srcset=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/12f09/computer_nekorogaru_man.png 148w,
+/static/72a9cb2cb89b9519a8285b915b603d4c/e4a3f/computer_nekorogaru_man.png 295w,
+/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png 450w&quot;
+        sizes=&quot;(max-width: 450px) 100vw, 450px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
 また、大学の研究関連の TODO は今のところ個人のワークスペースかメモアプリかに書いてある。(もうここで既に怪しい)&lt;br&gt;
 他にも趣味だの生活関連の TODO というものも多くある。&lt;/p&gt;
 &lt;p&gt;このように様々な分類の TODO があり、一括で管理できないものかなぁとなっている。そして多くはプライベートなものであるべき。そして複数端末から参照したい。となると TODO リストにふさわしいのは web アプリなのかなぁ。&lt;/p&gt;
 &lt;p&gt;なにかいいものを見つけたいけど運用もまともにできるか心配でしかない。ずぼらなので…&lt;/p&gt;
-&lt;p&gt;以上、ポエムでした&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献はこちら]]></description><link>https://rrih.github.io/posts/jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/posts/jdk-install-mac/</guid><pubDate>Thu, 19 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
+&lt;p&gt;以上、ポエムでした&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献はこちら]]></description><link>https://rrih.github.io/posts/jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/posts/jdk-install-mac/</guid><pubDate>Thu, 19 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAAES0lEQVQ4y6VTe0xTZxT/oHXT7K/FbLrIRMagtbTlvY51AoIEZMRiL+VlYiaPBQU2YUQkmdtkGeAf20CgLaVCyow85+bCxI2MAirVMrpa6QspCJSJMAJzOrS9/c5ur0hmMsySneTkPO45v5zzO99FaB0xSffT1iwVP5U3SgnGqJLw/GfuO7Tpca1cjNaVsaZMZKwVrcVmGXHCLCe8n8TWtnSO8WRypxYJabQbxF5kVaajZ4pZnsJYBYudO5sJJhmhpVRqkhJKy5lUy2wRAbqI2ER3jV4Uz3gmmKVBgqhmejVzg6R1qikVxhoImFVlwExzKpjr98O0Mo2yKfU0FdVihlWR+u9gi5fr0NiZTNqf6Sp8wSQn7HPdx+B2R4FztE7knO0uc9rO5TlsjQRYFKlXXCWi1SHWAbw/fwmN1iR60Nx8Gc+2yMUOvTwDDFIJtsqS8bD0ADYqMlxW6T4w1onsVkUKzaOpngL25XBokO2+vsiPz0fR6Wl0PN31Ic3JZEdJ0p32I/BjlQSraw/hyY4C+PaTJGyQHcCzXcUw0Vbwx5jq4IvuWltrngfihwhoAG5QOAqPiGQKhNHMhIQEZuKe+A3u/J2fT/c8HFLArYuVZJ4oBLdUvAuPbirxgroaL/XXw6JGvrygldKAv1+T0VshXvAb6x4HzC2DYGuF+f5ap7H9UzxxoQLm+mqAanY+vNEE8xqp4Z3OL+ha+1XqPvxQgcfqhNsEwqiytyJjyiIiY44Lo2LKeGHC4o+Ls7SqmlIwna+Eu99Ugb2jAi/01+FlfRNeHG7EMNae5O4f+KHy8bNhBQTRgCxu8KssbhBwAsNoDQgKp3WHPw82e7FB9nn+0p/D1Q5bbxVYu0+6bp0/DpaW7GneQV4sEvo+58ZgpvEQ8vHnrK3sy+L2+O3kw+ts3grlO15jBThYHJ7Lm8WHHGL3A4s0mdRWi0EnywR9bTKeURBw6KM9gMTcU3R/XhwD+e/kIV6IgOlOcAJDy9m8EHADhQrexoGhb2JfNhd8WHwcvSsCLKpsmLt0Als7iqinkwlTinRnzakkQCkBF9dIV2t0nnJFI31RxNwY5sfhA5sXDNTUmOIVUzS4FbhU3NdciqfO5YClfh82S0UwWbuXrCmPgw2S4N7mz1QbKQSPNeD8ctmmrzu/T6a4XHnple2wxWsHfnmbN97i5YO3Uuq2wsjd+KvD0bixOA6frcjF84MNrgnjVadhfPL+xJSdHLlpkaF+jS7SYB5X3Z75bfKvlUegUDaROXn5ZOHREvJI4VGy4INiMv/9Ito/XFhEnq6Xk8M6A3l36QGGVSFJDPa5eYdWbyxFo1ab8ckHF/x3Wb53DyamZsYNJmvDT4PXJccq6jbTq1JB1GWtPnfw+q9ZlH1PrRnJ7deMZFHqzuUOaHTZA9d0bt9ts/uuaLPVQ7/k9qiHdm0NTnj+qZ8AAP1voUA8qUEYFHUebRd60d/rTnPxjouo0gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;animal chara computer inu&quot;
+        title=&quot;animal chara computer inu&quot;
+        src=&quot;/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png&quot;
+        srcset=&quot;/static/0c521d53218d85dcc691c678ef121449/12f09/animal_chara_computer_inu.png 148w,
+/static/0c521d53218d85dcc691c678ef121449/e4a3f/animal_chara_computer_inu.png 295w,
+/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
 &lt;p&gt;環境&lt;br&gt;
 Mac Catalina&lt;br&gt;
 バージョン 10.15.7（19H2）&lt;/p&gt;
@@ -88,7 +175,36 @@ OpenJDK &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;-Bit Server VM
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% javac Sample.java &lt;span class=&quot;token comment&quot;&gt;# コンパイル&lt;/span&gt;
 % java Sample &lt;span class=&quot;token comment&quot;&gt;# 実行&lt;/span&gt;
 hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;参考文献は&lt;a href=&quot;https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[研究は疲れた]]></title><description><![CDATA[お疲れ様です。最近は研究の比重多めの日々です。 が、まだ終わってないんですけど正直研究にはもう飽きてます。 早く卒業したい。ただそれだけになっている今日この頃。 C や C…]]></description><link>https://rrih.github.io/posts/research-tired/</link><guid isPermaLink="false">https://rrih.github.io/posts/research-tired/</guid><pubDate>Wed, 18 Nov 2020 19:38:00 GMT</pubDate><content:encoded>&lt;p&gt;お疲れ様です。最近は研究の比重多めの日々です。&lt;br&gt;
+&lt;p&gt;参考文献は&lt;a href=&quot;https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[研究は疲れた]]></title><description><![CDATA[お疲れ様です。最近は研究の比重多めの日々です。 が、まだ終わってないんですけど正直研究にはもう飽きてます。 早く卒業したい。ただそれだけになっている今日この頃。 C や C…]]></description><link>https://rrih.github.io/posts/research-tired/</link><guid isPermaLink="false">https://rrih.github.io/posts/research-tired/</guid><pubDate>Wed, 18 Nov 2020 19:38:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEyklEQVQ4y4WUC1BUZRTHv2VhF/bpLg9JlMTRBDVkQIVxKkQqNccsDWSRhQEUBN2YxEVwaiUFUR4LykOGJRHMKIqHgmgKDMhDENhl3wqoIGOl0iTmg9e9p3svLOU40p059/vOnPP97v9833cPQv/30Jk0cgAAxGazt/KtrReZQkfKy5Elm03NeULh7JzIbevJgYIhFm8xoltUMVhs4AsFz1gczoU5dnYhRMSMgllbU2ncWaFMFqWKfJYscbri5eYMzu84TZpZMIEjEABPKAAGg7GSSrW0NJtVHVaTjS7kSE2uxUB1hmbwYjrU5UknJaIN+PwFDmMMFgvYfL7GisWiZLG43CmFtw091CqdpgtpCdNoVZQPDQXUV6GteONo/WloLjyEQ9dZyn5KicZ817oBw4rVz+Xz3Ckgh0OjgFptFwXQ67rphJmTZtArzR82lltSwMqsrwkoPLmWOw7Kc3h78WF42ZQ/WXlCAsiCqTKVwbex+bdEtbrzjeXjDflS0P0I402KcbzjDLxsKcBHqk/h/j6egMyZUWSOnZ0tjQROK+w2KQwi7ARhCQadMk6r6YypqatbCMqCBdB99jfoKgJoL8SgNQ+D2nQYq5A/IA6NSa69U5JEm1Gg03bTp4Glz/8ehsGB23B/sBceP7oPDfWXFWTsZGlmaHNJKjytTcfG61InCgplcPxc1hUyFhXuTi+PXUYBn+V5IGQ0as1Jx6Drjrl3x0DA+l7c7TeMEvsIzdevNUFPfuA+Rdo9bmLSRFVFFqh+zcV85Ckw77BsxPVb8TyTsOkbRoC6rlEKbw0Mrdcb9aAz6id0ejWmN2qxjraGyVFNDRirU0ciD2wa1NadBuj5HntQe3Ry85FYWJNSlNkX57CifJ/Nklc2viyM82lN3ApN2y9p0FKVC621xdB5vRra6iugsUgKVxNWQH0UH3rz/fGhknA4c3wP/sXBPNgYlQRndzuA7BNWEcnJ2WkzdcHl/ryTadt5Q7kBnEvZIv7NzB3CkZMimz9zxHOfKESWT0uD2Q+/C507rgiaA8XBHDx0TwgeEi3BY0I8sNBti475uXLjSY7Yizd1OMvf4gu2uQv2kXN7FuIErOKf/tgFOXjTEJv5NsPJ6oNV+512BQ6vkkaAtzQU8zkQhH8u8pj0kojBMWZ/zO7lKPI90QbGTMnBXoKlQZ7C/eT8yy2udgHu3EOmmOTYQYVckQwpp2TYdlksrNwbAZu+icOCo/zGlgVsBUdxoGzvu2j7Ju/Fc2aAgWsEy3Z6CqNNfnTgxnUVV5qcyW4z0Zz1GfQo7oFSAVh74fO/rspfQHse9J2TQvwB0SPXhHhX4oBpW7asNp8Bhqy1tQpd5zifnA/2GsN7NIZhtc4wodbd6r3Upt974/IPssHSWDGo5LZw56Ij9FcEXc3YdTTR185tutlRb393QiRR6kybSiprXZ5erR5NrlRBWYsRbg0Nw/3fH4Ox7y40Knu1Ptkq69f+TXtnVL5ZgFxc/tMLP4yY2rL1OSoe+qp9KQrrWLg6reN9ceHNRMl55UCd/g/IvKSuQY75dIAS2kDTeTrcUNB6yo6hjMJkaq2iIPHVD/meekODCOu29ZJ3RSC/Bg7pfpTdSV2NnxN3oLX2Uyk7PQUz6f8AqtlF2MXugWoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;PCの前でぼけっとしている人&quot;
+        title=&quot;PCの前でぼけっとしている人&quot;
+        src=&quot;/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png&quot;
+        srcset=&quot;/static/9141029aa711caf1c09a82318e532500/12f09/neet_man2.png 148w,
+/static/9141029aa711caf1c09a82318e532500/e4a3f/neet_man2.png 295w,
+/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;お疲れ様です。最近は研究の比重多めの日々です。&lt;br&gt;
 が、まだ終わってないんですけど正直研究にはもう飽きてます。&lt;/p&gt;
 &lt;p&gt;早く卒業したい。ただそれだけになっている今日この頃。&lt;/p&gt;
 &lt;p&gt;C や C++とにらめっこするのほんまつらい&lt;/p&gt;
@@ -110,11 +226,147 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; heroku_3012b33fc1d1892 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.10937500&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
 &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; information_schema     &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;0.00878906&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;|&lt;/span&gt;
 +------------------------+------------+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;はい、まだ耐えてますね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Next.js+TypeScriptでvercelにデプロイ]]></title><description><![CDATA[リポジトリがこちら。本番環境はこちら Next.js、試しに触ってみたけどして vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React…]]></description><link>https://rrih.github.io/posts/nextts-vercel/</link><guid isPermaLink="false">https://rrih.github.io/posts/nextts-vercel/</guid><pubDate>Sat, 14 Nov 2020 23:01:00 GMT</pubDate><content:encoded>&lt;p&gt;リポジトリが&lt;a href=&quot;https://github.com/rrih/nextts&quot;&gt;こちら&lt;/a&gt;。本番環境は&lt;a href=&quot;https://nextts.vercel.app&quot;&gt;こちら&lt;/a&gt;&lt;br&gt;
+&lt;p&gt;はい、まだ耐えてますね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[fontawesomeにはTypeScript等一部アイコンが不足している]]></title><description><![CDATA[悲しいね。 Golang、TypeScript、GCP、Heroku、などが無いです。 aws で検索すると見つかるのですが、
+ gcp は見つからないという。(もちろん Google Cloud Platform で検索しても同様。)
+ fontawesome は aws…]]></description><link>https://rrih.github.io/posts/fontawesome-sad/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-sad/</guid><pubDate>Mon, 16 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEb0lEQVQ4y61Ua0xTZxg+BTfDxULplZYCUiBqlu3Htmy6jC1h7gKIu2RmJGNCJ1EIIi13kFAmsigIpRQoUC6lUFqoXEtbrnKbiAoCcXPs6jbntixuGHaJtOd7951TJfsx9M++5Mn7fO/75DnP952TQxD3F5PJJAJDgmkeJNlJsDlsN9xzF4oD3P0DRAyqH7ZnN8HyYxGPXGwOh/D28qI5i8Vi/JcG97fxBHyac3k8QiAUbG0oChS7jNnsTTM/tl8ETpiEE34QGi4RPugLA1xUJBY/PKWvr+8DM2+eQDDA4/PA14cJQSHBwOHxbvkymckv7Ht6G20q9H+4mcAloA19mMxugYAP/kKB08PD08nkcB3iACF4ee8AgUh4ltJwuFw3nHxrQzx0o2pwqORZDocNj3t6kx47fMgQsT86dTwO3RmvcXyUcghYPP4v0ZF7PShtQNAWR4b+SiIoOMid4pIwSSJ11PiYCGeT4ij6zFSC4FMD2rioJeGaHpLjom5jmSel5YuEW+XbT7gzWW4uvv218NCdAPMtyDHXhK7oFACXm2Fep3D+PqaGm71lo3QIAEaVuo6hNVkYTd1DDG2XhVHfOcCoau0mCOXJPOJSuZxOOFcme3O8JA3QaB3524gaLXWcQrCsh28Hyp2/WqoAprT2R36D+GnEHVMV/fZ+NCiLYaIVYEi9cW9Sg+5O1qKNSQ38NVXvgFkt/N2vvqQx2rn6/hF+1+AY3zQ0wTfbpwQY/Pb+EYFKZ95OhB1Mpo33vp/JDDlwbDU2PhXWLSoS5psQLGLzK80kXO/A16CHtk7zPaXOvK5uO/9HXUcvRh+F9dr23j9r2nvWqlrNuwhJ9BH6/sJjj+3f9VYqsF6MQ/Kij9Ha9S743l5LzpwphtUB5bX54e6hmk4LlDV2wrkm4/1qgrMNBlC19eK9YYpO9uShDPq4kpikuN3vpEHwq4edT72Xg4aW+1Fxg8YZGPkhiN5Iaq/uGDRrjINwTmt0lDd2okbTIKpsNpGYO6r12LDBIN28x/FvgBUlr13c83YqhEQdIV8/nIoG7ZUQnZqNuC/Hw0vSvLuajl6yAifDQMqWLjAOjkG1zkxSKXHitXpDn2jT8Hm57ZnYAhOwI+IQa9+7yNZcChsXVKDIywR+ZAJKyC8HnAaKVS2oRK2DkhodUlQ1o9O1bY6K1vNQWNGoonzKdf1uxHdff/7cype37D3TN0i1cQgp9X3IMjaJFpZW0PzCEpqYW0CfLKyg2avLaPryEprBoDjVwyAvLl6Hr27+YPv5p9vyM5XVjxE3Vr+ImJmeWhsftsLU+Khj+sKEc2x01Gm12pw2q9U5bLM57bjabVZ6P2K30xi2u+a4vzE7OwtXFxZaN4+ckpzSk59XAGnHT0BGRiZkZWaBLF0G6SfSMWQgk8lBTkGeQVeqR1WXRkbXA9ExT2waFhUVvVJ4svCookiRgLkUc2luTq40LzdPWpBfkPgvSHOyc6hZItZQoOdYl1h6utT198VD4v9a2VnZxD9o1GJgsagWmgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;kaisya man bad&quot;
+        title=&quot;kaisya man bad&quot;
+        src=&quot;/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png&quot;
+        srcset=&quot;/static/12b2af6226355ebcdd7a81d01f718342/12f09/kaisya_man_bad.png 148w,
+/static/12b2af6226355ebcdd7a81d01f718342/e4a3f/kaisya_man_bad.png 295w,
+/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;悲しいね。&lt;/p&gt;
+&lt;p&gt;Golang、TypeScript、GCP、Heroku、などが無いです。&lt;/p&gt;
+&lt;p&gt;aws で検索すると見つかるのですが、
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/4c0ce1c872f0642be4b80693e17d3191/f726e/is-aws.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 35.810810810810814%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAtUlEQVQoz5WPbQ+CMAyE+f9/UkUxirytXbdOkXMMTAjGiB+e3XJr7rqsZsXNOHAYQNrD+B70B8Y9UHMAWQevAVnLHlVLMKIgCZDQQ3QjcdbqA01cimUOLG8VjsUZl2uJummh0fQJnXWJfiA+oOoYxDwF7g5H7PMT+ucQjXsy3Ryw1i1k45GfCojzaDqCi40d2fRIVpIalugrNEyFoy7xi3u23GAMTeqn77qVvgN/brhu/MaW2RdumCAZ7hm0lQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;is aws&quot;
+        title=&quot;is aws&quot;
+        src=&quot;/static/4c0ce1c872f0642be4b80693e17d3191/fcda8/is-aws.png&quot;
+        srcset=&quot;/static/4c0ce1c872f0642be4b80693e17d3191/12f09/is-aws.png 148w,
+/static/4c0ce1c872f0642be4b80693e17d3191/e4a3f/is-aws.png 295w,
+/static/4c0ce1c872f0642be4b80693e17d3191/fcda8/is-aws.png 590w,
+/static/4c0ce1c872f0642be4b80693e17d3191/efc66/is-aws.png 885w,
+/static/4c0ce1c872f0642be4b80693e17d3191/c83ae/is-aws.png 1180w,
+/static/4c0ce1c872f0642be4b80693e17d3191/f726e/is-aws.png 2610w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;gcp は見つからないという。(もちろん Google Cloud Platform で検索しても同様。)
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/d2c7f81800c0abc2beda3e6bd89bafca/2d86d/gcp-is-not.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 39.189189189189186%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAABYlAAAWJQFJUiTwAAAA60lEQVQoz5WQSU/DMBCF/f9/GRIHJMQNUkKatGVJ4nW8BOkxdpMWUHrI4cnLG39+MyKQR3IOafpGStMmxXn1IcI6YnmIArQOcZoLp+0qQOY4ChBSW/RSQxkL8qGYWxRiwpcmjEozkBNWr2+om31p2TGQVuQ5eWDRDT+/y+nyB0JbwqAMpHHIaf9L81z64zu69lD240qN5O7yfW5bmKWIgaNedD4PrJ796u4eTw+PGChiNGf/WuvmtyvA5ccL8HBC91yh3dU41Q2OLzvIj88LYEl3G/gbyqNQTQvDMzb7DjrvGa7arnjXdv8m/AFvFGg0xZzqXwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;gcp is not&quot;
+        title=&quot;gcp is not&quot;
+        src=&quot;/static/d2c7f81800c0abc2beda3e6bd89bafca/fcda8/gcp-is-not.png&quot;
+        srcset=&quot;/static/d2c7f81800c0abc2beda3e6bd89bafca/12f09/gcp-is-not.png 148w,
+/static/d2c7f81800c0abc2beda3e6bd89bafca/e4a3f/gcp-is-not.png 295w,
+/static/d2c7f81800c0abc2beda3e6bd89bafca/fcda8/gcp-is-not.png 590w,
+/static/d2c7f81800c0abc2beda3e6bd89bafca/efc66/gcp-is-not.png 885w,
+/static/d2c7f81800c0abc2beda3e6bd89bafca/c83ae/gcp-is-not.png 1180w,
+/static/d2c7f81800c0abc2beda3e6bd89bafca/2d86d/gcp-is-not.png 2578w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;fontawesome は aws 派なのかな？&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Laravelに入門してみためも]]></title><description><![CDATA[Laravel+React をやってみたかっただけ。 リポジトリはこちら 念のためバージョンを合わせてやってみた。 あと CakePHP+React はなかなか見つからない件 参考文献 初めての Laravel6.x と React 入門 | アールエフェクト laravel…]]></description><link>https://rrih.github.io/posts/laravel-start/</link><guid isPermaLink="false">https://rrih.github.io/posts/laravel-start/</guid><pubDate>Sun, 15 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;Laravel+React をやってみたかっただけ。&lt;br&gt;
+リポジトリは&lt;a href=&quot;https://github.com/rrih/laravel_react&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;念のためバージョンを合わせてやってみた。&lt;/p&gt;
+&lt;p&gt;あと CakePHP+React はなかなか見つからない件&lt;/p&gt;
+&lt;h4&gt;参考文献&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://reffect.co.jp/laravel/laravel6-react-router&quot;&gt;初めての Laravel6.x と React 入門 | アールエフェクト&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://qiita.com/revenue-hack/items/f90fa5a7d4352d0bbc3f&quot;&gt;laravel でバージョンを指定してインストール - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Next.js+TypeScriptでvercelにデプロイ]]></title><description><![CDATA[リポジトリがこちら。本番環境はこちら Next.js、試しに触ってみたけどして vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React…]]></description><link>https://rrih.github.io/posts/nextts-vercel/</link><guid isPermaLink="false">https://rrih.github.io/posts/nextts-vercel/</guid><pubDate>Sat, 14 Nov 2020 23:01:00 GMT</pubDate><content:encoded>&lt;p&gt;リポジトリが&lt;a href=&quot;https://github.com/rrih/nextts&quot;&gt;こちら&lt;/a&gt;。本番環境は&lt;a href=&quot;https://nextts.vercel.app&quot;&gt;こちら&lt;/a&gt;&lt;br&gt;
 Next.js、試しに触ってみたけど&lt;code class=&quot;language-text&quot;&gt;npx create-next-app&lt;/code&gt;して vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React 書ける人にとってはとりあえず動くものを作るのにかなり便利そう。今後のフロントエンドは Next+vercel の組み合わせ一択なのではないか？(流石にこれは言い過ぎか)&lt;/p&gt;
 &lt;p&gt;あと今回は、styled-components を適用するために&lt;code class=&quot;language-text&quot;&gt;.babelrc&lt;/code&gt;記述する必要がありました。こういうのは基本的に豊富な公式を参照すればよさそう。&lt;/p&gt;
 &lt;p&gt;時間が出来次第、Next.js+Vercel でなにかしらツール的なものを作りたい(๑╹ω╹๑ )&lt;br&gt;
-vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎてなにもわからない…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[macOSでclangを使わずgccを使う]]></title><description><![CDATA[こちらを参考にした。それだけ]]></description><link>https://rrih.github.io/posts/gcc-mac-dev/</link><guid isPermaLink="false">https://rrih.github.io/posts/gcc-mac-dev/</guid><pubDate>Fri, 13 Nov 2020 03:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://hkmc.jp/note/mac/use_gcc.html&quot;&gt;こちら&lt;/a&gt;を参考にした。それだけ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ClearDBがよく落ちてしまう。なにもわからない]]></title><description><![CDATA[なんで…？ 昨日からよく https://feel-prod.herokuapp.com が落ちる件について 全然わからない。ログは以下の通り。誰か教えてほしい。 正直なにもわからないです 😢 予想というかわかっていることと見解 多分 ClearDB(DB…]]></description><link>https://rrih.github.io/posts/heroku-cleardb-dead/</link><guid isPermaLink="false">https://rrih.github.io/posts/heroku-cleardb-dead/</guid><pubDate>Tue, 10 Nov 2020 17:50:00 GMT</pubDate><content:encoded>&lt;p&gt;なんで…？&lt;/p&gt;
+vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎてなにもわからない…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[macOSでclangを使わずgccを使う]]></title><description><![CDATA[こちらを参考にした。それだけ]]></description><link>https://rrih.github.io/posts/gcc-mac-dev/</link><guid isPermaLink="false">https://rrih.github.io/posts/gcc-mac-dev/</guid><pubDate>Fri, 13 Nov 2020 03:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://hkmc.jp/note/mac/use_gcc.html&quot;&gt;こちら&lt;/a&gt;を参考にした。それだけ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ClearDBがよく落ちてしまう。なにもわからない]]></title><description><![CDATA[なんで…？ 昨日からよく https://feel-prod.herokuapp.com が落ちる件について 全然わからない。ログは以下の通り。誰か教えてほしい。 正直なにもわからないです 😢 予想というかわかっていることと見解 多分 ClearDB(DB…]]></description><link>https://rrih.github.io/posts/heroku-cleardb-dead/</link><guid isPermaLink="false">https://rrih.github.io/posts/heroku-cleardb-dead/</guid><pubDate>Tue, 10 Nov 2020 17:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEU0lEQVQ4y61Ra0yTZxT+uCiOS2G2pTcuCpjFhcVEk2WZumkwLiYzUZJtzBREd8tkRBhS2gKbcxuMW7mXQm9YKL0AbeWigIBDJzIuk15AEZpgdG4Jm24u20L79T17v4+t2Q9xf3aSJ885532+5zvnfQkWm02Eh4URVERFRQUQT4jIyMhgFptF55uZmwlBbAyxbgjiYmlmMpl+MyaL9TIjIuIkl88Xxm+Nj/+nz+FyaA1XwCeeGv+aLILD41owIJLBgLgt8YDzn6IYjJznEuM3rZlGBzzVjMvnUUSLsImFy+UAX8AnQ0PDyAgmm8TnEBoWDtE8roHSBAaHBPBjBOsb8mNjAinekpSwh8liwsZnwshQRpRPwGGhrGOHkNtWTlacTkPPsqN9CUlbt1FaXoxg/SnxWsEUJ2xLzKamE77+irdenIkmtMUI7G3oj6sKBDfbIP/kEQ+WbV/7Jm59w3AmO2gtC05N3p4EMKHx/TnWjEbkEvT7NQWMNUt9K4N1sGQpd2MRfY9VHwvXX7m37DRteLn2zLtXKvMA+hrJh7ZqdMtcimC+Ay33VPp+HWgAGGl2wFALvY2rVx+gNvcTFJSmXj/qdRaCgDEVbQjX1V/AuA5Ioww8vfV41RaASS08vqIgvUMKAGvd3V9U5zYR/xX3zBX+HHVXH4KBxt9gtBHQeAvyDMl9MKMDuG0B6K1XUxr72OCG8fGpoInZ20ELd38ImnPfD7w67Qyy31kOVHddoh+YOJ6Vv5YQuxk5eaLFh5PYwGkjHxjr4cGg/D5MqT+b7lby5R09VoXe5pK3W2dajD03FR0XvpPrrTMUN+lt9hpt5y5iY2ISsSP9HP1qyalZ1vC9GaCyDXvvPZr2lbUaIHpv2jJ11my6+Fqr9TJUazuhTmeB2vPdNGpauwD/CGQa048yjZlB7Dwmoafj7Uvb8fzRLEg8mI6ySxvRt0v9IJSUebkH3oGkwx+I262XVI36HqhQGlZlahPZoOsma7RmUqY2rja026BSZfjKf3cAELLn/bKBF9/KgsOZp8idb5xCR/NEKDn1Q9+u1Pdgd3re93K97XG1xgSVSgPCRsg2dA3hVVGVygh4VajVml/yG75dNbk/JbcZol9N83FSMhEvJQO4+zNQ3METEHtAiN7MKwE8EXwp16GSpjYobWpDGFAi15EybIb7w34zz8qduL4bi02fnx+FE5/U+ITiciSRKZHS1ANNhh5U12YFY98wsgx+jcz9I4CBOi+OgmmNSdvwNzByfUr/6OeVfR1dF0KIpSX38fm5OXA6HB6X0+lxOuzeOZfTj1vzc16H3e6dnZ312jE/AasulwsWFhZuLLrdG+gpc3Nyp89+ehbEBWKQiCUglUihUFoExUXFUFhY9Hdd6GcKRbhPMaWnOPuj7MP+tXHzjChf1I6hEokKNNhYLRFLKVYViArUVE0Bn2sKcI9iXNM66hzXrdj0BdrM4XAS/1dIpVLiL765dzewPwXeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;kaisya komaru man&quot;
+        title=&quot;kaisya komaru man&quot;
+        src=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png&quot;
+        srcset=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/12f09/kaisya_komaru_man.png 148w,
+/static/5009084099f6e4b3dd95f116e1e224fa/e4a3f/kaisya_komaru_man.png 295w,
+/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png 400w&quot;
+        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;なんで…？&lt;/p&gt;
 &lt;h3&gt;昨日からよく &lt;a href=&quot;https://feel-prod.herokuapp.com&quot;&gt;https://feel-prod.herokuapp.com&lt;/a&gt; が落ちる件について&lt;/h3&gt;
 &lt;p&gt;全然わからない。ログは以下の通り。誰か教えてほしい。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;roi@roi feel % heroku logs --tail
