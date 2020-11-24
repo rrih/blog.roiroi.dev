@@ -4,6 +4,8 @@ date: "2020-11-21T06:17:00.284Z"
 description: ""
 ---
 
+![](../../../assets/animal_chara_computer_usagi.png)
+
 深夜に寝る前に思いつきで追加したのでてきとうすぎです。
 
 #### 手順

@@ -4,6 +4,8 @@ date: "2020-11-16T13:19:00.284Z"
 description: ""
 ---
 
+![](../../../assets/kaisya_man_bad.png)
+
 悲しいね。
 
 Golang、TypeScript、GCP、Heroku、などが無いです。

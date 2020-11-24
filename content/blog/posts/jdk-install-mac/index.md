@@ -4,6 +4,8 @@ date: "2020-11-19T20:53:00.284Z"
 description: ""
 ---
 
+![](../../../assets/animal_chara_computer_inu.png)
+
 久しぶりにJavaの環境構築をしたのでメモ
 
 環境  

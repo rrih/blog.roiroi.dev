@@ -4,6 +4,8 @@ date: "2020-11-10T17:50:00.284Z"
 description: ""
 ---
 
+![](../../../assets/kaisya_komaru_man.png)
+
 なんで…？
 
 ### 昨日からよく https://feel-prod.herokuapp.com が落ちる件について
