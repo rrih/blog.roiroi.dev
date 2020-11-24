@@ -108,7 +108,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           <FontAwesomeIcon icon={far.faEnvelope} /> rsklv[at]icloud.com
         </Email>
         </div>
-        <div className="border-bottom py-5">
+        <div className="py-5">
           <div className="d-flex justify-content-around">
             <TechIcon>
               <FontAwesomeIcon icon={fab.faPhp} />

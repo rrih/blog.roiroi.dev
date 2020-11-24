@@ -1,6 +1,6 @@
 ---
 title: macOSでclangを使わずgccを使う
-date: "2020-11-22T03:56:00.284Z"
+date: "2020-11-13T03:56:00.284Z"
 description: ""
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: react-fontawesome(fas, far, fab)
-date: "2020-11-24T03:58:00.284Z"
+date: "2020-11-23T03:58:00.284Z"
 description: ""
 ---
 

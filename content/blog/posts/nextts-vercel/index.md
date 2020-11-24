@@ -1,6 +1,6 @@
 ---
 title: Next.js+TypeScriptでvercelにデプロイ
-date: "2020-11-16T23:01:00.284Z"
+date: "2020-11-14T23:01:00.284Z"
 description: ""
 ---
 

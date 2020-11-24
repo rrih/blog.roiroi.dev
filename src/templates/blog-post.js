@@ -54,21 +54,21 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr />
           {/* シェア */}
-          <div className="share-zone shadow rounded">
-            <div className="h5 text-center bg-dark text-light m-0 p-2 rounded-top">シェアする</div>
+          <div className="share-zone shadow rounded border">
+            <div className="h5 text-center m-0 p-2 rounded-top border-bottom">シェアする</div>
             <div className="border rounded-bottom px-2 px-md-5 py-2 text-center">
               <div>
-                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev`}>Twitter</a>
+                <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow text-decoration-none" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev`}>Twitter</a>
               </div>
               <div>
-                <a className="btn btn-outline-dark rounded-pill w-100 my-2 shadow" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href !== 'undefined' ? location.href : null}&t=${post.frontmatter.title}`}>Facebook</a>
+                <a className="btn btn-outline-light rounded-pill w-100 my-2 shadow text-decoration-none" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href !== 'undefined' ? location.href : null}&t=${post.frontmatter.title}`}>Facebook</a>
               </div>
             </div>
           </div>
 
           {/* この記事を書いた人 */}
           <div className="this-article-author my-4 border rounded shadow">
-            <div className="h5 text-center bg-dark text-light rounded-top p-2">Author</div>
+            <div className="h5 text-center bg-dark text-light rounded-top p-2 border-bottom">Author</div>
             <div className="p-3 d-flex justify-content-around align-items-center">
               <div className="py-3 pl-md-3 d-sm-none">
                 <a href="https://github.com/rrih" target="_blank" className="shadow" rel="noopener noreferrer">{avatarIcon}</a>
@@ -85,7 +85,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   某大学4年生。なにもわかっていない人です。
                   </small>
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow"><small>Twitter</small></a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none"><small>Twitter</small></a></div>
                     {/* 一旦 GitHub アカウントはコメントアウト */}
                     {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div> */}
                   </div>
@@ -94,7 +94,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                 <div className="d-none d-sm-block">
                   某大学4年生。なにもわかっていない人です。
                   <div className="d-flex my-2">
-                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow">Twitter</a></div>
+                    <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none">Twitter</a></div>
                     {/* 一旦 GitHub アカウントはコメントアウト */}
                     {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow">GitHub</a></div> */}
                   </div>
@@ -111,7 +111,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <div className="mx-2">
               <span role="img" aria-labelledby="right">←</span>
               <div>
-                <Link to={previous.fields.slug} rel="prev" className="btn btn-dark w-100 shadow p-3">
+                <Link to={previous.fields.slug} rel="prev" className="btn btn-outline-light w-100 shadow p-3 text-decoration-none">
                   {previous.frontmatter.title}
                 </Link>
               </div>
@@ -124,7 +124,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             <div className="mx-2">
               <div className="text-right">→</div>
               <div>
-                <Link to={next.fields.slug} rel="next" className="btn btn-dark w-100 shadow p-3">
+                <Link to={next.fields.slug} rel="next" className="btn btn-outline-light w-100 shadow p-3 text-decoration-none">
                   {next.frontmatter.title}
                 </Link>
               </div>

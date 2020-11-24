@@ -9,8 +9,14 @@ const Layout = ({ location, title, children }) => {
   const TopSquareCard = styled.div`
     border-radius: 40px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-    background-color: #${location.pathname === '/' ? '212529' : 'f8f9fa'};
-    color: #${location.pathname === '/' ? 'f8f9fa' : '212529'};
+    // 一旦プログラマブルにカラーを変更するのはやめる
+    // background-color: #${location.pathname === '/' ? '212529' : 'f8f9fa'};
+    // color: #${location.pathname === '/' ? 'f8f9fa' : '212529'};
+    background-color: #212529;
+    color: #f8f9fa;
+    h1, h2, h3, h4, a {
+      color: #f8f9fa;
+    }
   `
   // console.log(location.pathname)
 
