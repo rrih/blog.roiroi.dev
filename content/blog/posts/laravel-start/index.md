@@ -1,5 +1,5 @@
 ---
-title: Laravelに入門してみためも
+title: Laravel+Reactに入門してみためも
 date: "2020-11-15T06:17:00.284Z"
 description: ""
 ---

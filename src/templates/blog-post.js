@@ -5,6 +5,7 @@ import styled from "styled-components";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { ShareSns } from "../utils/share-sns";
 // import "@fortawesome/fontawesome-svg-core/styles.css";
 
 // fontawesome
@@ -57,12 +58,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <div className="share-zone shadow rounded border">
             <div className="h5 text-center m-0 p-2 rounded-top border-bottom">シェアする</div>
             <div className="border rounded-bottom px-2 px-md-5 py-2 text-center">
-              <div>
+              {/* <div>
                 <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow text-decoration-none" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev`}>Twitter</a>
               </div>
               <div>
                 <a className="btn btn-outline-light rounded-pill w-100 my-2 shadow text-decoration-none" href={`https://www.facebook.com/sharer/sharer.php?u=${location.href !== 'undefined' ? location.href : null}&t=${post.frontmatter.title}`}>Facebook</a>
-              </div>
+              </div> */}
+              {typeof location.href !== 'undefined' && location.href &&
+              <ShareSns articleUrl={location.href} articleTitle={post.frontmatter.title} />}
             </div>
           </div>
 
