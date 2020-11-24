@@ -15,25 +15,25 @@ export const ShareSns = ({ articleUrl, articleTitle }) => {
         <div className={'ShareSns'} className="d-flex justify-content-around py-3">
             <div>
                 <FacebookShareButton url={articleUrl}>
-                    <FacebookIcon size={32} round />
+                    <FacebookIcon size={60} round />
                 </FacebookShareButton>
             </div>
 
             <div>
                 <LineShareButton url={articleUrl}>
-                    <LineIcon size={32} round />
+                    <LineIcon size={60} round />
                 </LineShareButton>
             </div>
 
             <div>
                 <TwitterShareButton title={articleTitle} via="rrih_dev" url={articleUrl}>
-                    <TwitterIcon size={32} round />
+                    <TwitterIcon size={60} round />
                 </TwitterShareButton>
             </div>
 
             <div>
                 <HatenaShareButton title={articleTitle} url={articleUrl}>
-                    <HatenaIcon size={32} round />
+                    <HatenaIcon size={60} round />
                 </HatenaShareButton>
             </div>
 
