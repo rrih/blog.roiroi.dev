@@ -2,6 +2,7 @@
 title: 結局TODOリストって何に書けばいいんだろうね
 date: "2020-11-20T01:16:00.284Z"
 description: ""
+tags: ["test"]
 ---
 
 TODOリストにもいろいろとありますよね。例えば業務のTODOなら業務用のSlack、特にtimesチャンネルに書いておけばよさそう。 

@@ -2,6 +2,7 @@
 title: ターミナルでMySQLのクエリを見る
 date: "2020-11-09T13:20:00.284Z"
 description: ""
+tags: ["test"]
 ---
 
 #### 準備

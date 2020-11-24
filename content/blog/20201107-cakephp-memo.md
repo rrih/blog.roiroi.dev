@@ -2,6 +2,7 @@
 title: CakePHP、実装についてめも
 date: "2020-11-07T13:19:00.284Z"
 description: ""
+tags: ["test"]
 ---
 
 PHPのメモ、というか業務(CakePHP4)についてのメモ
