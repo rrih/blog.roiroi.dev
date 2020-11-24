@@ -1,7 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 14:38:11 GMT</lastBuildDate><item><title><![CDATA[Gatsbyでsitemapをサーチコンソールで送信]]></title><description><![CDATA[記事を更新するたびに手でやらないといけないの？これ めんどくさそう 参考文献 Gatsby.js でサイトマップを作成する]]></description><link>https://rrih.github.io/posts/search-console-sitemap/</link><guid isPermaLink="false">https://rrih.github.io/posts/search-console-sitemap/</guid><pubDate>Tue, 24 Nov 2020 04:09:00 GMT</pubDate><content:encoded>&lt;p&gt;記事を更新するたびに手でやらないといけないの？これ&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 24 Nov 2020 16:41:03 GMT</lastBuildDate><item><title><![CDATA[react-tooltipを追加]]></title><description><![CDATA[扱いが簡単で良いね  こんな感じ 参考文献 wwayne/react-tooltip: react tooltip component]]></description><link>https://rrih.github.io/20201125-add-tooltip/</link><guid isPermaLink="false">https://rrih.github.io/20201125-add-tooltip/</guid><pubDate>Wed, 25 Nov 2020 00:21:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i react-tooltip&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;扱いが簡単で良いね&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/use-react-tooltip.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;こんな感じ&lt;/p&gt;
+&lt;h4&gt;参考文献&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/wwayne/react-tooltip&quot;&gt;wwayne/react-tooltip: react tooltip component&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Gatsbyでsitemapをサーチコンソールで送信]]></title><description><![CDATA[記事を更新するたびに手でやらないといけないの？これ めんどくさそう 参考文献 Gatsby.js でサイトマップを作成する - Qiita]]></description><link>https://rrih.github.io/20201124-search-console-sitemap/</link><guid isPermaLink="false">https://rrih.github.io/20201124-search-console-sitemap/</guid><pubDate>Tue, 24 Nov 2020 04:09:00 GMT</pubDate><content:encoded>&lt;p&gt;記事を更新するたびに手でやらないといけないの？これ&lt;/p&gt;
 &lt;p&gt;めんどくさそう&lt;/p&gt;
 &lt;h4&gt;参考文献&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;https://qiita.com/ShinKano/items/3cf3eef6320bc62181a3&quot;&gt;Gatsby.js でサイトマップを作成する&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome(fas, far, fab)]]></title><description><![CDATA[fontawesome 完全に理解した(ダニングクルーガー効果定期) これで、、が動く 関連記事 react-fontawesome+react-scroll でページトップへスクロールするやつを追加した]]></description><link>https://rrih.github.io/posts/fontawesome-perfect-understand/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-perfect-understand/</guid><pubDate>Mon, 23 Nov 2020 03:58:00 GMT</pubDate><content:encoded>&lt;p&gt;fontawesome 完全に理解した(ダニングクルーガー効果定期)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://qiita.com/ShinKano/items/3cf3eef6320bc62181a3&quot;&gt;Gatsby.js でサイトマップを作成する - Qiita&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome(fas, far, fab)]]></title><description><![CDATA[fontawesome 完全に理解した(ダニングクルーガー効果定期) これで、、が動く 関連記事 react-fontawesome+react-scroll でページトップへスクロールするやつを追加した]]></description><link>https://rrih.github.io/20201123-fontawesome-perfect-understand/</link><guid isPermaLink="false">https://rrih.github.io/20201123-fontawesome-perfect-understand/</guid><pubDate>Mon, 23 Nov 2020 03:58:00 GMT</pubDate><content:encoded>&lt;p&gt;fontawesome 完全に理解した(ダニングクルーガー効果定期)&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;javascript&quot;&gt;&lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; FontAwesomeIcon &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@fortawesome/react-fontawesome&apos;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; library &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@fortawesome/fontawesome-svg-core&apos;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; fas &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@fortawesome/free-solid-svg-icons&apos;&lt;/span&gt;
@@ -12,7 +19,7 @@ library&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;FontAwesomeIcon icon&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;fab&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;faReact&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;これで&lt;code class=&quot;language-text&quot;&gt;fas&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;far&lt;/code&gt;、&lt;code class=&quot;language-text&quot;&gt;fab&lt;/code&gt;が動く&lt;/p&gt;
 &lt;h4&gt;関連記事&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;/posts/fontawesome-scroll-to-top&quot;&gt;react-fontawesome+react-scroll でページトップへスクロールするやつを追加した&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[鬼滅の刃 無限列車編を観た感想]]></title><description><![CDATA[…]]></description><link>https://rrih.github.io/posts/kimetsu-no-yaiba-movie/</link><guid isPermaLink="false">https://rrih.github.io/posts/kimetsu-no-yaiba-movie/</guid><pubDate>Sun, 22 Nov 2020 06:48:00 GMT</pubDate><content:encoded>&lt;p&gt;ネタバレを含んだ感想です&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/20201121-fontawesome-scroll-to-top&quot;&gt;react-fontawesome+react-scroll でページトップへスクロールするやつを追加した&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[鬼滅の刃 無限列車編を観た感想]]></title><description><![CDATA[…]]></description><link>https://rrih.github.io/20201122-kimetsu-no-yaiba-movie/</link><guid isPermaLink="false">https://rrih.github.io/20201122-kimetsu-no-yaiba-movie/</guid><pubDate>Sun, 22 Nov 2020 06:48:00 GMT</pubDate><content:encoded>&lt;p&gt;ネタバレを含んだ感想です&lt;/p&gt;
 &lt;h4&gt;煉獄杏寿郎がよい&lt;/h4&gt;
 &lt;p&gt;煉獄さんにとって無限列車編が最初で最後の見せ場になるわけですが、煉獄さんの強さ、生き様をこれでもかと見せつけられる感じ。だいたいみんな煉獄さんのことが好きになる。一通り、炎の呼吸の技を披露してくれたが違いがよくわからなかった。これはあとでもう一度見に行くやつかな。&lt;/p&gt;
 &lt;h4&gt;猗窩座も良い&lt;/h4&gt;
@@ -25,36 +32,7 @@ HUNTER×HUNTER のメルエム感がある。煉獄さんとの一騎討ちは�
 &lt;p&gt;善逸や伊之助、禰豆子の活躍も最低限あったのでまぁいいかな。義勇さんやしのぶさんなど、他の柱はほぼ出番ないので炎柱以外の柱推しの人はそこだけ注意。&lt;/p&gt;
 &lt;h4&gt;次の劇場版について&lt;/h4&gt;
 &lt;p&gt;原作の 7~8 巻にあたるわけですが、次の劇場版が予想できないのが正直なところ。遊郭編をがっつり削って尺収めるか、無限城編の一部を劇場版化するとか？いずれにしても二期のあとにはなるだろうし、前者はなさそう。どうなんだろう。全然わからないね。でも鬼滅の戦闘シーンはなかなかイケてるからできるだけ劇場版で見たいという気になってきた…&lt;/p&gt;
-&lt;p&gt;今回めちゃめちゃ売れたし、絶対いずれ劇場版やるとは思うんだよね。個人的に無一郎が推しなので刀鍛冶の里編を劇場版にしてくれてもいいですよ。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した]]></title><description><![CDATA[深夜に寝る前に思いつきで追加したのでてきとうすぎです。 手順 先に必要なパッケージをインストールしておく あとは layout.js に書くだけ。 ちなみに react-fontawesome で使用する場合、camel case…]]></description><link>https://rrih.github.io/posts/fontawesome-scroll-to-top/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-scroll-to-top/</guid><pubDate>Sat, 21 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 384px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 104.05405405405406%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsSAAALEgHS3X78AAAEX0lEQVQ4y4VVfUxbVRR/wET/UGNMphM24gT5LFA+ChsMs2g0+8f9Y6KJ/uPiMsMouBnjluzLYTbUQDKSKc5E2YYfmzBDXARkCAwKLbR8tHSUUkpLC+0rpbz29YO2r73Hey+tURPgJPee++4593d/555z72OYbeRC03eMbt6USMaKSe3bCyaLcVSlOUK+sd4V97ve2v7CWyfPJzE7yZ9DY/HhLiu7+giwLFpWZPHJBGZ38qxx6fq6xwsa3cK5HQFVGl0C0e0yZZrT5gjAohUca+um0583P0Xm9RZbF8Rk0Wpr2xFw6tE8BexnnblOrV4InP0SnFYbyzB7ktWWFSnwAeA+veoHfxBUBnP1joATM3MUsJP3ptintL7gJ1eA1eoXT//ye9qqmzf46puBb/gaHB4ve+Zi07PbgrX/0c/0j6go4LGx6SdXZg1GuHQNLMPjD+8ENiRc9yCsvVMjEJZKk7WO+FlY59aJkU9qcf88A6EwdTIsmNtAoQGzWqfW2Fdbgr3DEFRMgc6x9gOx42Nkvr3VsX3Ig/JJyrDlVkeqzbFmIIeP4B8RIrjrGxo7QXx0BtP2ZdM9IKe7UnYm64M4CCBEMCNxbBfnid7rHiggfjKlOnFLwNGJGWrs6h+t2giFydoox3EEBIUFAfE8T+aoYdZgaiS+TheXxOQVllKA7PwiprCkPEksOZhUVFaR1NDY/Hhs11oaqjcgDPQPoqjXj1xOJ5LLRhEEBYHYzCvs3dg5JmyCiYq2ZGpadb9Bg/WHogQ3tGCGqD+AgETu9lGGWr2RMmQdOMsisYQuzMkvfgazO19SXnm59MChzyQHqy4Xl1VcePXIm9e+amoOW5aXKe6GQY/CS2Z6BKRzcF7Hjz3yDIIxMLOUwGTliSnNzLzCpzFTNk9cCrmFJZAnlsRaKTyX+iKcOXfRFwgJQQ/nBo+HR5yHj7h4Pwx23r0aj0Z9mFTavpcwmJimPCMn/yYGhozs/CBuQjpu2BbBY6g8/LpradnOB4Ih4H1+5PV6SdBRY3cbjB994j5Z3+rerApGVCShgLkFJR9k5xdDepZIKD1QBZKKV9DLuQWQni1CxeWVYDLTUJHTtQ5r6xzOCYpydiso39u74S5nNq9e79BYYuvtnx6LsU7FbAIEFIeK8EaQJRKjnIJiSEvPQu2/daJYcePSiaAITg27bAX5+5m+nnczC/6Xz5TkvhHVa2JJhX13Shrs2bc/is8OYb3Z9u5HRWWHUH1DI7rx/U3ovN+FnOvuqHXFHjHNzwVNlmVBPWtQMD2Dcgl+VW4Yl5ZnA8Ew+vnOr9Fjxz8M19R9LJysPSVUSz+K6VPCiWqpcKn+itDT2yfYWTYSCtMypFfG5eZhZm7hLjOl1T+MX85/3dMdJRiOgNXmsOsM5o5hxeTxltv30mmgf40oK/H/om5EpalRTGmloxMaqWJyphrrWplyuhb/O6pxq5Xjb6ylsvFp6YhSXfdgeOzo2S+++c8bSO7+3//UNiotLXkbAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;animal chara computer usagi&quot;
-        title=&quot;animal chara computer usagi&quot;
-        src=&quot;/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png&quot;
-        srcset=&quot;/static/82ffaa7be052f021d781441938e34f30/12f09/animal_chara_computer_usagi.png 148w,
-/static/82ffaa7be052f021d781441938e34f30/e4a3f/animal_chara_computer_usagi.png 295w,
-/static/82ffaa7be052f021d781441938e34f30/804b2/animal_chara_computer_usagi.png 384w&quot;
-        sizes=&quot;(max-width: 384px) 100vw, 384px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;深夜に寝る前に思いつきで追加したのでてきとうすぎです。&lt;/p&gt;
+&lt;p&gt;今回めちゃめちゃ売れたし、絶対いずれ劇場版やるとは思うんだよね。個人的に無一郎が推しなので刀鍛冶の里編を劇場版にしてくれてもいいですよ。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した]]></title><description><![CDATA[深夜に寝る前に思いつきで追加したのでてきとうすぎです。 手順 先に必要なパッケージをインストールしておく あとは layout.js に書くだけ。 ちなみに react-fontawesome で使用する場合、camel case…]]></description><link>https://rrih.github.io/20201121-fontawesome-scroll-to-top/</link><guid isPermaLink="false">https://rrih.github.io/20201121-fontawesome-scroll-to-top/</guid><pubDate>Sat, 21 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;深夜に寝る前に思いつきで追加したのでてきとうすぎです。&lt;/p&gt;
 &lt;h4&gt;手順&lt;/h4&gt;
 &lt;p&gt;先に必要なパッケージをインストールしておく&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;$ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i react-scroll
@@ -78,75 +56,17 @@ $ &lt;span class=&quot;token function&quot;&gt;npm&lt;/span&gt; i --save @fortaw
 &lt;p&gt;当サイトの該当コードは&lt;a href=&quot;https://github.com/rrih/rrih.github.io/blob/master/src/components/layout.js#L87&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
 &lt;h4&gt;参考文献&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://qiita.com/takk0715/items/6b82d7b4d13134d717eb&quot;&gt;React-Scroll で smooth なスクロールを実装してみた。&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://www.corylog.com/gatsby/gatsby014/&quot;&gt;GatsbyJS で fontawesome を使う&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://qiita.com/takk0715/items/6b82d7b4d13134d717eb&quot;&gt;React-Scroll で smooth なスクロールを実装してみた。 - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.corylog.com/gatsby/gatsby014/&quot;&gt;GatsbyJS で fontawesome を使う | コリログ&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4&gt;関連記事&lt;/h4&gt;
-&lt;p&gt;&lt;a href=&quot;/posts/fontawesome-perfect-understand&quot;&gt;react-fontawesome(fas, far, fab)&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[結局TODOリストって何に書けばいいんだろうね]]></title><description><![CDATA[TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
-また、大学の研究関連の TODO…]]></description><link>https://rrih.github.io/posts/where-todo/</link><guid isPermaLink="false">https://rrih.github.io/posts/where-todo/</guid><pubDate>Fri, 20 Nov 2020 01:16:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 450px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAADN0lEQVQ4y5WTd0wTcRTHfy00QAEtBBkyBAekUFBxxIALBTEIEQVFMSRiUIMa/zHGhchyYFtpKb27QntdtIySSEichahAIkFm/AOjxviHmhgZCYgU2t7zrgSccbzk7r137+Vz3/cbCNEWELgYebq7MyFa5LuIjX4yLy+e45s7l4t8fHzQf5gzi3nnHkz1DPDzzQgLCVw1D/X2dtRWRPL/jgEAxs0pW83heg65cD3AfaGXzWMhr5/r4rKOKfB4PPY/6fL29ZsLOXFrBC8uHs+EvMykmROHUuwb10YDDXqVnZ3hyjSEhoagz82Vfwbm56Q6xvEPDgrtMl61WHt0lLVXT411VFOfHuHWlYJwQBzuTsfP/f0dKqe7STTdo0MzvXoHg/HTPdpZ4NRDwtFEmWtWTz1RTg+aymH8KUn1NlynqE7SVno0C9bHRB1nerZviHVifFvjLdb8kg0avqnDMDlrgKxwZuIxtXDLVHMVvH8gs4+2V1Mf2jDKYq62WXViGKkVFTE9w6pyJ6mkkDW79t3cyW6tzy8KvzfLfawFhhrB2iyzU31Gm72vDm7XV0jm6pJmCYfxz+9Upb5pJTqpAaNj2788080qrqi4FSwUCYMwmTT4XLnI75GBCOswK+TGFgnY716i1I2F1GKizMLHiwwxNWXBc+CEo8d28FL2DSPk6sbkDdpy9kQXiZBCQVjoZxLHsUmMwL6o5Nh4TqXwQ5CswJ5FnIVY2XkqXF4EAs0N4CuKh5eJLhrZ29NJFLerFG1KA9eUA8k/jKjVaob1eh2YTI1Qa6gFHUnCDRUOgeILlJ+00B4hLbBFYkUzEZUFU3y8mIpSXwePnCOAtu4BdlImoNhtA8Li0630xpz92K70QhqN2szAmppMUF9fBzqNBqQ4BqX1N2GvugSWEiUQTauLVF0DgV4IMXUi8D51EtCm3cBKzJhBsQm6JfFb98NLU8jbNoLDAPNUKuVreuwXJKl6R+cjGEFM9BvEn+V68ejyquLHkfgVMa2ulK8oqYqqKZMuOJx7GcWl5qJt6Wt/e7BpGJtW6EKP7KZU1njWGWp9N58R+qcl5C/46zUTxLP5iclOMHoPvTLj6CvhxXWVF5OnawAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;寝転がる人&quot;
-        title=&quot;寝転がる人&quot;
-        src=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png&quot;
-        srcset=&quot;/static/72a9cb2cb89b9519a8285b915b603d4c/12f09/computer_nekorogaru_man.png 148w,
-/static/72a9cb2cb89b9519a8285b915b603d4c/e4a3f/computer_nekorogaru_man.png 295w,
-/static/72a9cb2cb89b9519a8285b915b603d4c/fc2a6/computer_nekorogaru_man.png 450w&quot;
-        sizes=&quot;(max-width: 450px) 100vw, 450px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
+&lt;p&gt;&lt;a href=&quot;/20201123-fontawesome-perfect-understand&quot;&gt;react-fontawesome(fas, far, fab)&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[結局TODOリストって何に書けばいいんだろうね]]></title><description><![CDATA[TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
+また、大学の研究関連の TODO…]]></description><link>https://rrih.github.io/20201120-where-todo/</link><guid isPermaLink="false">https://rrih.github.io/20201120-where-todo/</guid><pubDate>Fri, 20 Nov 2020 01:16:00 GMT</pubDate><content:encoded>&lt;p&gt;TODO リストにもいろいろとありますよね。例えば業務の TODO なら業務用の Slack、特に times チャンネルに書いておけばよさそう。
 また、大学の研究関連の TODO は今のところ個人のワークスペースかメモアプリかに書いてある。(もうここで既に怪しい)&lt;br&gt;
 他にも趣味だの生活関連の TODO というものも多くある。&lt;/p&gt;
 &lt;p&gt;このように様々な分類の TODO があり、一括で管理できないものかなぁとなっている。そして多くはプライベートなものであるべき。そして複数端末から参照したい。となると TODO リストにふさわしいのは web アプリなのかなぁ。&lt;/p&gt;
 &lt;p&gt;なにかいいものを見つけたいけど運用もまともにできるか心配でしかない。ずぼらなので…&lt;/p&gt;
-&lt;p&gt;以上、ポエムでした&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献はこちら]]></description><link>https://rrih.github.io/posts/jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/posts/jdk-install-mac/</guid><pubDate>Thu, 19 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 97.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsSAAALEgHS3X78AAAES0lEQVQ4y6VTe0xTZxT/oHXT7K/FbLrIRMagtbTlvY51AoIEZMRiL+VlYiaPBQU2YUQkmdtkGeAf20CgLaVCyow85+bCxI2MAirVMrpa6QspCJSJMAJzOrS9/c5ur0hmMsySneTkPO45v5zzO99FaB0xSffT1iwVP5U3SgnGqJLw/GfuO7Tpca1cjNaVsaZMZKwVrcVmGXHCLCe8n8TWtnSO8WRypxYJabQbxF5kVaajZ4pZnsJYBYudO5sJJhmhpVRqkhJKy5lUy2wRAbqI2ER3jV4Uz3gmmKVBgqhmejVzg6R1qikVxhoImFVlwExzKpjr98O0Mo2yKfU0FdVihlWR+u9gi5fr0NiZTNqf6Sp8wSQn7HPdx+B2R4FztE7knO0uc9rO5TlsjQRYFKlXXCWi1SHWAbw/fwmN1iR60Nx8Gc+2yMUOvTwDDFIJtsqS8bD0ADYqMlxW6T4w1onsVkUKzaOpngL25XBokO2+vsiPz0fR6Wl0PN31Ic3JZEdJ0p32I/BjlQSraw/hyY4C+PaTJGyQHcCzXcUw0Vbwx5jq4IvuWltrngfihwhoAG5QOAqPiGQKhNHMhIQEZuKe+A3u/J2fT/c8HFLArYuVZJ4oBLdUvAuPbirxgroaL/XXw6JGvrygldKAv1+T0VshXvAb6x4HzC2DYGuF+f5ap7H9UzxxoQLm+mqAanY+vNEE8xqp4Z3OL+ha+1XqPvxQgcfqhNsEwqiytyJjyiIiY44Lo2LKeGHC4o+Ls7SqmlIwna+Eu99Ugb2jAi/01+FlfRNeHG7EMNae5O4f+KHy8bNhBQTRgCxu8KssbhBwAsNoDQgKp3WHPw82e7FB9nn+0p/D1Q5bbxVYu0+6bp0/DpaW7GneQV4sEvo+58ZgpvEQ8vHnrK3sy+L2+O3kw+ts3grlO15jBThYHJ7Lm8WHHGL3A4s0mdRWi0EnywR9bTKeURBw6KM9gMTcU3R/XhwD+e/kIV6IgOlOcAJDy9m8EHADhQrexoGhb2JfNhd8WHwcvSsCLKpsmLt0Als7iqinkwlTinRnzakkQCkBF9dIV2t0nnJFI31RxNwY5sfhA5sXDNTUmOIVUzS4FbhU3NdciqfO5YClfh82S0UwWbuXrCmPgw2S4N7mz1QbKQSPNeD8ctmmrzu/T6a4XHnple2wxWsHfnmbN97i5YO3Uuq2wsjd+KvD0bixOA6frcjF84MNrgnjVadhfPL+xJSdHLlpkaF+jS7SYB5X3Z75bfKvlUegUDaROXn5ZOHREvJI4VGy4INiMv/9Ito/XFhEnq6Xk8M6A3l36QGGVSFJDPa5eYdWbyxFo1ab8ckHF/x3Wb53DyamZsYNJmvDT4PXJccq6jbTq1JB1GWtPnfw+q9ZlH1PrRnJ7deMZFHqzuUOaHTZA9d0bt9ts/uuaLPVQ7/k9qiHdm0NTnj+qZ8AAP1voUA8qUEYFHUebRd60d/rTnPxjouo0gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;animal chara computer inu&quot;
-        title=&quot;animal chara computer inu&quot;
-        src=&quot;/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png&quot;
-        srcset=&quot;/static/0c521d53218d85dcc691c678ef121449/12f09/animal_chara_computer_inu.png 148w,
-/static/0c521d53218d85dcc691c678ef121449/e4a3f/animal_chara_computer_inu.png 295w,
-/static/0c521d53218d85dcc691c678ef121449/e17e5/animal_chara_computer_inu.png 400w&quot;
-        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
+&lt;p&gt;以上、ポエムでした&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Mac CatalinaにhomebrewでJava環境構築]]></title><description><![CDATA[久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献 Mac に Java 開発環境をインストールする - Qiita]]></description><link>https://rrih.github.io/20201119-jdk-install-mac/</link><guid isPermaLink="false">https://rrih.github.io/20201119-jdk-install-mac/</guid><pubDate>Thu, 19 Nov 2020 20:53:00 GMT</pubDate><content:encoded>&lt;p&gt;久しぶりに Java の環境構築をしたのでメモ&lt;/p&gt;
 &lt;p&gt;環境&lt;br&gt;
 Mac Catalina&lt;br&gt;
 バージョン 10.15.7（19H2）&lt;/p&gt;
@@ -175,40 +95,14 @@ OpenJDK &lt;span class=&quot;token number&quot;&gt;64&lt;/span&gt;-Bit Server VM
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;% javac Sample.java &lt;span class=&quot;token comment&quot;&gt;# コンパイル&lt;/span&gt;
 % java Sample &lt;span class=&quot;token comment&quot;&gt;# 実行&lt;/span&gt;
 hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;参考文献は&lt;a href=&quot;https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[研究は疲れた]]></title><description><![CDATA[お疲れ様です。最近は研究の比重多めの日々です。 が、まだ終わってないんですけど正直研究にはもう飽きてます。 早く卒業したい。ただそれだけになっている今日この頃。 C や C…]]></description><link>https://rrih.github.io/posts/research-tired/</link><guid isPermaLink="false">https://rrih.github.io/posts/research-tired/</guid><pubDate>Wed, 18 Nov 2020 19:38:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEyklEQVQ4y4WUC1BUZRTHv2VhF/bpLg9JlMTRBDVkQIVxKkQqNccsDWSRhQEUBN2YxEVwaiUFUR4LykOGJRHMKIqHgmgKDMhDENhl3wqoIGOl0iTmg9e9p3svLOU40p059/vOnPP97v9833cPQv/30Jk0cgAAxGazt/KtrReZQkfKy5Elm03NeULh7JzIbevJgYIhFm8xoltUMVhs4AsFz1gczoU5dnYhRMSMgllbU2ncWaFMFqWKfJYscbri5eYMzu84TZpZMIEjEABPKAAGg7GSSrW0NJtVHVaTjS7kSE2uxUB1hmbwYjrU5UknJaIN+PwFDmMMFgvYfL7GisWiZLG43CmFtw091CqdpgtpCdNoVZQPDQXUV6GteONo/WloLjyEQ9dZyn5KicZ817oBw4rVz+Xz3Ckgh0OjgFptFwXQ67rphJmTZtArzR82lltSwMqsrwkoPLmWOw7Kc3h78WF42ZQ/WXlCAsiCqTKVwbex+bdEtbrzjeXjDflS0P0I402KcbzjDLxsKcBHqk/h/j6egMyZUWSOnZ0tjQROK+w2KQwi7ARhCQadMk6r6YypqatbCMqCBdB99jfoKgJoL8SgNQ+D2nQYq5A/IA6NSa69U5JEm1Gg03bTp4Glz/8ehsGB23B/sBceP7oPDfWXFWTsZGlmaHNJKjytTcfG61InCgplcPxc1hUyFhXuTi+PXUYBn+V5IGQ0as1Jx6Drjrl3x0DA+l7c7TeMEvsIzdevNUFPfuA+Rdo9bmLSRFVFFqh+zcV85Ckw77BsxPVb8TyTsOkbRoC6rlEKbw0Mrdcb9aAz6id0ejWmN2qxjraGyVFNDRirU0ciD2wa1NadBuj5HntQe3Ry85FYWJNSlNkX57CifJ/Nklc2viyM82lN3ApN2y9p0FKVC621xdB5vRra6iugsUgKVxNWQH0UH3rz/fGhknA4c3wP/sXBPNgYlQRndzuA7BNWEcnJ2WkzdcHl/ryTadt5Q7kBnEvZIv7NzB3CkZMimz9zxHOfKESWT0uD2Q+/C507rgiaA8XBHDx0TwgeEi3BY0I8sNBti475uXLjSY7Yizd1OMvf4gu2uQv2kXN7FuIErOKf/tgFOXjTEJv5NsPJ6oNV+512BQ6vkkaAtzQU8zkQhH8u8pj0kojBMWZ/zO7lKPI90QbGTMnBXoKlQZ7C/eT8yy2udgHu3EOmmOTYQYVckQwpp2TYdlksrNwbAZu+icOCo/zGlgVsBUdxoGzvu2j7Ju/Fc2aAgWsEy3Z6CqNNfnTgxnUVV5qcyW4z0Zz1GfQo7oFSAVh74fO/rspfQHse9J2TQvwB0SPXhHhX4oBpW7asNp8Bhqy1tQpd5zifnA/2GsN7NIZhtc4wodbd6r3Upt974/IPssHSWDGo5LZw56Ij9FcEXc3YdTTR185tutlRb393QiRR6kybSiprXZ5erR5NrlRBWYsRbg0Nw/3fH4Ox7y40Knu1Ptkq69f+TXtnVL5ZgFxc/tMLP4yY2rL1OSoe+qp9KQrrWLg6reN9ceHNRMl55UCd/g/IvKSuQY75dIAS2kDTeTrcUNB6yo6hjMJkaq2iIPHVD/meekODCOu29ZJ3RSC/Bg7pfpTdSV2NnxN3oLX2Uyk7PQUz6f8AqtlF2MXugWoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;PCの前でぼけっとしている人&quot;
-        title=&quot;PCの前でぼけっとしている人&quot;
-        src=&quot;/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png&quot;
-        srcset=&quot;/static/9141029aa711caf1c09a82318e532500/12f09/neet_man2.png 148w,
-/static/9141029aa711caf1c09a82318e532500/e4a3f/neet_man2.png 295w,
-/static/9141029aa711caf1c09a82318e532500/e17e5/neet_man2.png 400w&quot;
-        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;お疲れ様です。最近は研究の比重多めの日々です。&lt;br&gt;
+&lt;h4&gt;参考文献&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961&quot;&gt;Mac に Java 開発環境をインストールする - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[研究は疲れた]]></title><description><![CDATA[お疲れ様です。最近は研究の比重多めの日々です。 が、まだ終わってないんですけど正直研究にはもう飽きてます。 早く卒業したい。ただそれだけになっている今日この頃。 C や C…]]></description><link>https://rrih.github.io/20201118-research-tired/</link><guid isPermaLink="false">https://rrih.github.io/20201118-research-tired/</guid><pubDate>Wed, 18 Nov 2020 19:38:00 GMT</pubDate><content:encoded>&lt;p&gt;お疲れ様です。最近は研究の比重多めの日々です。&lt;br&gt;
 が、まだ終わってないんですけど正直研究にはもう飽きてます。&lt;/p&gt;
 &lt;p&gt;早く卒業したい。ただそれだけになっている今日この頃。&lt;/p&gt;
 &lt;p&gt;C や C++とにらめっこするのほんまつらい&lt;/p&gt;
-&lt;p&gt;皆さん、機械学習や強化学習に憧れて卒論のテーマにするのはやめましょう。つらいです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[昨日落ちてたやつが復活してた件]]></title><description><![CDATA[前回これの本番が落ちていた時、こんなことを言ってましたが、今見たら完全に復活してました。 全然わからないですね 🤔 調べてみたところ、ClearDB の無料分を超えたから死んだと思ってたのだけれど復活するとなるとそうでもなさそう？そもそも 5M…]]></description><link>https://rrih.github.io/posts/heroku-cleardb-revive/</link><guid isPermaLink="false">https://rrih.github.io/posts/heroku-cleardb-revive/</guid><pubDate>Tue, 17 Nov 2020 18:47:00 GMT</pubDate><content:encoded>&lt;p&gt;前回&lt;a href=&quot;https://github.com/rrih/feel&quot;&gt;これ&lt;/a&gt;の&lt;a href=&quot;htps://feel-prod.herokuapp.com&quot;&gt;本番&lt;/a&gt;が落ちていた時、&lt;a href=&quot;/posts/heroku-cleardb-dead/&quot;&gt;こんなこと&lt;/a&gt;を言ってましたが、今見たら完全に復活してました。&lt;/p&gt;
+&lt;p&gt;皆さん、機械学習や強化学習に憧れて卒論のテーマにするのはやめましょう。つらいです。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[昨日落ちてたやつが復活してた件]]></title><description><![CDATA[前回これの本番が落ちていた時、こんなことを言ってましたが、今見たら完全に復活してました。 全然わからないですね 🤔 調べてみたところ、ClearDB の無料分を超えたから死んだと思ってたのだけれど復活するとなるとそうでもなさそう？そもそも 5M…]]></description><link>https://rrih.github.io/20201117-heroku-cleardb-revive/</link><guid isPermaLink="false">https://rrih.github.io/20201117-heroku-cleardb-revive/</guid><pubDate>Tue, 17 Nov 2020 18:47:00 GMT</pubDate><content:encoded>&lt;p&gt;前回&lt;a href=&quot;https://github.com/rrih/feel&quot;&gt;これ&lt;/a&gt;の&lt;a href=&quot;htps://feel-prod.herokuapp.com&quot;&gt;本番&lt;/a&gt;が落ちていた時、&lt;a href=&quot;/heroku-cleardb-dead/&quot;&gt;こんなこと&lt;/a&gt;を言ってましたが、今見たら完全に復活してました。&lt;/p&gt;
 &lt;p&gt;全然わからないですね 🤔&lt;/p&gt;
 &lt;p&gt;調べてみたところ、ClearDB の無料分を超えたから死んだと思ってたのだけれど復活するとなるとそうでもなさそう？そもそも 5M もいってなさそう。&lt;/p&gt;
 &lt;p&gt;ということで測ってみました。&lt;/p&gt;
@@ -228,36 +122,7 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 +------------------------+------------+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;はい、まだ耐えてますね。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[fontawesomeにはTypeScript等一部アイコンが不足している]]></title><description><![CDATA[悲しいね。 Golang、TypeScript、GCP、Heroku、などが無いです。 aws で検索すると見つかるのですが、
  gcp は見つからないという。(もちろん Google Cloud Platform で検索しても同様。)
- fontawesome は aws…]]></description><link>https://rrih.github.io/posts/fontawesome-sad/</link><guid isPermaLink="false">https://rrih.github.io/posts/fontawesome-sad/</guid><pubDate>Mon, 16 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEb0lEQVQ4y61Ua0xTZxg+BTfDxULplZYCUiBqlu3Htmy6jC1h7gKIu2RmJGNCJ1EIIi13kFAmsigIpRQoUC6lUFqoXEtbrnKbiAoCcXPs6jbntixuGHaJtOd7951TJfsx9M++5Mn7fO/75DnP952TQxD3F5PJJAJDgmkeJNlJsDlsN9xzF4oD3P0DRAyqH7ZnN8HyYxGPXGwOh/D28qI5i8Vi/JcG97fxBHyac3k8QiAUbG0oChS7jNnsTTM/tl8ETpiEE34QGi4RPugLA1xUJBY/PKWvr+8DM2+eQDDA4/PA14cJQSHBwOHxbvkymckv7Ht6G20q9H+4mcAloA19mMxugYAP/kKB08PD08nkcB3iACF4ee8AgUh4ltJwuFw3nHxrQzx0o2pwqORZDocNj3t6kx47fMgQsT86dTwO3RmvcXyUcghYPP4v0ZF7PShtQNAWR4b+SiIoOMid4pIwSSJ11PiYCGeT4ij6zFSC4FMD2rioJeGaHpLjom5jmSel5YuEW+XbT7gzWW4uvv218NCdAPMtyDHXhK7oFACXm2Fep3D+PqaGm71lo3QIAEaVuo6hNVkYTd1DDG2XhVHfOcCoau0mCOXJPOJSuZxOOFcme3O8JA3QaB3524gaLXWcQrCsh28Hyp2/WqoAprT2R36D+GnEHVMV/fZ+NCiLYaIVYEi9cW9Sg+5O1qKNSQ38NVXvgFkt/N2vvqQx2rn6/hF+1+AY3zQ0wTfbpwQY/Pb+EYFKZ95OhB1Mpo33vp/JDDlwbDU2PhXWLSoS5psQLGLzK80kXO/A16CHtk7zPaXOvK5uO/9HXUcvRh+F9dr23j9r2nvWqlrNuwhJ9BH6/sJjj+3f9VYqsF6MQ/Kij9Ha9S743l5LzpwphtUB5bX54e6hmk4LlDV2wrkm4/1qgrMNBlC19eK9YYpO9uShDPq4kpikuN3vpEHwq4edT72Xg4aW+1Fxg8YZGPkhiN5Iaq/uGDRrjINwTmt0lDd2okbTIKpsNpGYO6r12LDBIN28x/FvgBUlr13c83YqhEQdIV8/nIoG7ZUQnZqNuC/Hw0vSvLuajl6yAifDQMqWLjAOjkG1zkxSKXHitXpDn2jT8Hm57ZnYAhOwI+IQa9+7yNZcChsXVKDIywR+ZAJKyC8HnAaKVS2oRK2DkhodUlQ1o9O1bY6K1vNQWNGoonzKdf1uxHdff/7cype37D3TN0i1cQgp9X3IMjaJFpZW0PzCEpqYW0CfLKyg2avLaPryEprBoDjVwyAvLl6Hr27+YPv5p9vyM5XVjxE3Vr+ImJmeWhsftsLU+Khj+sKEc2x01Gm12pw2q9U5bLM57bjabVZ6P2K30xi2u+a4vzE7OwtXFxZaN4+ckpzSk59XAGnHT0BGRiZkZWaBLF0G6SfSMWQgk8lBTkGeQVeqR1WXRkbXA9ExT2waFhUVvVJ4svCookiRgLkUc2luTq40LzdPWpBfkPgvSHOyc6hZItZQoOdYl1h6utT198VD4v9a2VnZxD9o1GJgsagWmgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;kaisya man bad&quot;
-        title=&quot;kaisya man bad&quot;
-        src=&quot;/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png&quot;
-        srcset=&quot;/static/12b2af6226355ebcdd7a81d01f718342/12f09/kaisya_man_bad.png 148w,
-/static/12b2af6226355ebcdd7a81d01f718342/e4a3f/kaisya_man_bad.png 295w,
-/static/12b2af6226355ebcdd7a81d01f718342/e17e5/kaisya_man_bad.png 400w&quot;
-        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;悲しいね。&lt;/p&gt;
+ fontawesome は aws…]]></description><link>https://rrih.github.io/20201116-fontawesome-sad/</link><guid isPermaLink="false">https://rrih.github.io/20201116-fontawesome-sad/</guid><pubDate>Mon, 16 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;悲しいね。&lt;/p&gt;
 &lt;p&gt;Golang、TypeScript、GCP、Heroku、などが無いです。&lt;/p&gt;
 &lt;p&gt;aws で検索すると見つかるのですが、
 &lt;span
@@ -277,8 +142,8 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;is aws&quot;
-        title=&quot;is aws&quot;
+        alt=&quot;aws&quot;
+        title=&quot;aws&quot;
         src=&quot;/static/4c0ce1c872f0642be4b80693e17d3191/fcda8/is-aws.png&quot;
         srcset=&quot;/static/4c0ce1c872f0642be4b80693e17d3191/12f09/is-aws.png 148w,
 /static/4c0ce1c872f0642be4b80693e17d3191/e4a3f/is-aws.png 295w,
@@ -310,8 +175,8 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
   &gt;&lt;/span&gt;
   &lt;img
         class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;gcp is not&quot;
-        title=&quot;gcp is not&quot;
+        alt=&quot;gcp&quot;
+        title=&quot;gcp&quot;
         src=&quot;/static/d2c7f81800c0abc2beda3e6bd89bafca/fcda8/gcp-is-not.png&quot;
         srcset=&quot;/static/d2c7f81800c0abc2beda3e6bd89bafca/12f09/gcp-is-not.png 148w,
 /static/d2c7f81800c0abc2beda3e6bd89bafca/e4a3f/gcp-is-not.png 295w,
@@ -325,7 +190,7 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
       /&gt;
   &lt;/a&gt;
     &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;fontawesome は aws 派なのかな？&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Laravel+Reactに入門してみためも]]></title><description><![CDATA[Laravel+React をやってみたかっただけ。 リポジトリはこちら 念のためバージョンを合わせてやってみた。 あと CakePHP+React はなかなか見つからない件 参考文献 初めての Laravel6.x と React 入門 | アールエフェクト laravel…]]></description><link>https://rrih.github.io/posts/laravel-start/</link><guid isPermaLink="false">https://rrih.github.io/posts/laravel-start/</guid><pubDate>Sun, 15 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;Laravel+React をやってみたかっただけ。&lt;br&gt;
+&lt;p&gt;fontawesome は aws 派なのかな？&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Laravel+Reactに入門してみためも]]></title><description><![CDATA[Laravel+React をやってみたかっただけ。 リポジトリはこちら 念のためバージョンを合わせてやってみた。 あと CakePHP+React はなかなか見つからない件 参考文献 初めての Laravel6.x と React 入門 | アールエフェクト laravel…]]></description><link>https://rrih.github.io/20201115-laravel-start/</link><guid isPermaLink="false">https://rrih.github.io/20201115-laravel-start/</guid><pubDate>Sun, 15 Nov 2020 06:17:00 GMT</pubDate><content:encoded>&lt;p&gt;Laravel+React をやってみたかっただけ。&lt;br&gt;
 リポジトリは&lt;a href=&quot;https://github.com/rrih/laravel_react&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;念のためバージョンを合わせてやってみた。&lt;/p&gt;
 &lt;p&gt;あと CakePHP+React はなかなか見つからない件&lt;/p&gt;
@@ -333,42 +198,14 @@ hoge&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://reffect.co.jp/laravel/laravel6-react-router&quot;&gt;初めての Laravel6.x と React 入門 | アールエフェクト&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://qiita.com/revenue-hack/items/f90fa5a7d4352d0bbc3f&quot;&gt;laravel でバージョンを指定してインストール - Qiita&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Next.js+TypeScriptでvercelにデプロイ]]></title><description><![CDATA[リポジトリがこちら。本番環境はこちら Next.js、試しに触ってみたけどして vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React…]]></description><link>https://rrih.github.io/posts/nextts-vercel/</link><guid isPermaLink="false">https://rrih.github.io/posts/nextts-vercel/</guid><pubDate>Sat, 14 Nov 2020 23:01:00 GMT</pubDate><content:encoded>&lt;p&gt;リポジトリが&lt;a href=&quot;https://github.com/rrih/nextts&quot;&gt;こちら&lt;/a&gt;。本番環境は&lt;a href=&quot;https://nextts.vercel.app&quot;&gt;こちら&lt;/a&gt;&lt;br&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Next.js+TypeScriptでvercelにデプロイ]]></title><description><![CDATA[リポジトリがこちら。本番環境はこちら Next.js、試しに触ってみたけどして vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React…]]></description><link>https://rrih.github.io/20201114-nextts-vercel/</link><guid isPermaLink="false">https://rrih.github.io/20201114-nextts-vercel/</guid><pubDate>Sat, 14 Nov 2020 23:01:00 GMT</pubDate><content:encoded>&lt;p&gt;リポジトリが&lt;a href=&quot;https://github.com/rrih/nextts&quot;&gt;こちら&lt;/a&gt;。本番環境は&lt;a href=&quot;https://nextts.vercel.app&quot;&gt;こちら&lt;/a&gt;&lt;br&gt;
 Next.js、試しに触ってみたけど&lt;code class=&quot;language-text&quot;&gt;npx create-next-app&lt;/code&gt;して vercel でリポジトリ選択してポチポチするだけでデプロイできるの、体験が良過ぎますね。いろいろと隠蔽されてる感もすごいけど、React 書ける人にとってはとりあえず動くものを作るのにかなり便利そう。今後のフロントエンドは Next+vercel の組み合わせ一択なのではないか？(流石にこれは言い過ぎか)&lt;/p&gt;
 &lt;p&gt;あと今回は、styled-components を適用するために&lt;code class=&quot;language-text&quot;&gt;.babelrc&lt;/code&gt;記述する必要がありました。こういうのは基本的に豊富な公式を参照すればよさそう。&lt;/p&gt;
 &lt;p&gt;時間が出来次第、Next.js+Vercel でなにかしらツール的なものを作りたい(๑╹ω╹๑ )&lt;br&gt;
-vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎてなにもわからない…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[macOSでclangを使わずgccを使う]]></title><description><![CDATA[こちらを参考にした。それだけ]]></description><link>https://rrih.github.io/posts/gcc-mac-dev/</link><guid isPermaLink="false">https://rrih.github.io/posts/gcc-mac-dev/</guid><pubDate>Fri, 13 Nov 2020 03:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://hkmc.jp/note/mac/use_gcc.html&quot;&gt;こちら&lt;/a&gt;を参考にした。それだけ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ClearDBがよく落ちてしまう。なにもわからない]]></title><description><![CDATA[なんで…？ 昨日からよく https://feel-prod.herokuapp.com が落ちる件について 全然わからない。ログは以下の通り。誰か教えてほしい。 正直なにもわからないです 😢 予想というかわかっていることと見解 多分 ClearDB(DB…]]></description><link>https://rrih.github.io/posts/heroku-cleardb-dead/</link><guid isPermaLink="false">https://rrih.github.io/posts/heroku-cleardb-dead/</guid><pubDate>Tue, 10 Nov 2020 17:50:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsSAAALEgHS3X78AAAEU0lEQVQ4y61Ra0yTZxT+uCiOS2G2pTcuCpjFhcVEk2WZumkwLiYzUZJtzBREd8tkRBhS2gKbcxuMW7mXQm9YKL0AbeWigIBDJzIuk15AEZpgdG4Jm24u20L79T17v4+t2Q9xf3aSJ885532+5zvnfQkWm02Eh4URVERFRQUQT4jIyMhgFptF55uZmwlBbAyxbgjiYmlmMpl+MyaL9TIjIuIkl88Xxm+Nj/+nz+FyaA1XwCeeGv+aLILD41owIJLBgLgt8YDzn6IYjJznEuM3rZlGBzzVjMvnUUSLsImFy+UAX8AnQ0PDyAgmm8TnEBoWDtE8roHSBAaHBPBjBOsb8mNjAinekpSwh8liwsZnwshQRpRPwGGhrGOHkNtWTlacTkPPsqN9CUlbt1FaXoxg/SnxWsEUJ2xLzKamE77+irdenIkmtMUI7G3oj6sKBDfbIP/kEQ+WbV/7Jm59w3AmO2gtC05N3p4EMKHx/TnWjEbkEvT7NQWMNUt9K4N1sGQpd2MRfY9VHwvXX7m37DRteLn2zLtXKvMA+hrJh7ZqdMtcimC+Ay33VPp+HWgAGGl2wFALvY2rVx+gNvcTFJSmXj/qdRaCgDEVbQjX1V/AuA5Ioww8vfV41RaASS08vqIgvUMKAGvd3V9U5zYR/xX3zBX+HHVXH4KBxt9gtBHQeAvyDMl9MKMDuG0B6K1XUxr72OCG8fGpoInZ20ELd38ImnPfD7w67Qyy31kOVHddoh+YOJ6Vv5YQuxk5eaLFh5PYwGkjHxjr4cGg/D5MqT+b7lby5R09VoXe5pK3W2dajD03FR0XvpPrrTMUN+lt9hpt5y5iY2ISsSP9HP1qyalZ1vC9GaCyDXvvPZr2lbUaIHpv2jJ11my6+Fqr9TJUazuhTmeB2vPdNGpauwD/CGQa048yjZlB7Dwmoafj7Uvb8fzRLEg8mI6ySxvRt0v9IJSUebkH3oGkwx+I262XVI36HqhQGlZlahPZoOsma7RmUqY2rja026BSZfjKf3cAELLn/bKBF9/KgsOZp8idb5xCR/NEKDn1Q9+u1Pdgd3re93K97XG1xgSVSgPCRsg2dA3hVVGVygh4VajVml/yG75dNbk/JbcZol9N83FSMhEvJQO4+zNQ3METEHtAiN7MKwE8EXwp16GSpjYobWpDGFAi15EybIb7w34zz8qduL4bi02fnx+FE5/U+ITiciSRKZHS1ANNhh5U12YFY98wsgx+jcz9I4CBOi+OgmmNSdvwNzByfUr/6OeVfR1dF0KIpSX38fm5OXA6HB6X0+lxOuzeOZfTj1vzc16H3e6dnZ312jE/AasulwsWFhZuLLrdG+gpc3Nyp89+ehbEBWKQiCUglUihUFoExUXFUFhY9Hdd6GcKRbhPMaWnOPuj7MP+tXHzjChf1I6hEokKNNhYLRFLKVYViArUVE0Bn2sKcI9iXNM66hzXrdj0BdrM4XAS/1dIpVLiL765dzewPwXeAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;kaisya komaru man&quot;
-        title=&quot;kaisya komaru man&quot;
-        src=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png&quot;
-        srcset=&quot;/static/5009084099f6e4b3dd95f116e1e224fa/12f09/kaisya_komaru_man.png 148w,
-/static/5009084099f6e4b3dd95f116e1e224fa/e4a3f/kaisya_komaru_man.png 295w,
-/static/5009084099f6e4b3dd95f116e1e224fa/e17e5/kaisya_komaru_man.png 400w&quot;
-        sizes=&quot;(max-width: 400px) 100vw, 400px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;なんで…？&lt;/p&gt;
-&lt;h3&gt;昨日からよく &lt;a href=&quot;https://feel-prod.herokuapp.com&quot;&gt;https://feel-prod.herokuapp.com&lt;/a&gt; が落ちる件について&lt;/h3&gt;
-&lt;p&gt;全然わからない。ログは以下の通り。誰か教えてほしい。&lt;/p&gt;
+vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎてなにもわからない…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[macOSでclangを使わずgccを使う]]></title><description><![CDATA[こちらを参考にした。それだけ]]></description><link>https://rrih.github.io/20201113-gcc-mac-dev/</link><guid isPermaLink="false">https://rrih.github.io/20201113-gcc-mac-dev/</guid><pubDate>Fri, 13 Nov 2020 03:56:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://hkmc.jp/note/mac/use_gcc.html&quot;&gt;こちら&lt;/a&gt;を参考にした。それだけ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ClearDBがよく落ちてしまう。なにもわからない]]></title><description><![CDATA[なんで…？ 問題 昨日からよく https://feel-prod.herokuapp.com が落ちる件について 全然わからない。ログは以下の通り。誰か教えてほしい。 正直なにもわからないです 😢 予想というかわかっていることと見解 多分 ClearDB(DB…]]></description><link>https://rrih.github.io/20201110-heroku-cleardb-dead/</link><guid isPermaLink="false">https://rrih.github.io/20201110-heroku-cleardb-dead/</guid><pubDate>Tue, 10 Nov 2020 17:50:00 GMT</pubDate><content:encoded>&lt;p&gt;なんで…？&lt;/p&gt;
+&lt;h3&gt;問題&lt;/h3&gt;
+&lt;p&gt;昨日からよく &lt;a href=&quot;https://feel-prod.herokuapp.com&quot;&gt;https://feel-prod.herokuapp.com&lt;/a&gt; が落ちる件について&lt;br&gt;
+全然わからない。ログは以下の通り。誰か教えてほしい。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;roi@roi feel % heroku logs --tail
 &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-11-16T08:46:37.058751+00:00 heroku&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;web.1&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;: Unidling
 &lt;span class=&quot;token number&quot;&gt;2020&lt;/span&gt;-11-16T08:46:37.063925+00:00 heroku&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;web.1&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;: State changed from down to starting
@@ -475,7 +312,10 @@ vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎ�
 &lt;p&gt;多分 ClearDB(DB サーバー)の問題なんだろうなぁ。手元で本番 DB にアクセスしようとすると問い合わせに死ぬほど時間がかかる上、接続できない。アプリ側は問題なさそう。&lt;/p&gt;
 &lt;p&gt;たまーに &lt;a href=&quot;https://feel-prod.herokuapp.com/posts&quot;&gt;https://feel-prod.herokuapp.com/posts&lt;/a&gt; にアクセスできる。たまにできるのがまたよくわからないになっている。&lt;br&gt;
 呼び出しているクエリが重いとか？これまでそんなことはなかったのだけれど。&lt;/p&gt;
-&lt;p&gt;結果、全然わからない 😢&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ターミナルでMySQLのクエリを見る]]></title><description><![CDATA[準備 ターミナルで MySQL コンテナに入り、接続。 設定 以下の通りにコマンド叩く。 別窓開いて 別窓開いて MySQL コンテナに入り、 これでログの流れをみれるようになる。 また、 UPDATE 部分のみ抽出して監視することもできる 以上]]></description><link>https://rrih.github.io/posts/mysql-query-log-watch/</link><guid isPermaLink="false">https://rrih.github.io/posts/mysql-query-log-watch/</guid><pubDate>Mon, 09 Nov 2020 13:20:00 GMT</pubDate><content:encoded>&lt;h4&gt;準備&lt;/h4&gt;
+&lt;p&gt;結果、全然わからない 😢&lt;/p&gt;
+&lt;h4&gt;追記(2020-11-11)&lt;/h4&gt;
+&lt;p&gt;解決した(?)&lt;br&gt;
+というより放置で直った&lt;/p&gt;</content:encoded></item><item><title><![CDATA[ターミナルでMySQLのクエリを見る]]></title><description><![CDATA[準備 ターミナルで MySQL コンテナに入り、接続。 設定 以下の通りにコマンド叩く。 別窓開いて 別窓開いて MySQL コンテナに入り、 これでログの流れをみれるようになる。 また、 UPDATE 部分のみ抽出して監視することもできる 以上]]></description><link>https://rrih.github.io/20201109-mysql-query-log-watch/</link><guid isPermaLink="false">https://rrih.github.io/20201109-mysql-query-log-watch/</guid><pubDate>Mon, 09 Nov 2020 13:20:00 GMT</pubDate><content:encoded>&lt;h4&gt;準備&lt;/h4&gt;
 &lt;p&gt;ターミナルで MySQL コンテナに入り、接続。&lt;/p&gt;
 &lt;h5&gt;設定&lt;/h5&gt;
 &lt;p&gt;以下の通りにコマンド叩く。&lt;/p&gt;
@@ -487,8 +327,8 @@ vercel ってなんて読むの？ばーせる？べるせる？英語弱すぎ�
 &lt;p&gt;また、&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;zsh&quot;&gt;&lt;pre class=&quot;language-zsh&quot;&gt;&lt;code class=&quot;language-zsh&quot;&gt;tail -f /var/lib/mysql/general.log | grep &amp;quot;UPDATE&amp;quot;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;UPDATE 部分のみ抽出して監視することもできる&lt;/p&gt;
-&lt;p&gt;以上&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【更新】プライバシーポリシーを追加]]></title><description><![CDATA[当サイトのフッタ部分にプライバシーポリシーを追加しました。 Google 神の仰せのままに。]]></description><link>https://rrih.github.io/posts/add-privacy-policy/</link><guid isPermaLink="false">https://rrih.github.io/posts/add-privacy-policy/</guid><pubDate>Sun, 08 Nov 2020 04:05:00 GMT</pubDate><content:encoded>&lt;p&gt;当サイトのフッタ部分に&lt;a href=&quot;/privacy-policy&quot;&gt;プライバシーポリシー&lt;/a&gt;を追加しました。&lt;/p&gt;
-&lt;p&gt;Google 神の仰せのままに。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP、実装についてめも]]></title><description><![CDATA[PHP のメモ、というか業務(CakePHP4)についてのメモ 現在タスクで学んだこと 旧実装のクエリのログを見ながら再現していくイメージ Model 周りの util 的メソッドは Trait や Behavior の利用を検討 バリデーションは二度動く(patchEntity…]]></description><link>https://rrih.github.io/posts/cakephp-memo/</link><guid isPermaLink="false">https://rrih.github.io/posts/cakephp-memo/</guid><pubDate>Sat, 07 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;PHP のメモ、というか業務(CakePHP4)についてのメモ&lt;/p&gt;
+&lt;p&gt;以上&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【更新】プライバシーポリシーを追加]]></title><description><![CDATA[当サイトのフッタ部分にプライバシーポリシーを追加しました。 Google 神の仰せのままに。]]></description><link>https://rrih.github.io/20201108-add-privacy-policy/</link><guid isPermaLink="false">https://rrih.github.io/20201108-add-privacy-policy/</guid><pubDate>Sun, 08 Nov 2020 04:05:00 GMT</pubDate><content:encoded>&lt;p&gt;当サイトのフッタ部分に&lt;a href=&quot;/privacy-policy&quot;&gt;プライバシーポリシー&lt;/a&gt;を追加しました。&lt;/p&gt;
+&lt;p&gt;Google 神の仰せのままに。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP、実装についてめも]]></title><description><![CDATA[PHP のメモ、というか業務(CakePHP4)についてのメモ 現在タスクで学んだこと 旧実装のクエリのログを見ながら再現していくイメージ Model 周りの util 的メソッドは Trait や Behavior の利用を検討 バリデーションは二度動く(patchEntity…]]></description><link>https://rrih.github.io/20201107-cakephp-memo/</link><guid isPermaLink="false">https://rrih.github.io/20201107-cakephp-memo/</guid><pubDate>Sat, 07 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;PHP のメモ、というか業務(CakePHP4)についてのメモ&lt;/p&gt;
 &lt;h3&gt;現在タスクで学んだこと&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;旧実装のクエリのログを見ながら再現していくイメージ&lt;/li&gt;
@@ -500,6 +340,6 @@ save に動くものは&lt;code class=&quot;language-text&quot;&gt;buildRules&lt
 &lt;li&gt;単一責務の原則&lt;br&gt;
 別メソッドに切り出すべきシーンでそうせずにデカい関数を書くと怒られたりする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;そもそも現在やってるタスクまだゴールしていない件…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP4+MySQL5(ClearDB)の構成でHerokuにデプロイ]]></title><description><![CDATA[CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。 ソースはこちら 触りたかったのは CakePHP、MySQL なのでインフラは何も考えずにすむ Heroku(そろそろ思考停止 Heroku…]]></description><link>https://rrih.github.io/posts/cakephp-mysql-app-deploy-heroku/</link><guid isPermaLink="false">https://rrih.github.io/posts/cakephp-mysql-app-deploy-heroku/</guid><pubDate>Thu, 05 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。&lt;br&gt;
+&lt;p&gt;そもそも現在やってるタスクまだゴールしていない件…&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP4+MySQL5(ClearDB)の構成でHerokuにデプロイ]]></title><description><![CDATA[CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。 ソースはこちら 触りたかったのは CakePHP、MySQL なのでインフラは何も考えずにすむ Heroku(そろそろ思考停止 Heroku…]]></description><link>https://rrih.github.io/20201105-cakephp-mysql-app-deploy-heroku/</link><guid isPermaLink="false">https://rrih.github.io/20201105-cakephp-mysql-app-deploy-heroku/</guid><pubDate>Thu, 05 Nov 2020 13:19:00 GMT</pubDate><content:encoded>&lt;p&gt;CakePHP4 と MySQL の勉強を兼ねて簡単なアプリを書いて Heroku で公開してみたので、その部分のめも。&lt;br&gt;
 ソースは&lt;a href=&quot;https://github.com/rrih/feel&quot;&gt;こちら&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;触りたかったのは CakePHP、MySQL なのでインフラは何も考えずにすむ Heroku(そろそろ思考停止 Heroku やめたいにゃんね)(インフラは別途時間ある時に手を出していきたい)。&lt;/p&gt;</content:encoded></item></channel></rss>
