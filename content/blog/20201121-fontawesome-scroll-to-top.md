@@ -4,7 +4,6 @@ date: "2020-11-21T06:17:00.284Z"
 description: ""
 ---
 
-![](../../../assets/animal_chara_computer_usagi.png)
 
 深夜に寝る前に思いつきで追加したのでてきとうすぎです。
 
@@ -40,8 +39,8 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 当サイトの該当コードは[こちら](https://github.com/rrih/rrih.github.io/blob/master/src/components/layout.js#L87)
 
 #### 参考文献
-- [React-Scrollでsmoothなスクロールを実装してみた。](https://qiita.com/takk0715/items/6b82d7b4d13134d717eb)
-- [GatsbyJSでfontawesomeを使う](https://www.corylog.com/gatsby/gatsby014/)
+- [React-Scrollでsmoothなスクロールを実装してみた。 - Qiita](https://qiita.com/takk0715/items/6b82d7b4d13134d717eb)
+- [GatsbyJSでfontawesomeを使う | コリログ](https://www.corylog.com/gatsby/gatsby014/)
 
 #### 関連記事
-[react-fontawesome(fas, far, fab)](/posts/fontawesome-perfect-understand)
+[react-fontawesome(fas, far, fab)](/20201123-fontawesome-perfect-understand)

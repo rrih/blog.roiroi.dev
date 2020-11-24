@@ -4,11 +4,10 @@ date: "2020-11-10T17:50:00.284Z"
 description: ""
 ---
 
-![](../../../assets/kaisya_komaru_man.png)
-
 なんで…？
 
-### 昨日からよく https://feel-prod.herokuapp.com が落ちる件について
+### 問題
+昨日からよく https://feel-prod.herokuapp.com が落ちる件について  
 全然わからない。ログは以下の通り。誰か教えてほしい。
 
 ```bash
@@ -126,3 +125,6 @@ roi@roi feel % heroku logs --tail
 
 結果、全然わからない😢
 
+#### 追記(2020-11-11)
+解決した(?)  
+というより放置で直った

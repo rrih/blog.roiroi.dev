@@ -99,7 +99,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="rrih" />
+      <SEO title={location.host} />
       <div className="mx-4 text-center">
         <div className="border-bottom py-3" data-tip={`${age}歳。ただの開発者`}>
           <H2Title>

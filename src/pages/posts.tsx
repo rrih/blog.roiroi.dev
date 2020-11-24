@@ -12,15 +12,15 @@ const Posts = ({ data, location }: PageProps<Data>) => {
     return (
         <Layout location={location} title={siteTitle}>
         <SEO title="記事一覧" />
-        <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-5">
-            <div className="h3 mx-4 mx-md-0 text-center my-3">記事一覧</div>
-            <ul>
+        <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5 px-3 px-sm-5 px-md-0">
+            <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4">記事一覧</div>
+            <ul className="ml-0 pl-0">
             {posts.map(({ node }) => {
             const title = node.frontmatter.title || node.fields.slug
             return (
                 <li key={node.fields.slug} className="list-unstyled mb-0">
                 <header className="text-wrap">
-                  <small>{node.frontmatter.date} 公開　</small> 
+                  <small>{node.frontmatter.date} 　</small> 
                     <Link to={node.fields.slug} className="text-decoration-none">
                     {title}
                     </Link>

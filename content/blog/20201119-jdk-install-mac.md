@@ -4,8 +4,6 @@ date: "2020-11-19T20:53:00.284Z"
 description: ""
 ---
 
-![](../../../assets/animal_chara_computer_inu.png)
-
 久しぶりにJavaの環境構築をしたのでメモ
 
 環境  
@@ -50,4 +48,6 @@ public class Sample {
 % java Sample # 実行
 hoge
 ```
-参考文献は[こちら](https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961)
+
+#### 参考文献
+- [MacにJava開発環境をインストールする - Qiita](https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961)

@@ -4,14 +4,14 @@ import styled from "styled-components";
 import { animateScroll as scroll } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
+import ReactTooltip from "react-tooltip";
 
 const Layout = ({ location, title, children }) => {
   const TopSquareCard = styled.div`
-    border-radius: 40px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     background-color: #212529;
     color: #f8f9fa;
-    h1, h2, h3, h4, a {
+    h1, h2, h3, h4, h5, a {
       color: #f8f9fa;
     }
   `
@@ -26,6 +26,12 @@ const Layout = ({ location, title, children }) => {
     top: 90vh;
     width: 50px;
     height: 50px;
+  `
+
+  const TopHeaderLink = styled.a`
+    font-family: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,
+    sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,
+    Segoe UI Symbol,Noto Color Emoji;
   `
 
   const scrollToTop = () => {
@@ -64,9 +70,14 @@ const Layout = ({ location, title, children }) => {
       <div
         className="mx-3"
       >
-        <a href={topLinkPosts()} className="text-decoration-none text-light">
-          トップ
-        </a>
+        <TopHeaderLink
+          href={topLinkPosts()}
+          className="text-decoration-none text-light"
+          data-tip="トップへ戻る"
+        >
+          {location.host}
+          <ReactTooltip effect="float" type="dark" place="bottom" />
+        </TopHeaderLink>
       </div>
       <div className="mx-3">
         {avatarIcon}
@@ -76,10 +87,10 @@ const Layout = ({ location, title, children }) => {
 
   return (
     <div
-      className="bg-secondary mt-4 pt-4"
+      className="bg-secondary mt-4 pt-2"
     >
       <header>{header}</header>
-      <TopSquareCard className="container border mt-3 px-0">
+      <TopSquareCard className="container mt-3 px-0">
         {children}
       </TopSquareCard>
       <footer className="text-center bg-dark text-light py-2 mt-3 py-5">

@@ -15,7 +15,6 @@ import { ShareSns } from "../utils/share-sns";
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const BlogPostSquareCard = styled.div`
-    border-radius: 40px;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   `
 
@@ -41,14 +40,14 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <div className="container px-0">
-        <BlogPostSquareCard className="border my-3 m-md-3 p-3 shadow blog-posts">
+        <BlogPostSquareCard className="my-3 m-md-3 p-3 shadow">
           <header className="">
             <small>> <a href="/posts">記事一覧</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
-            <div
-              className="h2"
+            <h2
+              className="my-3"
             >
               {post.frontmatter.title}
-            </div>
+            </h2>
               {post.frontmatter.date}公開
           </header>
           <hr />
@@ -56,8 +55,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <hr />
           {/* シェア */}
           <div className="share-zone shadow rounded border">
-            <div className="h5 text-center m-0 p-2 rounded-top border-bottom">シェアする</div>
-            <div className="border rounded-bottom px-2 px-md-5 py-2 text-center">
+            <div className="h5 text-center m-0 p-2 rounded-top border-bottom">Share</div>
+            <div className="rounded-bottom px-2 px-md-5 py-2 text-center">
               {/* <div>
                 <a className="btn btn-outline-primary rounded-pill w-100 my-2 shadow text-decoration-none" href={`http://twitter.com/intent/tweet?url=${location.href !== 'undefined' ? location.href : null}&text=${post.frontmatter.title}&via=rrih_dev`}>Twitter</a>
               </div>
@@ -71,7 +70,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
           {/* この記事を書いた人 */}
           <div className="this-article-author my-4 border rounded shadow">
-            <div className="h5 text-center bg-dark text-light rounded-top p-2 border-bottom">Author</div>
+            <div className="h5 text-center bg-dark text-light rounded-top p-2 border-bottom">Administrator</div>
             <div className="p-3 d-flex justify-content-around align-items-center">
               <div className="py-3 pl-md-3 d-sm-none">
                 <a href="https://github.com/rrih" target="_blank" className="shadow" rel="noopener noreferrer">{avatarIcon}</a>

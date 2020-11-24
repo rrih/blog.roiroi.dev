@@ -11,8 +11,8 @@ const PrivacePolicy = ({ data, location }: PageProps<Data>) => {
     return (
         <Layout location={location} title={siteTitle}>
         <SEO title="プライバシーポリシー" />
-            <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5">
-                <div className="h3 mx-4 mx-md-0 text-center my-3 pb-3 border-bottom">プライバシーポリシー</div>
+            <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5 px-3 px-sm-5 px-md-0">
+                <div className="h3 mx-4 mx-md-0 text-center my-3 pb-3 pt-4 border-bottom">プライバシーポリシー</div>
 
                 <h3>広告の配信について</h3>
                 <p>

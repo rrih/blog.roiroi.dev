@@ -20,4 +20,4 @@ library.add(fas, far, fab)
 これで`fas`、`far`、`fab`が動く
 
 #### 関連記事
-[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した](/posts/fontawesome-scroll-to-top)
+[react-fontawesome+react-scrollでページトップへスクロールするやつを追加した](/20201121-fontawesome-scroll-to-top)
