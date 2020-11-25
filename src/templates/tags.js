@@ -15,28 +15,23 @@ const Tags = ({ location, pageContext, data }) => {
   return (
     <Layout location={location} title={tag}>
         <SEO
-            title={tag}
-            description={"All tags."}
+            title={`${tag}のタグがつけられたページ`}
+            description={`${tag}のタグがつけられたページ`}
         />
         <div>
-        <h1>{tagHeader}</h1>
-        {tag}
-        <ul>
-            {edges.map(({ node }) => {
-            const { slug } = node.fields
-            const { title } = node.frontmatter
-            return (
-                <li key={slug}>
-                <Link to={slug}>{title}</Link>
-                </li>
-            )
-            })}
-        </ul>
-        {/*
-                This links to a page that does not yet exist.
-                You'll come back to it!
-                */}
-        <Link to="/tags">All tags</Link>
+            <h1>{tagHeader}</h1>
+            <ul>
+                {edges.map(({ node }) => {
+                    const { slug } = node.fields
+                    const { title, tags } = node.frontmatter
+                    console.log(tags)
+                    return (
+                        <li key={slug}>
+                            <Link to={slug}>{title}</Link>
+                        </li>
+                    )
+                })}
+            </ul>
         </div>
     </Layout>
   )
@@ -82,6 +77,7 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
+            tags
           }
         }
       }
