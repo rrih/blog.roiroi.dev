@@ -1,7 +1,7 @@
+// /tags ページ
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-// import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // Utilities
@@ -29,7 +29,6 @@ const TagsPage = ({ data, location }) => {
 	  ))}
 	</ul>
       </article>
-      {/* <Bio /> */}
     </Layout>
   )
 }
