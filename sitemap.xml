@@ -38,8 +38,10 @@
 <url> <loc>https://rrih.github.io/tags/tips/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/typescript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/雑記/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rrih.github.io/calendar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/posts/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/privacy-policy/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rrih.github.io/todo/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
