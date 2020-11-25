@@ -5,13 +5,16 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
+import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { toast } from 'react-toastify';
 import ReactTooltip from "react-tooltip";
 import moment from "moment";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import "@fortawesome/fontawesome-svg-core/styles.css";
+config.autoAddCss = false
 library.add(fas, far, fab)
 
 export type Data = {
