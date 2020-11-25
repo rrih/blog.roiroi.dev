@@ -40,12 +40,3 @@ export const ShareSns = ({ articleUrl, articleTitle }) => {
         </div>
     );
 };
-
-// export const ShareRrihTwitterIcon = () => {
-//     const url = 'https://rrih.github.io'
-//     return (
-//         <TwitterShareButton title={rrih} via="rrih_dev" url={url}>
-//             <TwitterIcon size={32} round />
-//         </TwitterShareButton>
-//     )
-// }

@@ -41,23 +41,6 @@ const Posts = ({ data, location }: PageProps<Data>) => {
                       <Link to={node.fields.slug} className="text-decoration-none">
                         {title}
                       </Link>
-                      {/* タグ一旦なし */}
-                      {/* <span>
-                        <small>
-                          <FontAwesomeIcon icon={fas.faTags} />
-                        </small>
-                        {tags && tags.map(tag => (
-                          <small>
-                            <Link
-                              to={`/tags/${kebabCase(tag)}/`}
-                              className="mx-1 my-0 text-decoration-none
-                              bg-light text-dark p-1 rounded"
-                            >
-                              {tag}
-                            </Link>
-                          </small>
-                        ))}
-                      </span> */}
                   </header>
                 </li>
               )

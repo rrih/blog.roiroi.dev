@@ -1,11 +1,9 @@
 // ビルドエラーがでるため、一応残しておく。いつか抹消する
-// /tags ページ
 import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// Utilities
 import kebabCase from "lodash/kebabCase"
 
 const TagsPage = ({ data, location }) => {
@@ -14,8 +12,8 @@ const TagsPage = ({ data, location }) => {
     return (
         <Layout location={location} title={siteTitle}>
             <SEO
-            title={"Tags"}
-            description={"All tags."}
+            title={"全てのタグ"}
+            description={"全てのタグ"}
             />
             <article>
             <h2>All Tags</h2>
