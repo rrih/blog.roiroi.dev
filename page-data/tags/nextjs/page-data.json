@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/nextjs/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/20201114-nextts-vercel/"},"frontmatter":{"title":"Next.js+TypeScriptでvercelにデプロイ","tags":["nextjs","typescript"]}}}]}},"pageContext":{"tag":"nextjs"}}}

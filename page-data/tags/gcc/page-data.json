@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tags-js","path":"/tags/gcc/","result":{"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"fields":{"slug":"/20201113-gcc-mac-dev/"},"frontmatter":{"title":"macOSでclangを使わずgccを使う","tags":["mac","gcc","tips"]}}}]}},"pageContext":{"tag":"gcc"}}}
