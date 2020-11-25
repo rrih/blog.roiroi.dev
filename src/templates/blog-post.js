@@ -6,13 +6,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShareSns } from "../utils/share-sns";
-// import { Tags } from "../components/tags";
-// import "@fortawesome/fontawesome-svg-core/styles.css";
+import kebabCase from 'lodash/kebabCase';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+library.add(fas, far, fab)
 
-// fontawesome
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const BlogPostSquareCard = styled.div`
@@ -23,7 +24,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const [avatarIcon, setAvatarIcon] = useState();
   const post = data.markdownRemark
   const tags = post.frontmatter.tags
-  // console.log(post.frontmatter.tags)
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const getUserWithGitHub = async () => {
@@ -52,9 +52,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               {post.frontmatter.title}
             </h2>
               {post.frontmatter.date}公開 <br />
-              {tags != null && tags.map(tag => {
+              {/* {tags != null && tags.map(tag => {
                 return <li><a href={`/tags/${tag}`}>{tag}</a></li>
-              })}
+              })} */}
+              <FontAwesomeIcon icon={fas.faTags} />
+              {tags && tags.map(tag => (
+                  <Link  to={`/tags/${kebabCase(tag)}/`}>
+                    {tag}
+                </Link>
+              ))}
           </header>
           <hr />
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />

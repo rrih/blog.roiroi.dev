@@ -2,39 +2,46 @@ import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-// Components
+import styled from "styled-components";
 import { Link, graphql } from "gatsby"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+library.add(fas, far, fab)
 
 const Tags = ({ location, pageContext, data }) => {
-  const { tag } = pageContext
-  const { edges, totalCount } = data.allMarkdownRemark
-  const tagHeader = `${totalCount} post${
-    totalCount === 1 ? "" : "s"
-  } tagged with "${tag}"`
+    const { tag } = pageContext
+    const { edges, totalCount } = data.allMarkdownRemark
+    //   const tagHeader = (<code>${tag}</code>{`に関する記事 ${totalCount}件`})
+    const H3 = styled.h3`
+        font-family: var(--bs-font-sans-serif)
+    `
 
-  return (
-    <Layout location={location} title={tag}>
-        <SEO
-            title={`${tag}のタグがつけられたページ`}
-            description={`${tag}のタグがつけられたページ`}
-        />
-        <div>
-            <h1>{tagHeader}</h1>
-            <ul>
-                {edges.map(({ node }) => {
-                    const { slug } = node.fields
-                    const { title, tags } = node.frontmatter
-                    console.log(tags)
-                    return (
-                        <li key={slug}>
-                            <Link to={slug}>{title}</Link>
-                        </li>
-                    )
-                })}
-            </ul>
-        </div>
-    </Layout>
-  )
+    return (
+        <Layout location={location} title={tag}>
+            <SEO
+                title={`${tag}のタグがつけられたページ`}
+                description={`${tag}のタグがつけられたページ`}
+            />
+            <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5 px-3 px-sm-5 px-md-0">
+                <H3 className="mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> {tag}</H3>
+                <ul className="ml-0 pl-0">
+                    {edges.map(({ node }) => {
+                        const { slug } = node.fields
+                        const { title, tags } = node.frontmatter
+                        console.log(tags)
+                        return (
+                            <li key={slug} className="list-unstyled mb-0">
+                                <Link to={slug}>{title}</Link>
+                            </li>
+                        )
+                    })}
+                </ul>
+            </div>
+        </Layout>
+    )
 }
 
 Tags.propTypes = {
