@@ -2,7 +2,7 @@
 title: react-fontawesome(fas, far, fab)
 date: "2020-11-23T03:58:00.284Z"
 description: ""
-tags: ["test"]
+tags: ["react", "fontawesome"]
 ---
 
 fontawesome完全に理解した(ダニングクルーガー効果定期)

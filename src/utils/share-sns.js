@@ -12,7 +12,7 @@ import React from "react";
 
 export const ShareSns = ({ articleUrl, articleTitle }) => {
     return (
-        <div className={'ShareSns'} className="d-flex justify-content-around py-3">
+        <div className="d-flex justify-content-around py-3">
             <div>
                 <FacebookShareButton url={articleUrl}>
                     <FacebookIcon size={60} round />

@@ -14,7 +14,6 @@ library.add(fas, far, fab)
 const Tags = ({ location, pageContext, data }) => {
     const { tag } = pageContext
     const { edges, totalCount } = data.allMarkdownRemark
-    //   const tagHeader = (<code>${tag}</code>{`に関する記事 ${totalCount}件`})
     const H3 = styled.h3`
         font-family: var(--bs-font-sans-serif)
     `
@@ -22,7 +21,7 @@ const Tags = ({ location, pageContext, data }) => {
     return (
         <Layout location={location} title={tag}>
             <SEO
-                title={`${tag}のタグがつけられたページ`}
+                title={`${tag}`}
                 description={`${tag}のタグがつけられたページ`}
             />
             <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5 px-3 px-sm-5 px-md-0">
@@ -31,10 +30,14 @@ const Tags = ({ location, pageContext, data }) => {
                     {edges.map(({ node }) => {
                         const { slug } = node.fields
                         const { title, tags } = node.frontmatter
-                        console.log(tags)
                         return (
                             <li key={slug} className="list-unstyled mb-0">
-                                <Link to={slug}>{title}</Link>
+                                <Link
+                                    to={slug}
+                                    className="text-decoration-none"
+                                >
+                                    {title}
+                                </Link>
                             </li>
                         )
                     })}

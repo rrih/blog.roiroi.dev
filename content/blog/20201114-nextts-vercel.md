@@ -2,7 +2,7 @@
 title: Next.js+TypeScriptでvercelにデプロイ
 date: "2020-11-14T23:01:00.284Z"
 description: ""
-tags: ["test"]
+tags: ["nextjs", "typescript"]
 ---
 
 リポジトリが[こちら](https://github.com/rrih/nextts)。本番環境は[こちら](https://nextts.vercel.app)  

@@ -4,7 +4,7 @@ import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Data } from "."
-// import Tags from "../components/tags"
+import styled from "styled-components";
 import kebabCase from 'lodash/kebabCase';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,7 +16,8 @@ library.add(fas, far, fab)
 const Posts = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
-  // const tags = posts
+  const tags = data.allMarkdownRemark.group
+
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -56,6 +57,20 @@ const Posts = ({ data, location }: PageProps<Data>) => {
               )
             })}
           </ul>
+          <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
+          <div className="my-2">
+            {tags.map(tag => {
+              return (
+                <Link
+                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                  className="m-1 text-decoration-none
+                  text-dark bg-light rounded px-1 text-nowrap"
+                >
+                  {tag.fieldValue}                  
+                </Link>
+              )
+            })}
+          </div>
       </div>
     </Layout>
   )
@@ -71,6 +86,10 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      group(field: frontmatter___tags) {
+        fieldValue
+        totalCount
+      }
       edges {
         node {
           excerpt
