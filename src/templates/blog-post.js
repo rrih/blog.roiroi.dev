@@ -51,16 +51,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             >
               {post.frontmatter.title}
             </h2>
-              {post.frontmatter.date}公開 <br />
-              {/* {tags != null && tags.map(tag => {
-                return <li><a href={`/tags/${tag}`}>{tag}</a></li>
-              })} */}
-              <FontAwesomeIcon icon={fas.faTags} />
-              {tags && tags.map(tag => (
-                  <Link  to={`/tags/${kebabCase(tag)}/`}>
-                    {tag}
-                </Link>
-              ))}
+              {post.frontmatter.date}公開
+              <div className="my-2">
+                <FontAwesomeIcon icon={fas.faTags} />
+                {tags && tags.map(tag => (
+                    <Link  to={`/tags/${kebabCase(tag)}/`} className="m-1 text-decoration-none bg-light text-dark p-1 rounded">
+                      {tag}
+                  </Link>
+                ))}
+              </div>
           </header>
           <hr />
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />
