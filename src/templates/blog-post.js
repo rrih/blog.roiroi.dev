@@ -53,6 +53,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             </h2>
               {post.frontmatter.date}公開
               <div className="my-2">
+                {/* コンポーネント化したい */}
                 <FontAwesomeIcon icon={fas.faTags} />
                 {tags && tags.map(tag => (
                     <Link  to={`/tags/${kebabCase(tag)}/`} className="m-1 text-decoration-none bg-light text-dark p-1 rounded">
