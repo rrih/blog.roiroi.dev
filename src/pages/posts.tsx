@@ -11,12 +11,18 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
+import FooterTags from "../components/FooterTags"
 library.add(fas, far, fab)
 
 const Posts = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
+  // TODO 下の group の lint error 直す
   const tags = data.allMarkdownRemark.group
+  const tagsForFooterTags = []
+  tags.forEach(tag => {
+    tagsForFooterTags.push(tag.fieldValue)
+  })
 
 
   return (
@@ -57,21 +63,7 @@ const Posts = ({ data, location }: PageProps<Data>) => {
               )
             })}
           </ul>
-          <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
-          <div className="my-2">
-            {tags.map(tag => {
-              return (
-                <Link
-                  to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                  className="m-1 text-decoration-none
-                  text-dark bg-light rounded px-1 text-nowrap"
-                  key={tag.fieldValue}
-                >
-                  {tag.fieldValue}                  
-                </Link>
-              )
-            })}
-          </div>
+          <FooterTags tags={tagsForFooterTags} />
       </div>
     </Layout>
   )

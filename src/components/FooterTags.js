@@ -8,21 +8,27 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 library.add(fas, far, fab)
 
-const FooterTags = (tags) => {
+/**
+ * tags はArray型
+ * 
+ * @param {*} param0 
+ */
+const FooterTags = ({tags}) => {
     return (
         <>
             <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
-            <div className="my-2">
-                {tags.map(tag => {
+            <div className="my-2 d-flex flex-wrap">
+                {tags != null && tags.map(tag => {
                     return (
-                        <Link
-                            to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                            className="m-1 text-decoration-none
-                            text-dark bg-light rounded px-1 text-nowrap"
-                            key={tag.fieldValue}
-                        >
-                            {tag.fieldValue}                  
-                        </Link>
+                        <div key={tag}>
+                            <Link
+                                to={`/tags/${kebabCase(tag)}/`}
+                                className="m-1 text-decoration-none
+                                text-dark bg-light rounded px-1 text-nowrap"
+                            >
+                                {tag}                  
+                            </Link>
+                        </div>
                     )
                 })}
             </div>
