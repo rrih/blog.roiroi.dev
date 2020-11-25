@@ -159,6 +159,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY年MM月DD日")
         description
+        tags
       }
     }
   }

@@ -4,6 +4,7 @@ import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Data } from "."
+import Tags from "../components/tags"
 
 const Posts = ({ data, location }: PageProps<Data>) => {
     const siteTitle = data.site.siteMetadata.title
@@ -16,17 +17,18 @@ const Posts = ({ data, location }: PageProps<Data>) => {
             <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4">記事一覧</div>
             <ul className="ml-0 pl-0">
             {posts.map(({ node }) => {
-            const title = node.frontmatter.title || node.fields.slug
-            return (
-                <li key={node.fields.slug} className="list-unstyled mb-0">
-                <header className="text-wrap">
-                  <small>{node.frontmatter.date} 　</small> 
-                    <Link to={node.fields.slug} className="text-decoration-none">
-                    {title}
-                    </Link>
-                </header>
-                </li>
-            )
+              const title = node.frontmatter.title || node.fields.slug
+              return (
+                  <li key={node.fields.slug} className="list-unstyled mb-0">
+                  <header className="text-wrap">
+                    <small>{node.frontmatter.date} 　</small> 
+                      <Link to={node.fields.slug} className="text-decoration-none">
+                      {title}
+                      </Link>
+                      <Tags tags={node.frontmatter.tags} />
+                  </header>
+                  </li>
+              )
             })}
             </ul>
         </div>
@@ -54,6 +56,7 @@ export const pageQuery = graphql`
             date(formatString: "YYYY年MM月DD日")
             title
             description
+            tags
           }
         }
       }

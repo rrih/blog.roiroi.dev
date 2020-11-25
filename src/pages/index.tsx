@@ -28,6 +28,7 @@ export type Data = {
           title: string
           date: string
           description: string
+          tags: Array<string>
         }
         fields: {
           slug: string
