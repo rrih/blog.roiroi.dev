@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShareSns } from "../utils/share-sns";
+// import { Tags } from "../components/tags";
 // import "@fortawesome/fontawesome-svg-core/styles.css";
 
 // fontawesome
@@ -21,6 +22,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   const [avatarIcon, setAvatarIcon] = useState();
   const post = data.markdownRemark
+  const tags = post.frontmatter.tags
+  // console.log(post.frontmatter.tags)
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const getUserWithGitHub = async () => {
@@ -48,7 +51,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             >
               {post.frontmatter.title}
             </h2>
-              {post.frontmatter.date}公開
+              {post.frontmatter.date}公開 <br />
+              {tags != null && tags.map(tag => {
+                return <li><a href={`/tags/${tag}`}>{tag}</a></li>
+              })}
           </header>
           <hr />
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />
