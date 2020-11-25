@@ -2,7 +2,7 @@
 title: CakePHP4+MySQL5(ClearDB)の構成でHerokuにデプロイ
 date: "2020-11-05T13:19:00.284Z"
 description: ""
-tags: ["test"]
+tags: ["mysql", "php", "cakephp4", "cakephp", "heroku"]
 ---
 
 CakePHP4とMySQLの勉強を兼ねて簡単なアプリを書いてHerokuで公開してみたので、その部分のめも。  

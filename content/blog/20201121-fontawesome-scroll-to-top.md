@@ -2,7 +2,7 @@
 title: react-fontawesome+react-scrollでページトップへスクロールするやつを追加した
 date: "2020-11-21T06:17:00.284Z"
 description: ""
-tags: ["test"]
+tags: ["react", "fontawesome"]
 ---
 
 

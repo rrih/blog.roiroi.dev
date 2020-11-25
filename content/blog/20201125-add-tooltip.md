@@ -2,7 +2,7 @@
 title: react-tooltipを追加
 date: "2020-11-25T00:21:00.284Z"
 description: ""
-tags: ["test"]
+tags: ["react"]
 ---
 
 ```bash

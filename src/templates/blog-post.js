@@ -6,12 +6,14 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { ShareSns } from "../utils/share-sns";
-// import "@fortawesome/fontawesome-svg-core/styles.css";
+import kebabCase from 'lodash/kebabCase';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fas } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { far } from '@fortawesome/free-regular-svg-icons'
+library.add(fas, far, fab)
 
-// fontawesome
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { library } from '@fortawesome/fontawesome-svg-core'
-// import { fab } from '@fortawesome/free-brands-svg-icons'
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const BlogPostSquareCard = styled.div`
@@ -21,6 +23,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
 
   const [avatarIcon, setAvatarIcon] = useState();
   const post = data.markdownRemark
+  const tags = post.frontmatter.tags
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const getUserWithGitHub = async () => {
@@ -49,6 +52,15 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               {post.frontmatter.title}
             </h2>
               {post.frontmatter.date}公開
+              <div className="my-2">
+                {/* コンポーネント化したい */}
+                <FontAwesomeIcon icon={fas.faTags} />
+                {tags && tags.map(tag => (
+                    <Link  to={`/tags/${kebabCase(tag)}/`} className="m-1 text-decoration-none bg-light text-dark p-1 rounded">
+                      {tag}
+                  </Link>
+                ))}
+              </div>
           </header>
           <hr />
           <section className="ml-md-2" dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -159,6 +171,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "YYYY年MM月DD日")
         description
+        tags
       }
     }
   }
