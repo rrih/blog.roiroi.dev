@@ -14,13 +14,13 @@ SET GLOBAL general_log = 'ON';
 ```
 #### 別窓開いて
 別窓開いてMySQLコンテナに入り、
-```zsh
+```bash
 tail -f /var/mysql/mysql.log
 ```
 これでログの流れをみれるようになる。
 
 また、
-```zsh
+```bash
 tail -f /var/lib/mysql/general.log | grep "UPDATE"
 ```
 UPDATE部分のみ抽出して監視することもできる

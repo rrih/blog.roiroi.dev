@@ -18,6 +18,7 @@ const Tags = ({ location, pageContext, data }) => {
         font-family: var(--bs-font-sans-serif)
     `
 
+    console.log(totalCount)
     return (
         <Layout location={location} title={tag}>
             <SEO
@@ -29,7 +30,7 @@ const Tags = ({ location, pageContext, data }) => {
                 <ul className="ml-0 pl-0">
                     {edges.map(({ node }) => {
                         const { slug } = node.fields
-                        const { title, tags } = node.frontmatter
+                        const { title } = node.frontmatter
                         return (
                             <li key={slug} className="list-unstyled mb-0">
                                 <Link

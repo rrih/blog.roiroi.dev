@@ -65,6 +65,7 @@ const Posts = ({ data, location }: PageProps<Data>) => {
                   to={`/tags/${kebabCase(tag.fieldValue)}/`}
                   className="m-1 text-decoration-none
                   text-dark bg-light rounded px-1 text-nowrap"
+                  key={tag.fieldValue}
                 >
                   {tag.fieldValue}                  
                 </Link>
