@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import styled from "styled-components";
 import { Link, graphql } from "gatsby"
 import kebabCase from 'lodash/kebabCase';
+import { FooterTags } from "../components/FooterTags";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -45,21 +46,37 @@ const Tags = ({ location, pageContext, data }) => {
                         )
                     })}
                 </ul>
-                <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
+                {/* <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
                 <div className="my-2">
-                    {tags && tags.map(tag => {
+                    {tags.map(tag => {
                         return (
                             <Link
-                            to={`/tags/${kebabCase(tag.fieldValue)}/`}
-                            className="m-1 text-decoration-none
-                            text-dark bg-light rounded px-1 text-nowrap"
-                            key={tag.fieldValue}
+                                to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                                className="m-1 text-decoration-none
+                                text-dark bg-light rounded px-1 text-nowrap"
+                                key={tag.fieldValue}
                             >
-                            {tag.fieldValue}                  
+                                {tag.fieldValue}                  
                             </Link>
                         )
                     })}
-                </div>
+                </div> */}
+                <FooterTags tags={tags} />
+                {/* <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4"><FontAwesomeIcon icon={fas.faTags} /> タグ</div>
+                <div className="my-2">
+                    {tags.map(tag => {
+                        return (
+                            <Link
+                                to={`/tags/${kebabCase(tag.fieldValue)}/`}
+                                className="m-1 text-decoration-none
+                                text-dark bg-light rounded px-1 text-nowrap"
+                                key={tag.fieldValue}
+                            >
+                                {tag.fieldValue}                  
+                            </Link>
+                        )
+                    })}
+                </div> */}
             </div>
         </Layout>
     )
