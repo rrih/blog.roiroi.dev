@@ -9,4 +9,3 @@ CakePHP4とMySQLの勉強を兼ねて簡単なアプリを書いてHerokuで公�
 ソースは[こちら](https://github.com/rrih/feel)
 
 触りたかったのはCakePHP、MySQLなのでインフラは何も考えずにすむHeroku(そろそろ思考停止Herokuやめたいにゃんね)(インフラは別途時間ある時に手を出していきたい)。
-

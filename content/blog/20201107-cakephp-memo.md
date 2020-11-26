@@ -6,7 +6,9 @@ tags: ["php", "cakephp", "cakephp4"]
 ---
 
 PHPのメモ、というか業務(CakePHP4)についてのメモ
+
 ### 現在タスクで学んだこと
+
 - 旧実装のクエリのログを見ながら再現していくイメージ
 - Model周りのutil的メソッドはTraitやBehaviorの利用を検討
 - バリデーションは二度動く(patchEntity生成時、save時)  

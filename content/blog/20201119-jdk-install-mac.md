@@ -14,12 +14,14 @@ Mac Catalina
 #### 結論
 
 これでよい
+
 ```bash
 % brew tap AdoptOpenJDK/openjdk 
 % brew cask install adoptopenjdk14
 ```
 
 #### バージョン確認
+
 ```bash
 % javac -version
 javac 14.0.2
@@ -30,12 +32,14 @@ OpenJDK 64-Bit Server VM AdoptOpenJDK (build 14.0.2+12, mixed mode, sharing)
 ```
 
 #### 試しに実行
+
 ```bash
 % mkdir java-sample
 % cd java-sample
 % touch Sample.java
 % vi Sample.java # てきとうにJavaコードを書く
 ```
+
 ```java
 // Sample.java
 public class Sample {
@@ -44,6 +48,7 @@ public class Sample {
     }
 }
 ```
+
 ```bash
 % javac Sample.java # コンパイル
 % java Sample # 実行

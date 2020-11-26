@@ -7,28 +7,28 @@ import SEO from "../components/seo"
 import kebabCase from "lodash/kebabCase"
 
 const TagsPage = ({ data, location }) => {
-    const siteTitle = data.site.siteMetadata.title;
+  const siteTitle = data.site.siteMetadata.title;
 
-    return (
-        <Layout location={location} title={siteTitle}>
-            <SEO
-            title={"全てのタグ"}
-            description={"全てのタグ"}
-            />
-            <article>
-            <h2>All Tags</h2>
-            <ul>
-                {data.allMarkdownRemark.group.map(tag => (
-                <li key={tag.fieldValue}>
-                    <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
-                    {tag.fieldValue} ({tag.totalCount})
-                    </Link>
-                </li>
-                ))}
-            </ul>
-            </article>
-        </Layout>
-    )
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title={"全てのタグ"}
+        description={"全てのタグ"}
+      />
+      <article>
+      <h2>All Tags</h2>
+      <ul>
+        {data.allMarkdownRemark.group.map(tag => (
+        <li key={tag.fieldValue}>
+          <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
+            {tag.fieldValue} ({tag.totalCount})
+          </Link>
+        </li>
+        ))}
+      </ul>
+      </article>
+    </Layout>
+  )
 }
 
 export default TagsPage

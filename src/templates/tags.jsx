@@ -28,8 +28,6 @@ const Tags = ({ location, pageContext, data }) => {
         font-family: var(--bs-font-sans-serif)
     `
 
-    // console.log(totalCount)
-    // console.log(tags)
     return (
         <Layout location={location} title={tag}>
             <SEO
@@ -131,24 +129,3 @@ export const pageQuery = graphql`
         }
     }
 `
-
-// allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-//     group(field: frontmatter___tags) {
-//         fieldValue
-//         totalCount
-//     }
-//     edges {
-//       node {
-//         excerpt
-//         fields {
-//           slug
-//         }
-//         frontmatter {
-//           date(formatString: "YYYY年MM月DD日")
-//           title
-//           description
-//           tags
-//         }
-//       }
-//     }
-//   }

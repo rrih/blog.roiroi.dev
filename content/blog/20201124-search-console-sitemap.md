@@ -10,4 +10,5 @@ tags: ["gatsby"]
 めんどくさそう
 
 #### 参考文献
-[Gatsby.jsでサイトマップを作成する - Qiita](https://qiita.com/ShinKano/items/3cf3eef6320bc62181a3)
+
+- [Gatsby.jsでサイトマップを作成する - Qiita](https://qiita.com/ShinKano/items/3cf3eef6320bc62181a3)

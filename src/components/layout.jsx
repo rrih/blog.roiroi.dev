@@ -59,8 +59,6 @@ const Layout = ({ location, title, children }) => {
       // origin へ返す場合
       case `/`:
       // トップの場合のみトップへ返す。それ以外は posts へ返す
-      // case `/privacy-policy`:
-      // case `/privacy-policy/`: 
         return `/`;
       // `/posts` へ返す場合
       default:

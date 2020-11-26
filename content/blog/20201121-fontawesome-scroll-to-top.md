@@ -9,7 +9,9 @@ tags: ["react", "fontawesome"]
 深夜に寝る前に思いつきで追加したのでてきとうすぎです。
 
 #### 手順
+
 先に必要なパッケージをインストールしておく
+
 ```bash
 $ npm i react-scroll
 $ npm i --save @fortawesome/fontawesome-svg-core @fortawesome/free-solid-svg-icons @fortawesome/react-fontawesome
@@ -35,6 +37,7 @@ import { faArrowUp } from '@fortawesome/free-solid-svg-icons'
 .
 .
 ```
+
 このような感じ。
 
 当サイトの該当コードは[こちら](https://github.com/rrih/rrih.github.io/blob/master/src/components/layout.js#L87)
