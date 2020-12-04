@@ -8,7 +8,7 @@
                 google_ad_client: "ca-pub-6426570202991325",
                 enable_page_level_ads: true
               });
-          </script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=c52a046bedbb0091412e7f2725365234"/><title data-react-helmet="true">Mac CatalinaにhomebrewでJava環境構築</title><meta data-react-helmet="true" name="description" content="久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献 Mac に Java 開発環境をインストールする - Qiita"/><meta data-react-helmet="true" property="og:title" content="Mac CatalinaにhomebrewでJava環境構築"/><meta data-react-helmet="true" property="og:description" content="久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献 Mac に Java 開発環境をインストールする - Qiita"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="rrih_dev"/><meta data-react-helmet="true" name="twitter:title" content="Mac CatalinaにhomebrewでJava環境構築"/><meta data-react-helmet="true" name="twitter:description" content="久しぶりに Java の環境構築をしたのでメモ 環境 Mac Catalina バージョン 10.15.7（19H2） 結論 これでよい バージョン確認 試しに実行 参考文献 Mac に Java 開発環境をインストールする - Qiita"/><style data-styled="" data-styled-version="5.2.1">.iKHgZb{box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);}/*!sc*/
+          </script><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="icon" href="/favicon-32x32.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="manifest" href="/manifest.webmanifest"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=c52a046bedbb0091412e7f2725365234"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=c52a046bedbb0091412e7f2725365234"/><title data-react-helmet="true">鬼滅の刃23巻を読み終えた感想</title><meta data-react-helmet="true" name="description" content="鬼滅の刃 2…"/><meta data-react-helmet="true" property="og:title" content="鬼滅の刃23巻を読み終えた感想"/><meta data-react-helmet="true" property="og:description" content="鬼滅の刃 2…"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="rrih_dev"/><meta data-react-helmet="true" name="twitter:title" content="鬼滅の刃23巻を読み終えた感想"/><meta data-react-helmet="true" name="twitter:description" content="鬼滅の刃 2…"/><style data-styled="" data-styled-version="5.2.1">.iKHgZb{box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);}/*!sc*/
 data-styled.g6[id="blog-post__BlogPostSquareCard-rr0prt-0"]{content:"iKHgZb,"}/*!sc*/
 .llXLkC{box-shadow:0 0.5rem 1rem rgba(0,0,0,0.15);background-color:#212529;color:#f8f9fa;}/*!sc*/
 .llXLkC h1,.llXLkC h2,.llXLkC h3,.llXLkC h4,.llXLkC h5,.llXLkC a{color:#f8f9fa;}/*!sc*/
@@ -17,20 +17,20 @@ data-styled.g7[id="layout__TopSquareCard-sc-1qlx9v5-0"]{content:"llXLkC,"}/*!sc*
 data-styled.g8[id="layout__TopScrollHelper-sc-1qlx9v5-1"]{content:"jOIARp,"}/*!sc*/
 .rXVha{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;}/*!sc*/
 data-styled.g9[id="layout__TopHeaderLink-sc-1qlx9v5-2"]{content:"rXVha,"}/*!sc*/
-</style><link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700|Noto+Sans+JP:400" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-7ea1ed2d597e55b123a0.js"/><link as="script" rel="preload" href="/framework-f2b1673255104281184a.js"/><link as="script" rel="preload" href="/app-1cacb575fd594c9d04b2.js"/><link as="script" rel="preload" href="/styles-9b6f388623a2ec93d35f.js"/><link as="script" rel="preload" href="/cb1608f2-824454736ddfbd1b57ca.js"/><link as="script" rel="preload" href="/a9a7754c-f83e033a63084f176bcb.js"/><link as="script" rel="preload" href="/13cfa17188c17cfeede3ec0de47b3f513ed8b1ce-3def79fc54b448700838.js"/><link as="script" rel="preload" href="/d8efa26f9079299cab028db535af838569c0a66b-5a6cb012e7eca37fbe11.js"/><link as="script" rel="preload" href="/4a9f65db56a51e56eb43a1313e9ffaa1fb67e72b-7e14957a2b48fc5e2c03.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js"/><link as="fetch" rel="preload" href="/page-data/20201119-jdk-install-mac/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="bg-secondary mt-4 pt-2"><header><div class="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow fixed-top"><div class="mx-3"><a href="/posts/" class="layout__TopHeaderLink-sc-1qlx9v5-2 rXVha text-decoration-none text-light" data-tip="トップへ戻る"><div class="__react_component_tooltip t11cc700d-2816-4593-98fd-fd00f9c71edb place-bottom type-dark" data-id="tooltip"><style>
-  	.t11cc700d-2816-4593-98fd-fd00f9c71edb {
+</style><link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,400i,700|Noto+Sans+JP:400" rel="stylesheet" type="text/css"/><link as="script" rel="preload" href="/webpack-runtime-7ea1ed2d597e55b123a0.js"/><link as="script" rel="preload" href="/framework-f2b1673255104281184a.js"/><link as="script" rel="preload" href="/app-1cacb575fd594c9d04b2.js"/><link as="script" rel="preload" href="/styles-9b6f388623a2ec93d35f.js"/><link as="script" rel="preload" href="/cb1608f2-824454736ddfbd1b57ca.js"/><link as="script" rel="preload" href="/a9a7754c-f83e033a63084f176bcb.js"/><link as="script" rel="preload" href="/13cfa17188c17cfeede3ec0de47b3f513ed8b1ce-3def79fc54b448700838.js"/><link as="script" rel="preload" href="/d8efa26f9079299cab028db535af838569c0a66b-5a6cb012e7eca37fbe11.js"/><link as="script" rel="preload" href="/4a9f65db56a51e56eb43a1313e9ffaa1fb67e72b-7e14957a2b48fc5e2c03.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js"/><link as="fetch" rel="preload" href="/page-data/20201205-kimetsu-no-yaiba-end/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="bg-secondary mt-4 pt-2"><header><div class="bg-dark text-light text-center py-2 d-flex justify-content-between align-items-center shadow fixed-top"><div class="mx-3"><a href="/posts/" class="layout__TopHeaderLink-sc-1qlx9v5-2 rXVha text-decoration-none text-light" data-tip="トップへ戻る"><div class="__react_component_tooltip t592733fc-cefd-4a18-bdec-2411e6d2d5d9 place-bottom type-dark" data-id="tooltip"><style>
+  	.t592733fc-cefd-4a18-bdec-2411e6d2d5d9 {
 	    color: #fff;
 	    background: #222;
 	    border: 1px solid transparent;
   	}
 
-  	.t11cc700d-2816-4593-98fd-fd00f9c71edb.place-top {
+  	.t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-top {
         margin-top: -10px;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-top::before {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-top::before {
         border-top: 8px solid transparent;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-top::after {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-top::after {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         bottom: -6px;
@@ -41,13 +41,13 @@ data-styled.g9[id="layout__TopHeaderLink-sc-1qlx9v5-2"]{content:"rXVha,"}/*!sc*/
         border-top-width: 6px;
     }
 
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-bottom {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-bottom {
         margin-top: 10px;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-bottom::before {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-bottom::before {
         border-bottom: 8px solid transparent;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-bottom::after {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-bottom::after {
         border-left: 8px solid transparent;
         border-right: 8px solid transparent;
         top: -6px;
@@ -58,13 +58,13 @@ data-styled.g9[id="layout__TopHeaderLink-sc-1qlx9v5-2"]{content:"rXVha,"}/*!sc*/
         border-bottom-width: 6px;
     }
 
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-left {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-left {
         margin-left: -10px;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-left::before {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-left::before {
         border-left: 8px solid transparent;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-left::after {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-left::after {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         right: -6px;
@@ -75,13 +75,13 @@ data-styled.g9[id="layout__TopHeaderLink-sc-1qlx9v5-2"]{content:"rXVha,"}/*!sc*/
         border-left-width: 6px;
     }
 
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-right {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-right {
         margin-left: 10px;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-right::before {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-right::before {
         border-right: 8px solid transparent;
     }
-    .t11cc700d-2816-4593-98fd-fd00f9c71edb.place-right::after {
+    .t592733fc-cefd-4a18-bdec-2411e6d2d5d9.place-right::after {
         border-top: 5px solid transparent;
         border-bottom: 5px solid transparent;
         left: -6px;
@@ -91,39 +91,39 @@ data-styled.g9[id="layout__TopHeaderLink-sc-1qlx9v5-2"]{content:"rXVha,"}/*!sc*/
         border-right-style: solid;
         border-right-width: 6px;
     }
-  </style></div></a></div><div class="mx-3"></div></div></header><div class="layout__TopSquareCard-sc-1qlx9v5-0 llXLkC container mt-3 px-0"><div class="container px-0"><div class="blog-post__BlogPostSquareCard-rr0prt-0 iKHgZb my-3 m-md-3 p-3 shadow"><header class=""><small>&gt; <a href="/posts">記事一覧</a> &gt;<!-- --> <a>Mac CatalinaにhomebrewでJava環境構築</a></small><h2 class="my-3">Mac CatalinaにhomebrewでJava環境構築</h2>2020年11月19日<!-- -->公開<div class="my-2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" class="svg-inline--fa fa-tags fa-w-20 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg><a class="m-1 text-decoration-none bg-light text-dark p-1 rounded" href="/tags/mac/">mac</a><a class="m-1 text-decoration-none bg-light text-dark p-1 rounded" href="/tags/java/">java</a><a class="m-1 text-decoration-none bg-light text-dark p-1 rounded" href="/tags/homebrew/">homebrew</a></div></header><hr/><section class="ml-md-2"><p>久しぶりに Java の環境構築をしたのでメモ</p>
-<p>環境<br>
-Mac Catalina<br>
-バージョン 10.15.7（19H2）</p>
-<h4>結論</h4>
-<p>これでよい</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">% brew tap AdoptOpenJDK/openjdk
-% brew cask <span class="token function">install</span> adoptopenjdk14</code></pre></div>
-<h4>バージョン確認</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">% javac -version
-javac <span class="token number">14.0</span>.2
-% java -version
-openjdk version <span class="token string">"14.0.2"</span> <span class="token number">2020</span>-07-14
-OpenJDK Runtime Environment AdoptOpenJDK <span class="token punctuation">(</span>build <span class="token number">14.0</span>.2+12<span class="token punctuation">)</span>
-OpenJDK <span class="token number">64</span>-Bit Server VM AdoptOpenJDK <span class="token punctuation">(</span>build <span class="token number">14.0</span>.2+12, mixed mode, sharing<span class="token punctuation">)</span></code></pre></div>
-<h4>試しに実行</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">% <span class="token function">mkdir</span> java-sample
-% <span class="token builtin class-name">cd</span> java-sample
-% <span class="token function">touch</span> Sample.java
-% <span class="token function">vi</span> Sample.java <span class="token comment"># てきとうにJavaコードを書く</span></code></pre></div>
-<div class="gatsby-highlight" data-language="java"><pre class="language-java"><code class="language-java"><span class="token comment">// Sample.java</span>
-<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Sample</span> <span class="token punctuation">{</span>
-    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-        <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">"hoge"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">% javac Sample.java <span class="token comment"># コンパイル</span>
-% java Sample <span class="token comment"># 実行</span>
-hoge</code></pre></div>
-<h4>参考文献</h4>
-<ul>
-<li><a href="https://qiita.com/suke_masa/items/f9af0fb84ad9447ae961">Mac に Java 開発環境をインストールする - Qiita</a></li>
-</ul></section><hr/><div class="share-zone shadow rounded border"><div class="h5 text-center m-0 p-2 rounded-top border-bottom">Share</div><div class="rounded-bottom px-2 px-md-5 py-2 text-center"></div></div><div class="this-article-author my-4 border rounded shadow"><div class="h5 text-center bg-dark text-light rounded-top p-2 border-bottom">Administrator</div><div class="p-3 d-flex justify-content-around align-items-center"><div class="py-3 pl-md-3 d-sm-none"><a href="https://github.com/rrih" target="_blank" class="shadow" rel="noopener noreferrer"></a></div><div class="py-3 d-none d-sm-block"><a href="https://github.com/rrih" target="_blank" class="shadow" rel="noopener noreferrer"></a></div><div class="pl-3 py-3" style="min-width:200px"><div class="h5">rrih</div><div class="d-sm-none"><small>某大学4年生。なにもわかっていない人です。</small><div class="d-flex my-2"><div class="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none"><small>Twitter</small></a></div></div></div><div class="d-none d-sm-block">某大学4年生。なにもわかっていない人です。<div class="d-flex my-2"><div class="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none">Twitter</a></div></div></div></div></div></div></div><nav class="d-md-flex justify-content-between p-2"><div class="my-2"><div class="mx-2"><span role="img" aria-labelledby="right">←</span><div><a rel="prev" class="btn btn-outline-light w-100 shadow p-3 text-decoration-none" href="/20201118-research-tired/">研究は疲れた</a></div></div></div><div class="my-2"><div class="mx-2"><div class="text-right">→</div><div><a rel="next" class="btn btn-outline-light w-100 shadow p-3 text-decoration-none" href="/20201120-where-todo/">結局TODOリストって何に書けばいいんだろうね</a></div></div></div></nav><div class="text-center pb-2"><a href="/posts">記事一覧へ戻る</a></div></div></div><footer class="text-center bg-dark text-light py-2 mt-3 py-5"><a href="/privacy-policy" class="text-decoration-none text-light">プライバシーポリシー</a><br/>© <!-- -->2020<!-- --> rrih All Rights Reserved</footer><div class="layout__TopScrollHelper-sc-1qlx9v5-1 jOIARp fixed-bottom border d-flex align-items-center justify-content-center"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  </style></div></a></div><div class="mx-3"></div></div></header><div class="layout__TopSquareCard-sc-1qlx9v5-0 llXLkC container mt-3 px-0"><div class="container px-0"><div class="blog-post__BlogPostSquareCard-rr0prt-0 iKHgZb my-3 m-md-3 p-3 shadow"><header class=""><small>&gt; <a href="/posts">記事一覧</a> &gt;<!-- --> <a>鬼滅の刃23巻を読み終えた感想</a></small><h2 class="my-3">鬼滅の刃23巻を読み終えた感想</h2>2020年12月05日<!-- -->公開<div class="my-2"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tags" class="svg-inline--fa fa-tags fa-w-20 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"></path></svg><a class="m-1 text-decoration-none bg-light text-dark p-1 rounded" href="/tags/雑記/">雑記</a></div></header><hr/><section class="ml-md-2"><p>鬼滅の刃 23 巻を読み終えたので感想を雑に書く。ネタバレあり。</p>
+<h4>珠世さんチート過ぎ</h4>
+<p>珠世さん無くして、無惨は倒せず。功績としては柱をも超えるまである。無惨より強くなれないなら無惨を弱くすればよい、何を言ってるかわからねーが、すごい。</p>
+<p>愈史郎は現代もどこかで珠世の絵画を描いている(らしい)</p>
+<h4>無惨の死に様は無惨ではなかった</h4>
+<p>最後、自分が燃え尽きないように身体の体積を増やして逃げ通そうとする展開は個人的に無惨の利己主義の極みが発露していてよかったと感じた。</p>
+<p>最終的に巨大化し、見た目が赤子のようなビジュアルになってるのも珠世の毒による老化現象との対比を感じさせる。<del>それでも普通に焼き死んだけど</del></p>
+<h4>最後に柱を多く失った中炭治郎が鬼化する展開はよき</h4>
+<p>これもジャンプ作品あるあるだと思う(´･_･`)</p>
+<p>ラスボスを倒してよかったね〜まずすぐハッピーエンドとはならない。炭治郎は一瞬最強の鬼となる可能性を思わせるのはとても揺さぶられた。オタクなので…</p>
+<p>炭治郎を止めた禰豆子と珠世とカナヲとしのぶさん、女性陣が紡いだ奇跡、ええな</p>
+<h4>終わり方、転生オチについて</h4>
+<p>正直あまり好きではない…</p>
+<p>なぜならなんでもありになってしまうから(そもそもリアリティーを求めるなという話ではあるが)。<br>
+また、転生オチって自分の中ではご都合主義感がすごいからというのもある。これが作者の書きたい終わりなのだから仕方ないけど。とはいえこれが最も丸い終わり方なのかな…万人受けはしそう。ぼくはファンタジー過ぎる話には納得感をあまり持てないのかもしれないね。</p>
+<p>義勇、錆兎、真菰が転生して一緒に学校に入ってるの尊い。良い話。子孫って言ってるけどこれどう見ても転生だから。子孫って言い切るならうずまきナルトたちの子くらいの類似度にしときなよ…？🤔</p>
+<p>あと、最終的に産屋敷輝利哉がありえん長生きしてるの、どういう理屈なんだろうか。産屋敷一族は短命だったはずでは？🤔</p>
+<h4>鬼滅の世間の評価との個人的評価のズレ</h4>
+<p>最近のジャンプ作品、売れてるものはだいたい無駄に延命しすぎなんだよな。それに比べると 23 巻という比較的早い段階で完結させるという判断には好感が持てる。NARUTO みたいに過去編導入を無限にやらずにきっちり完結へと向かわせるスピード感は読みやすかった。脳内のメモリを無駄に消費しなくてよい。</p>
+<p>ただ、唯一性にかける感があったかな。いろいろと他作品との類似点に目がいってしまうのはこれまでに有名作をあれこれと見てしまった自分が悪い気もする。ジャンプ作品ともなればなにかしら他作品と似てくるのは必然というもの。NARUTO、HUNTER×HUNTER、ジョジョ、東京喰種あたりがまぁ似てる部分あるかなと。<del>え、ボーボボ？あれは知らん</del></p>
+<h4>推しについて</h4>
+<p>早い段階から無一郎を推してたのだけれど、無限城編で早めに退場してしまい、残念だった。。。<br>
+柱の中で最も短命では？</p>
+<p>そもそも最後まで生き残った柱が少な過ぎる件。柱を推すこと自体、推せないなぁ。安定は炭治郎、禰豆子、伊之助、善逸あたりなのかねぇ。個人的にマイナー推しみたいなところあるから、主人公枠(主人公とその取り巻き含め)はあまり好きになれないんだけどなぁ。</p>
+<h4>伏線、回収できてるん？</h4>
+<p>鬼滅の伏線、そもそも全て把握しきれてはいないが全て回収されたのだろうか。地味に気になる点。体感、3 割くらい回収されてないような気がする…いや、何が回収されてないかはわかっていないのだけれど。わかっていただけないかな、この「結局全ては明らかになってないよね？」感…</p>
+<p>気のせいかな？</p>
+<h4>not for me かも</h4>
+<p>正直、面白かったし無限列車編とか無限城編とかかなりよかった(小並感)ではあるんだけど、いまいちのめり込めていない感もあるんだよな。おそらく、自分にとって鬼滅は not for me かもという。</p>
+<p>それとも目が肥えてきたか？</p>
+<p>おそらく本物のキッズたちが見る分にはとても新鮮で面白いのだろう(てきとう)。ぼくにとってのナルトや HUNTER×HUNTER のように。</p>
+<p>また、グロすぎず、複雑すぎず、子どもや年配にもウケがよいのは鬼滅のいいところなのでそういう人に鬼滅を見ていただきたいかなって感じ。</p>
+<p>とかいいつつ、今後もしばらくは「全集中・水の呼吸」とか「よもやよもや」、「お前も鬼にならないか？」などと言ってると思うわ。一般ウケいいし。</p></section><hr/><div class="share-zone shadow rounded border"><div class="h5 text-center m-0 p-2 rounded-top border-bottom">Share</div><div class="rounded-bottom px-2 px-md-5 py-2 text-center"></div></div><div class="this-article-author my-4 border rounded shadow"><div class="h5 text-center bg-dark text-light rounded-top p-2 border-bottom">Administrator</div><div class="p-3 d-flex justify-content-around align-items-center"><div class="py-3 pl-md-3 d-sm-none"><a href="https://github.com/rrih" target="_blank" class="shadow" rel="noopener noreferrer"></a></div><div class="py-3 d-none d-sm-block"><a href="https://github.com/rrih" target="_blank" class="shadow" rel="noopener noreferrer"></a></div><div class="pl-3 py-3" style="min-width:200px"><div class="h5">rrih</div><div class="d-sm-none"><small>某大学4年生。なにもわかっていない人です。</small><div class="d-flex my-2"><div class="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none"><small>Twitter</small></a></div></div></div><div class="d-none d-sm-block">某大学4年生。なにもわかっていない人です。<div class="d-flex my-2"><div class="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none">Twitter</a></div></div></div></div></div></div></div><nav class="d-md-flex justify-content-between p-2"><div class="my-2"><div class="mx-2"><span role="img" aria-labelledby="right">←</span><div><a rel="prev" class="btn btn-outline-light w-100 shadow p-3 text-decoration-none" href="/20201202-jujutsukaisen/">呪術廻戦に入門する予定</a></div></div></div><div class="my-2"></div></nav><div class="text-center pb-2"><a href="/posts">記事一覧へ戻る</a></div></div></div><footer class="text-center bg-dark text-light py-2 mt-3 py-5"><a href="/privacy-policy" class="text-decoration-none text-light">プライバシーポリシー</a><br/>© <!-- -->2020<!-- --> rrih All Rights Reserved</footer><div class="layout__TopScrollHelper-sc-1qlx9v5-1 jOIARp fixed-bottom border d-flex align-items-center justify-content-center"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-up" class="svg-inline--fa fa-arrow-up fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path></svg></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
   
   
   if(true) {
@@ -139,4 +139,4 @@ hoge</code></pre></div>
       
       
       
-      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/20201119-jdk-install-mac/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1cacb575fd594c9d04b2.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-f333c73fe2fc480a8923.js"],"component---src-pages-calendar-tsx":["/component---src-pages-calendar-tsx-7b06f9f39d4ac03f0713.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-7ec24758cdd057f35b0a.js"],"component---src-pages-posts-tsx":["/component---src-pages-posts-tsx-b289df0bfe6a9ce21eff.js"],"component---src-pages-privacy-policy-tsx":["/component---src-pages-privacy-policy-tsx-955f84e4a0b3e6da60c5.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-1912cdde9b9fd3703ed3.js"],"component---src-pages-todo-tsx":["/component---src-pages-todo-tsx-bf98c7ce27d4bbee8dbc.js"],"component---src-templates-blog-post-jsx":["/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js"],"component---src-templates-tags-jsx":["/component---src-templates-tags-jsx-733792accd449d52dede.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js" async=""></script><script src="/4a9f65db56a51e56eb43a1313e9ffaa1fb67e72b-7e14957a2b48fc5e2c03.js" async=""></script><script src="/d8efa26f9079299cab028db535af838569c0a66b-5a6cb012e7eca37fbe11.js" async=""></script><script src="/13cfa17188c17cfeede3ec0de47b3f513ed8b1ce-3def79fc54b448700838.js" async=""></script><script src="/a9a7754c-f83e033a63084f176bcb.js" async=""></script><script src="/cb1608f2-824454736ddfbd1b57ca.js" async=""></script><script src="/styles-9b6f388623a2ec93d35f.js" async=""></script><script src="/app-1cacb575fd594c9d04b2.js" async=""></script><script src="/framework-f2b1673255104281184a.js" async=""></script><script src="/webpack-runtime-7ea1ed2d597e55b123a0.js" async=""></script></body></html>
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/20201205-kimetsu-no-yaiba-end/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-1cacb575fd594c9d04b2.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-f333c73fe2fc480a8923.js"],"component---src-pages-calendar-tsx":["/component---src-pages-calendar-tsx-7b06f9f39d4ac03f0713.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-7ec24758cdd057f35b0a.js"],"component---src-pages-posts-tsx":["/component---src-pages-posts-tsx-b289df0bfe6a9ce21eff.js"],"component---src-pages-privacy-policy-tsx":["/component---src-pages-privacy-policy-tsx-955f84e4a0b3e6da60c5.js"],"component---src-pages-tags-tsx":["/component---src-pages-tags-tsx-1912cdde9b9fd3703ed3.js"],"component---src-pages-todo-tsx":["/component---src-pages-todo-tsx-bf98c7ce27d4bbee8dbc.js"],"component---src-templates-blog-post-jsx":["/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js"],"component---src-templates-tags-jsx":["/component---src-templates-tags-jsx-733792accd449d52dede.js"]};/*]]>*/</script><script src="/component---src-templates-blog-post-jsx-c3ad9d1abc6176c679b2.js" async=""></script><script src="/4a9f65db56a51e56eb43a1313e9ffaa1fb67e72b-7e14957a2b48fc5e2c03.js" async=""></script><script src="/d8efa26f9079299cab028db535af838569c0a66b-5a6cb012e7eca37fbe11.js" async=""></script><script src="/13cfa17188c17cfeede3ec0de47b3f513ed8b1ce-3def79fc54b448700838.js" async=""></script><script src="/a9a7754c-f83e033a63084f176bcb.js" async=""></script><script src="/cb1608f2-824454736ddfbd1b57ca.js" async=""></script><script src="/styles-9b6f388623a2ec93d35f.js" async=""></script><script src="/app-1cacb575fd594c9d04b2.js" async=""></script><script src="/framework-f2b1673255104281184a.js" async=""></script><script src="/webpack-runtime-7ea1ed2d597e55b123a0.js" async=""></script></body></html>
