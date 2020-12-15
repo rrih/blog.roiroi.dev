@@ -75,7 +75,7 @@ const H2Title = styled.div`
 
 const LinkIcon = styled.a`
   color: #f8f9fa;
-  font-size: 70px;
+  // font-size: 70px;
   text-decoration: none;
   &:hover {
     text-decoration: none;
@@ -111,22 +111,50 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           </H2Title>
           <ReactTooltip effect="float" type="dark" place="bottom" />
         </div>
-        <div className="border-bottom py-5 d-flex justify-content-around">
+        <div className="border-bottom py-5">
+
+{/* リンク集 */}
           <div>
             <LinkIcon href="https://github.com/rrih" data-tip="公開してるコードは大したものないです">
-              <FontAwesomeIcon icon={fab.faGithub} />
+              {/* <FontAwesomeIcon icon={fab.faGithub} /> */}
+              GitHub
               <ReactTooltip effect="float" type="dark" place="bottom" />
             </LinkIcon>
           </div>
+
           <div>
-            <LinkIcon href="https://twitter.com/rrih_dev" data-tip="無益な情報を発信するアカウント">
-              <FontAwesomeIcon icon={fab.faTwitter} />
+            <LinkIcon href="https://qiita.com/rrih" data-tip="たまに書く">
+              Qiita
               <ReactTooltip effect="float" type="dark" place="bottom" />
             </LinkIcon>
           </div>
+
           <div>
-            <LinkIcon href="/posts"  data-tip="メモ書き">
-              <FontAwesomeIcon icon={fas.faPen} />
+            <LinkIcon href="https://zenn.dev/ro" data-tip="今後書いていきたい">
+              Zenn
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
+            <LinkIcon href="https://wantedly.com/id/rrih" data-tip="ビジネスの文脈で使うかもしれない">
+              Wantedly
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
+            <LinkIcon href="https://twitter.com/rrih_dev" data-tip="ぼくの鳴き声のようなもの">
+              {/* <FontAwesomeIcon icon={fab.faTwitter} /> */}
+              Twitter
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
+            <LinkIcon href="/posts"  data-tip="虚無">
+              {/* <FontAwesomeIcon icon={fas.faPen} /> */}
+              意味のない文章集
               <ReactTooltip effect="float" type="dark" place="bottom" />
             </LinkIcon>
           </div>
