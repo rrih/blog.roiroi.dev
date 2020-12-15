@@ -137,8 +137,29 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           </div>
 
           <div>
+            <LinkIcon href="https://www.instagram.com/roi_web/" data-tip="食べたものの写真">
+              Instagram
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
             <LinkIcon href="https://wantedly.com/id/rrih" data-tip="ビジネスの文脈で使うかもしれない">
               Wantedly
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
+            <LinkIcon href="https://facebook.com/rsklv" data-tip="一応存在するアカウント">
+              Facebook
+              <ReactTooltip effect="float" type="dark" place="bottom" />
+            </LinkIcon>
+          </div>
+
+          <div>
+            <LinkIcon href="#" data-tip="TwitterのDMか何かで聞いてください">
+              LINE
               <ReactTooltip effect="float" type="dark" place="bottom" />
             </LinkIcon>
           </div>
