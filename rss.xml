@@ -1,4 +1,144 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 15 Dec 2020 18:00:05 GMT</lastBuildDate><item><title><![CDATA[CakePHP4にてrest api]]></title><description><![CDATA[CakePHP4 で REST(ful) API を生やす方法について、完全に自分用メモです。 公式を見ればわかることですが、まずルーティングの設定から。 最低限の役割を持つもののみ記述するとはこのような感じになります。この場合、PostsController の index…]]></description><link>https://rrih.github.io/20201207-cakephp-rest-api/</link><guid isPermaLink="false">https://rrih.github.io/20201207-cakephp-rest-api/</guid><pubDate>Sun, 06 Dec 2020 01:18:00 GMT</pubDate><content:encoded>&lt;p&gt;CakePHP4 で REST(ful) API を生やす方法について、完全に自分用メモです。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 20 Dec 2020 21:16:14 GMT</lastBuildDate><item><title><![CDATA[rrih.github.io、n回目の改変]]></title><description><![CDATA[お久しぶりです。
+今回は暇つぶしにrrih.github.ioの不要な情報を削減しました ✨(全然暇じゃない) before  after…]]></description><link>https://rrih.github.io/20201221-top-renewal/</link><guid isPermaLink="false">https://rrih.github.io/20201221-top-renewal/</guid><pubDate>Mon, 21 Dec 2020 00:19:00 GMT</pubDate><content:encoded>&lt;p&gt;お久しぶりです。
+今回は暇つぶしに&lt;a href=&quot;https://rrih.github.io&quot;&gt;rrih.github.io&lt;/a&gt;の不要な情報を削減しました ✨(全然暇じゃない)&lt;/p&gt;
+&lt;p&gt;before&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/414f489921c451751b7876412c57558a/a2b91/before_top_screen.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 54.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAABaUlEQVQoz5VS2U4CQRDkN4zAsvcu18KGJSAihigeSCIxIfHFB8XEyKXgQfCO8bvL6YHB5ZDoQ2Uq093V3TUTqNYb2K3WYSdcqFYcmp2AZhHi0BmXNAvrkopgREdYMfkdxXjOhBvRJDbLe9iv1RHoDd/QfXxFOrsBSTGgGFHIDKoZYwIGits7ODu/xPvnFw6OjhGSdZYT43mECGtIgle3Q9yMPhBo3z/jejCCk8lxARKTdZsnU3GpXMFJ4xTtXh+Vw9o4h8UFSJCmvmj1QVpTwZSX50GajKD4pgxGNKyFFN7AHxtzm0/YbA/QeXgZC7bunviEVCC6CkiqiUTag0uWMO6PE6c78nKpYFjRFwqoSdrLIVcoLTRcIUge5n8exe8RQ4o18/LFmft5D2cEl3no90q86Lx///aQOD0ITVfYKv/qMf3FP61MnAriqQwcN8sFZiyZ/EMz5qDZWbGyWFGsJ6ZZFqMzmnSngt8f4GmiSRobyAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;before&quot;
+        title=&quot;before&quot;
+        src=&quot;/static/414f489921c451751b7876412c57558a/fcda8/before_top_screen.png&quot;
+        srcset=&quot;/static/414f489921c451751b7876412c57558a/12f09/before_top_screen.png 148w,
+/static/414f489921c451751b7876412c57558a/e4a3f/before_top_screen.png 295w,
+/static/414f489921c451751b7876412c57558a/fcda8/before_top_screen.png 590w,
+/static/414f489921c451751b7876412c57558a/efc66/before_top_screen.png 885w,
+/static/414f489921c451751b7876412c57558a/c83ae/before_top_screen.png 1180w,
+/static/414f489921c451751b7876412c57558a/a2b91/before_top_screen.png 3360w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;after&lt;br&gt;
+&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6dbe23be1ad34d4c2242055e0325c997/29b37/top_screen_shot_20201221.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 57.432432432432435%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAn0lEQVQoz52S2w7CIBBE+//f4LW+YKNUXuSWlBLwu6aWhFqtpYGHyW4m4WR22arve6zJGDPVeZ96U6Vg38Bu4WcDY/X+FbSVbhX4gXUBdKkPqM/7CZpKWaXGHeW8x+m4C3LOlQEj1FoLzjlo+8DtTvF896OXvcN5AkpbEEJwbRowxjY/ZhOolIIQAlJKaK3LgL9jRxXf4fIGzV8vO2GJBlw0xq+YrT3nAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;PC版&quot;
+        title=&quot;PC版&quot;
+        src=&quot;/static/6dbe23be1ad34d4c2242055e0325c997/fcda8/top_screen_shot_20201221.png&quot;
+        srcset=&quot;/static/6dbe23be1ad34d4c2242055e0325c997/12f09/top_screen_shot_20201221.png 148w,
+/static/6dbe23be1ad34d4c2242055e0325c997/e4a3f/top_screen_shot_20201221.png 295w,
+/static/6dbe23be1ad34d4c2242055e0325c997/fcda8/top_screen_shot_20201221.png 590w,
+/static/6dbe23be1ad34d4c2242055e0325c997/efc66/top_screen_shot_20201221.png 885w,
+/static/6dbe23be1ad34d4c2242055e0325c997/c83ae/top_screen_shot_20201221.png 1180w,
+/static/6dbe23be1ad34d4c2242055e0325c997/29b37/top_screen_shot_20201221.png 3172w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/6960c8b67f61f3c1376b39ce34541401/c6bbc/top_screen_shot_sp_20201221.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 197.97297297297297%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAABYlAAAWJQFJUiTwAAAC7klEQVRIx+1XSU9TURTuHwFWTG0gYU5IiCu6MCbGqLCBEl1QujPGxMQJjRhiVIICMhY605G2tNAKFDrQQvhTn/c7pMw8eOBOFl/fPefe893vnPfeebeGmpoaEHV1daiurkZXVxfMZjM6OjpgNBrR1taGlpYWtLa2ypg+zre3t6OzsxPd3d1obGxEQ0ODzBnKg9raWiElaJfHRH19veCkXb6WY00mk5AaqIoKuCt3O42LfOfB2KamJsnQUFFRgcHBQZRKJWxvbyObzerCzs4OisUi+vv7UVlZCQN/hoaGsLe3dytCi8VyTGi1Wo8UcoEeMGZ3d1ebUI+6aym8I/w3hCev9F82d+3H5mQA54rF0oVzuhVmczk4HUvwelzI5/M3V0gU1AM7OvoJTx+Z8fD+PQy/ey3BZ9ddizCXyyOdTsFm7cPnty8wPT6C55bHWF9fE6W6CcspDb9/hd4nD/Csrwcf3rxUazL6a3iIbeSUkrVkAmNjX/Fl5CPisahSV9CfMlMicuqGcDE70f7+vtxp+guFwqm0NQmZTiKZPMLKygqisZhc4/E4YoSyU6mUrGXMlYQOpwserw++5WX8mpjE9MwslhxOTE3PyHhy6jdcbrco1SSk/K2tLdgXl4TU6XIJgVeRO11uLNKviBfsi3C7PchkMhKj2Q9Zm0QigdXVVbG5AW2CBLSZelKVgzXWVMgF0WhU6hUJh4WEgX6/X8AxfcFgUGzWkjGaCsOK6Nv3Hxgb/ymBHo8HM7NzmJ2bV6l7sKzqGgyFMTE5hUDALzW/lJD1CAYDciPmF+wIhUKKxCv1czid8Pl8omzBzrmwkGsqJGE6/QeRSARhRbaxsYHNzU2lJCAbcUxfUNn0caypkClzx+P3OXe5rYiuvCk3+Yzqal9nW/1Z++6r998T0lluR3qOcueOczzB2mw2HBwcyJPPpqkHbHf8PAwMDBwrpMHWxHeYrUsv2NJ6enpRVVV1eGg3Gk1obm6+FfhvgFx/Ad6+oww/FAEoAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;スマホ版&quot;
+        title=&quot;スマホ版&quot;
+        src=&quot;/static/6960c8b67f61f3c1376b39ce34541401/fcda8/top_screen_shot_sp_20201221.png&quot;
+        srcset=&quot;/static/6960c8b67f61f3c1376b39ce34541401/12f09/top_screen_shot_sp_20201221.png 148w,
+/static/6960c8b67f61f3c1376b39ce34541401/e4a3f/top_screen_shot_sp_20201221.png 295w,
+/static/6960c8b67f61f3c1376b39ce34541401/fcda8/top_screen_shot_sp_20201221.png 590w,
+/static/6960c8b67f61f3c1376b39ce34541401/efc66/top_screen_shot_sp_20201221.png 885w,
+/static/6960c8b67f61f3c1376b39ce34541401/c6bbc/top_screen_shot_sp_20201221.png 910w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;こんな感じになりました。&lt;br&gt;
+人はごちゃごちゃした(情報量多い)サイト作ってるとシンプルさを求めたくなるのでしょうか。&lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 320px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/dbb06be017ed39bd6ee9d41afaa6b095/cb69c/kouiunodeiindayo_kouiunode.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 88.51351351351352%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAASABQDASIAAhEBAxEB/8QAGAABAAMBAAAAAAAAAAAAAAAAAAEDBAX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7GWc8dJlF9QQJf/EABkQAQEBAQEBAAAAAAAAAAAAAAECAwASE//aAAgBAQABBQJZniMhJk7RLzdJ6d4mU7xH0oPX/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHhAAAgIABwAAAAAAAAAAAAAAAAECMREiMkFRYZH/2gAIAQEABj8CzCZQnxZt0YStEDSvBn//xAAbEAACAwEBAQAAAAAAAAAAAAABEQAhMUFRYf/aAAgBAQABPyEI6DkPNBu/YAQBQQi9JyZUAI6yOmcIB1F79lybADZ//9oADAMBAAIAAwAAABDb6L7/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAACAgICAwAAAAAAAAAAAAABEQAhMVFBYZGh8f/aAAgBAQABPxAbUIqmYMggkSBBYYJfcpiMU4oaQdCCRz3FCY2YXoB9ggCuV49KbJVTBc7lBS9IdxyCp//Z&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;kouiunodeiindayo kouiunode&quot;
+        title=&quot;kouiunodeiindayo kouiunode&quot;
+        src=&quot;/static/dbb06be017ed39bd6ee9d41afaa6b095/cb69c/kouiunodeiindayo_kouiunode.jpg&quot;
+        srcset=&quot;/static/dbb06be017ed39bd6ee9d41afaa6b095/a80bd/kouiunodeiindayo_kouiunode.jpg 148w,
+/static/dbb06be017ed39bd6ee9d41afaa6b095/1c91a/kouiunodeiindayo_kouiunode.jpg 295w,
+/static/dbb06be017ed39bd6ee9d41afaa6b095/cb69c/kouiunodeiindayo_kouiunode.jpg 320w&quot;
+        sizes=&quot;(max-width: 320px) 100vw, 320px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;というか before の時の自分のデザインセンス皆無ですね。&lt;br&gt;
+シンプルにすればそもそもデザインがどうとか気にならなくなってよいです。&lt;/p&gt;
+&lt;p&gt;ちなみにリンクボタンですが、a タグの中で svg 展開させて位置調整に margin 等弄って目視で位置調整するという、とてもひどいことになってます。&lt;br&gt;
+html, css わからなすぎつらみですね。&lt;/p&gt;
+&lt;p&gt;前々から GitHub のプロフィールがよいなと思っていたので、API 叩いて情報持ってくればよくね？ってなったのでそのようにしてみました。&lt;br&gt;
+ぼくの場合&lt;code class=&quot;language-text&quot;&gt;https://api.github.com/users/rrih&lt;/code&gt;を GET することで取得できます。&lt;br&gt;
+というわけでコードだけ見ると index.tsx に日本語直接書くようなことはほぼしてない感じです。&lt;br&gt;
+プロフィールだけ変えたくなったときに index.tsx を編集しなくてよくなります。(これまではわざわざ index.tsx に commit して push してた。煩わしい。)&lt;/p&gt;
+&lt;p&gt;それでは&lt;br&gt;
+(卒論おわらん 😭)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP4にてrest api]]></title><description><![CDATA[CakePHP4 で REST(ful) API を生やす方法について、完全に自分用メモです。 公式を見ればわかることですが、まずルーティングの設定から。 最低限の役割を持つもののみ記述するとはこのような感じになります。この場合、PostsController の index…]]></description><link>https://rrih.github.io/20201207-cakephp-rest-api/</link><guid isPermaLink="false">https://rrih.github.io/20201207-cakephp-rest-api/</guid><pubDate>Sun, 06 Dec 2020 01:18:00 GMT</pubDate><content:encoded>&lt;p&gt;CakePHP4 で REST(ful) API を生やす方法について、完全に自分用メモです。&lt;/p&gt;
 &lt;p&gt;公式を見ればわかることですが、まずルーティングの設定から。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;php&quot;&gt;&lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;token package&quot;&gt;Cake&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Routing&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Route&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;DashedRoute&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;use&lt;/span&gt; &lt;span class=&quot;token package&quot;&gt;Cake&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;Routing&lt;span class=&quot;token punctuation&quot;&gt;\&lt;/span&gt;RouteBuilder&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
