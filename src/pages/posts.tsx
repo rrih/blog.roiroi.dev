@@ -29,9 +29,9 @@ const Posts = ({ data, location }: PageProps<Data>) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO title="記事一覧" />
+      <SEO title="Posts" />
       <div className="flex-wrap container px-0 pb-4 mx-md-4 pr-md-5 px-3 px-sm-5 px-md-0">
-          <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4">記事一覧</div>
+          <div className="h3 mx-4 mx-md-0 text-center my-3 pt-4">Posts</div>
           <ul className="ml-0 pl-0">
             {posts.map(({ node }) => {
               const title = node.frontmatter.title || node.fields.slug

@@ -47,7 +47,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <div className="container px-0">
         <BlogPostSquareCard className="my-3 m-md-3 p-3 shadow">
           <header className="">
-            <small>> <a href="/posts">記事一覧</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
+            <small>> <a href="/posts">Posts</a> > <a href={location.href}>{post.frontmatter.title}</a></small>
             <h2
               className="my-3"
             >
@@ -102,8 +102,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   </small>
                   <div className="d-flex my-2">
                     <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none"><small>Twitter</small></a></div>
-                    {/* 一旦 GitHub アカウントはコメントアウト */}
-                    {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow"><small>GitHub</small></a></div> */}
                   </div>
                 </div>
                 {/* sm以上表示 */}
@@ -111,8 +109,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
                   某大学4年生。なにもわかっていない人です。
                   <div className="d-flex my-2">
                     <div className="mr-1 mr-md-3"><a href="https://twitter.com/rrih_dev" target="_blank" rel="noopener noreferrer" className="btn btn-outline-primary rounded-pill px-4 py-2 shadow text-decoration-none">Twitter</a></div>
-                    {/* 一旦 GitHub アカウントはコメントアウト */}
-                    {/* <div className="mr-3"><a href="https://github.com/rrih" target="_blank" className="btn btn-outline-dark rounded-pill px-4 py-2 shadow">GitHub</a></div> */}
                   </div>
                 </div>
               </div>
@@ -149,7 +145,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </div>
         </nav>
         <div className="text-center pb-2">
-          <a href="/posts">記事一覧へ戻る</a>
+          <a href="/posts">Postsへ戻る</a>
         </div>
       </div>
     </Layout>

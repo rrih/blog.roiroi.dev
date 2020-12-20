@@ -1,9 +1,9 @@
-// Gatsby supports TypeScript natively!
-import React, { useRef } from "react"
+import React, { useEffect, useState }from "react"
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import styled from "styled-components";
+import axios from "axios";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library, config } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -95,140 +95,151 @@ const Email = styled.div`
   font-size: 70px;
 `
 
+const IndexProfileDiv = styled.div`
+  height: 100vh;
+  width: 100vw;
+  background-color: #C0C0C0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const ProfileDiv = styled.div`
+  top: 30%;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  
+  font-size: 20px;
+  svg {
+    height: 30px;
+    width: 30px;
+  }
+`
+
+const LinkDOM = styled.a`
+  :hover {
+    color: white;
+    background-color: #212529;
+  }
+  svg {
+    margin-right: .25rem;
+    margin-left: .25rem;
+    margin-bottom: .8rem;
+  }
+  font-size: 60px;
+  text-align: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  border: solid 3px black;
+  border-radius: 50%;
+  color: #212529;
+`
+
+const LinkIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const ProfileTextList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+`
+
+const ProfileText = styled.li`
+  margin: 0;
+`
+
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const birthday = moment('1997/09/11', 'YYYY/MM/DD') // 誕生日
   const today = moment()
   const age = today.diff(birthday, 'years')
+  // TODO あとで github のプロフィールの型定義する
+  const [avatarIcon, setAvatarIcon] = useState();
+  const [myGitHubName, setMyGitHubName] = useState();
+  const [bio, setBio] = useState();
+  const [company, setCompany] = useState()
+  const githubScreenName = 'rrih'
+
+  const getUserWithGitHub = async () => {
+    await axios.get('https://api.github.com/users/rrih')
+      .then((res) => {
+        const au = <img className="mb-0 rounded-pill" src={res.data.avatar_url} alt="rrih-avatar-url" width={90}/>
+        console.log(res.data)
+        setBio(res.data.bio);
+        setMyGitHubName(res.data.name);
+        setCompany(res.data.company)
+        setAvatarIcon(au);
+      });
+  };
+  useEffect(() => {
+    getUserWithGitHub();
+    console.log('I am looking for a side job (๑╹ω╹๑ )\nI can write a little JavaScript and PHP, SQL (๑╹ω╹๑ )')
+  }, []);
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title={location.host} />
-      <div className="mx-4 text-center">
-        <div className="border-bottom py-3" data-tip={`${age}歳。ただの開発者`}>
-          <H2Title>
-            rrih
-          </H2Title>
-          <ReactTooltip effect="float" type="dark" place="bottom" />
-        </div>
-        <div className="border-bottom py-5">
-
-{/* リンク集 */}
-          <div>
-            <LinkIcon href="https://github.com/rrih" data-tip="公開してるコードは大したものないです">
-              {/* <FontAwesomeIcon icon={fab.faGithub} /> */}
-              GitHub
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
+    <>
+      <IndexProfileDiv>
+        <ProfileDiv>
+          <div className='pb-4'>
+            {avatarIcon}
           </div>
-
-          <div>
-            <LinkIcon href="https://qiita.com/rrih" data-tip="たまに書く">
-              Qiita
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="https://zenn.dev/ro" data-tip="今後書いていきたい">
-              Zenn
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="https://www.instagram.com/roi_web/" data-tip="食べたものの写真">
-              Instagram
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="https://wantedly.com/id/rrih" data-tip="ビジネスの文脈で使うかもしれない">
-              Wantedly
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="https://facebook.com/rsklv" data-tip="一応存在するアカウント">
-              Facebook
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="#" data-tip="TwitterのDMか何かで聞いてください">
-              LINE
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="https://twitter.com/rrih_dev" data-tip="ぼくの鳴き声のようなもの">
-              {/* <FontAwesomeIcon icon={fab.faTwitter} /> */}
-              Twitter
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-
-          <div>
-            <LinkIcon href="/posts"  data-tip="虚無">
-              {/* <FontAwesomeIcon icon={fas.faPen} /> */}
-              意味のない文章集
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </LinkIcon>
-          </div>
-        </div>
-        <div className="border-bottom py-5">
-          <Email data-tip="rsklv[at]icloud.com">
-            <FontAwesomeIcon icon={far.faEnvelope} />
-            <ReactTooltip effect="float" type="dark" place="bottom" />
-          </Email>
-        </div>
-        <div className="py-5">
-          <div className="d-flex justify-content-around">
-            <TechIcon data-tip="今メインで触ってます(´･_･`)ぜんぜんわからないです">
-              <FontAwesomeIcon icon={fab.faPhp} />
-              {/* <ReactTooltip effect="float" type="info" place="right" /> */}
-            </TechIcon>
-            <TechIcon data-tip="少しだけ実務経験あり(´･_･`)ぜんぜんわからないです">
-              <FontAwesomeIcon icon={fab.faReact} />
-              <ReactTooltip effect="float" type="dark" place="bottom" />
-            </TechIcon>
-            <TechIcon data-tip="少しだけ実務経験あり(´･_･`)ぜんぜんわからないです">
-              <FontAwesomeIcon icon={fab.faNode} />
-              {/* <ReactTooltip effect="float" type="info" place="top" /> */}
-            </TechIcon>
-            <TechIcon data-tip="学習中(´･_･`)ぜんぜんわからないです">
-              <FontAwesomeIcon icon={fab.faDocker} />
-              {/* <ReactTooltip effect="float" type="info" place="left" /> */}
-            </TechIcon>
-          </div>
-        </div>
-      </div>
-      
-      {/* TODO 一旦コメントアウト。トップページからは一時的に隠す。アドセンスが通ったら解除する */}
-      {/* <div className="flex-wrap container px-0 pb-4 mx-md-4">
-        <div className="h3 mx-4 mx-md-0">misc</div>
-        <ul>
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <li key={node.fields.slug} className="list-unstyled mb-0">
-              <header className="text-wrap">
-                <Link to={node.fields.slug} className="text-decoration-none">
-                  {title}
-                </Link>
-              
-                <small>{node.frontmatter.date} 公開</small>
-              </header>
-            </li>
-          )
-        })}
-        </ul>
-      </div> */}
-    </Layout>
+          <ProfileTextList>
+            <ProfileText>
+              {githubScreenName} - {myGitHubName}
+            </ProfileText>
+            <ProfileText>
+              {bio}
+            </ProfileText>
+            {/* <ProfileText>
+              <FontAwesomeIcon icon={far.faBuilding} /> {company}
+            </ProfileText> */}
+          </ProfileTextList>
+            {/* icons for link */}
+          <LinkIcons>
+            <div className='mx-2'>
+              <LinkDOM
+                href='https://twitter.com/rrih_dev'
+                target='_blank'
+                referrer-policy='no-referrer'
+                rel='noopener'
+              >
+                <FontAwesomeIcon icon={fab.faTwitter} />
+              </LinkDOM>
+            </div>
+            <div className='mx-2'>
+              <LinkDOM
+                href='https://github.com/rrih'
+                target='_blank'
+                referrer-policy='no-referrer'
+                rel='noopener'
+              >
+                <FontAwesomeIcon icon={fab.faGithub} />
+              </LinkDOM>
+            </div>
+            <div className='mx-2'>
+              <LinkDOM
+                href='https://rrih.github.io/posts'
+                target='_blank'
+                referrer-policy='no-referrer'
+                rel='noopener'
+              >
+                <FontAwesomeIcon icon={fas.faPenFancy} />
+              </LinkDOM>
+            </div>
+          </LinkIcons>
+        </ProfileDiv>
+      </IndexProfileDiv>
+      {/* <footer>
+        &copy; {new Date().getFullYear()} Ryohei Kawahara.
+      </footer> */}
+    </>
   )
 }
 
