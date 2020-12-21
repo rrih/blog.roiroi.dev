@@ -16,6 +16,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false
 library.add(fas, far, fab)
+import MDSpinner from "react-md-spinner";
 
 export type Data = {
   site: {
@@ -171,6 +172,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const birthday = moment('1997/09/11', 'YYYY/MM/DD') // 誕生日
   const today = moment()
   const age = today.diff(birthday, 'years')
+  const [isLoading, setIsLoading] = useState(false)
   // TODO あとで github のプロフィールの型定義する
   const [avatarIcon, setAvatarIcon] = useState();
   const [myGitHubName, setMyGitHubName] = useState();
@@ -181,18 +183,24 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
 
   const wannaJobMessage = `I am looking for a side job (๑╹ω╹๑ )\nI can write a little JavaScript and PHP, SQL (๑╹ω╹๑ )`;
 
+  // initialize
   const getUserWithGitHub = async () => {
+    setIsLoading(true)
     await axios.get(`https://api.github.com/users/${githubScreenName}`)
       .then((res) => {
         const au = <img className="mb-0 rounded-pill" src={res.data.avatar_url} alt="rrih-avatar-url" width={90}/>
-        // console.log(res.data)
-        // console.log(res.data.twitter_username)
         setGhTwitterId(res.data.twitter_username)
         setBio(res.data.bio);
         setMyGitHubName(res.data.name);
         setCompany(res.data.company)
         setAvatarIcon(au);
-      });
+      })
+      .catch((err) => {
+        console.log(err);
+      })
+      .finally(() => {
+        setIsLoading(false)
+      })
   };
   useEffect(() => {
     getUserWithGitHub();
@@ -203,50 +211,56 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
     <>
       <IndexProfileDiv>
         <ProfileDiv>
-          <div className='pb-4'>
-            {avatarIcon}
-          </div>
-          <ProfileTextList>
-            <ProfileText>
-              {githubScreenName} - {myGitHubName}
-            </ProfileText>
-            <ProfileText>
-              {bio}
-            </ProfileText>
-          </ProfileTextList>
-            {/* icons for link */}
-          <LinkIcons>
-            <Circle className='mx-2'>
-              <LinkDOM
-                href={`https://twitter.com/${gbTwitterId}`}
-                target='_blank'
-                referrer-policy='no-referrer'
-                rel='noopener'
-              >
-                <FontAwesomeIcon icon={fab.faTwitter} />
-              </LinkDOM>
-            </Circle>
-            <Circle className='mx-2'>
-              <LinkDOM
-                href={`https://github.com/${githubScreenName}`}
-                target='_blank'
-                referrer-policy='no-referrer'
-                rel='noopener'
-              >
-                <FontAwesomeIcon icon={fab.faGithub} />
-              </LinkDOM>
-            </Circle>
-            <Circle className='mx-2'>
-              <LinkDOM
-                href='https://rrih.github.io/posts'
-                target='_blank'
-                referrer-policy='no-referrer'
-                rel='noopener'
-              >
-                <FontAwesomeIcon icon={fas.faPenFancy} />
-              </LinkDOM>
-            </Circle>
-          </LinkIcons>
+          {isLoading && <MDSpinner />}
+          {!isLoading
+          &&
+            <div>
+              <div className='pb-4'>
+                {avatarIcon}
+              </div>
+              <ProfileTextList>
+                <ProfileText>
+                  {githubScreenName} - {myGitHubName}
+                </ProfileText>
+                <ProfileText>
+                  {bio}
+                </ProfileText>
+              </ProfileTextList>
+                {/* icons for link */}
+              <LinkIcons>
+                <Circle className='mx-2'>
+                  <LinkDOM
+                    href={`https://twitter.com/${gbTwitterId}`}
+                    target='_blank'
+                    referrer-policy='no-referrer'
+                    rel='noopener'
+                  >
+                    <FontAwesomeIcon icon={fab.faTwitter} />
+                  </LinkDOM>
+                </Circle>
+                <Circle className='mx-2'>
+                  <LinkDOM
+                    href={`https://github.com/${githubScreenName}`}
+                    target='_blank'
+                    referrer-policy='no-referrer'
+                    rel='noopener'
+                  >
+                    <FontAwesomeIcon icon={fab.faGithub} />
+                  </LinkDOM>
+                </Circle>
+                <Circle className='mx-2'>
+                  <LinkDOM
+                    href='https://rrih.github.io/posts'
+                    target='_blank'
+                    referrer-policy='no-referrer'
+                    rel='noopener'
+                  >
+                    <FontAwesomeIcon icon={fas.faPenFancy} />
+                  </LinkDOM>
+                </Circle>
+              </LinkIcons>
+            </div>
+          }
         </ProfileDiv>
       </IndexProfileDiv>
       {/* <footer>
