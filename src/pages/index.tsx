@@ -118,24 +118,6 @@ const ProfileDiv = styled.div`
   }
 `
 
-const LinkDOM = styled.a`
-  :hover {
-    color: white;
-    background-color: #212529;
-  }
-  svg {
-    margin-right: .25rem;
-    margin-left: .25rem;
-    margin-bottom: .8rem;
-  }
-  font-size: 60px;
-  text-align: center;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  border: solid 3px black;
-  border-radius: 50%;
-  color: #212529;
-`
 
 const LinkIcons = styled.div`
   display: flex;
@@ -155,6 +137,35 @@ const ProfileText = styled.li`
   margin: 0;
 `
 
+const Circle = styled.div`
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border solid 2px #212529;
+  color: #212529;
+`
+
+const LinkDOM = styled.a`
+  :hover {
+    color: white;
+    background-color: #212529;
+    border: none;
+  }
+  svg {
+    height: 100%;
+    font-size: 150%;
+  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #212529;
+  
+`
+
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const birthday = moment('1997/09/11', 'YYYY/MM/DD') // 誕生日
@@ -163,15 +174,20 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   // TODO あとで github のプロフィールの型定義する
   const [avatarIcon, setAvatarIcon] = useState();
   const [myGitHubName, setMyGitHubName] = useState();
+  const [gbTwitterId, setGhTwitterId] = useState()
   const [bio, setBio] = useState();
   const [company, setCompany] = useState()
   const githubScreenName = 'rrih'
 
+  const wannaJobMessage = `I am looking for a side job (๑╹ω╹๑ )\nI can write a little JavaScript and PHP, SQL (๑╹ω╹๑ )`;
+
   const getUserWithGitHub = async () => {
-    await axios.get('https://api.github.com/users/rrih')
+    await axios.get(`https://api.github.com/users/${githubScreenName}`)
       .then((res) => {
         const au = <img className="mb-0 rounded-pill" src={res.data.avatar_url} alt="rrih-avatar-url" width={90}/>
-        console.log(res.data)
+        // console.log(res.data)
+        // console.log(res.data.twitter_username)
+        setGhTwitterId(res.data.twitter_username)
         setBio(res.data.bio);
         setMyGitHubName(res.data.name);
         setCompany(res.data.company)
@@ -180,7 +196,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   };
   useEffect(() => {
     getUserWithGitHub();
-    console.log('I am looking for a side job (๑╹ω╹๑ )\nI can write a little JavaScript and PHP, SQL (๑╹ω╹๑ )')
+    console.log(wannaJobMessage)
   }, []);
 
   return (
@@ -197,33 +213,30 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             <ProfileText>
               {bio}
             </ProfileText>
-            {/* <ProfileText>
-              <FontAwesomeIcon icon={far.faBuilding} /> {company}
-            </ProfileText> */}
           </ProfileTextList>
             {/* icons for link */}
           <LinkIcons>
-            <div className='mx-2'>
+            <Circle className='mx-2'>
               <LinkDOM
-                href='https://twitter.com/rrih_dev'
+                href={`https://twitter.com/${gbTwitterId}`}
                 target='_blank'
                 referrer-policy='no-referrer'
                 rel='noopener'
               >
                 <FontAwesomeIcon icon={fab.faTwitter} />
               </LinkDOM>
-            </div>
-            <div className='mx-2'>
+            </Circle>
+            <Circle className='mx-2'>
               <LinkDOM
-                href='https://github.com/rrih'
+                href={`https://github.com/${githubScreenName}`}
                 target='_blank'
                 referrer-policy='no-referrer'
                 rel='noopener'
               >
                 <FontAwesomeIcon icon={fab.faGithub} />
               </LinkDOM>
-            </div>
-            <div className='mx-2'>
+            </Circle>
+            <Circle className='mx-2'>
               <LinkDOM
                 href='https://rrih.github.io/posts'
                 target='_blank'
@@ -232,12 +245,12 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
               >
                 <FontAwesomeIcon icon={fas.faPenFancy} />
               </LinkDOM>
-            </div>
+            </Circle>
           </LinkIcons>
         </ProfileDiv>
       </IndexProfileDiv>
       {/* <footer>
-        &copy; {new Date().getFullYear()} Ryohei Kawahara.
+        &copy; {new Date().getFullYear()} {myGitHubName}.
       </footer> */}
     </>
   )
