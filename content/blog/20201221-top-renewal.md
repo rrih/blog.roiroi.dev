@@ -1,5 +1,5 @@
 ---
-title: rrih.github.io、n回目の改変
+title: サイトのマイナーチェンジ
 date: "2020-12-21T00:19:00.284Z"
 description: ""
 tags: ["雑記"]
