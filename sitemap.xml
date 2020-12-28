@@ -9,6 +9,7 @@
 <url> <loc>https://rrih.github.io/20201202-jujutsukaisen/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/20201201-2020-advent-calendar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/20201128-geometry-net/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rrih.github.io/20201128-in/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/20201127-react-fontawesome-big-moment/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/20201126-add-tags/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/20201125-add-tooltip/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -45,9 +46,11 @@
 <url> <loc>https://rrih.github.io/tags/php/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/problem/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/react/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rrih.github.io/tags/sql/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/tips/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/typescript/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/tags/雑記/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://rrih.github.io/apps/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/calendar/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://rrih.github.io/links/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
