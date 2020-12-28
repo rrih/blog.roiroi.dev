@@ -205,11 +205,11 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   useEffect(() => {
     getUserWithGitHub();
     console.log(wannaJobMessage)
-    console.log(location.pathname)
   }, []);
 
   return (
     <>
+      <SEO title={location.host} description={`site of ${myGitHubName}`} lang="ja" />
       <IndexProfileDiv>
         <ProfileDiv>
           {isLoading && <MDSpinner />}

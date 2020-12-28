@@ -11,10 +11,10 @@ const NotFoundPage: React.FC = () => {
           <div className="h1">
             404
           </div>
-          <p>お探しのページが見つかりませんでした。</p>
+          <p>The page you are looking for could not be found.</p>
         </ProfileDiv>
         <div>
-          <a href='/'>トップ</a>へ戻る
+          <a href='/'>Back to Top</a>
         </div>
       </IndexProfileDiv>
     </React.Fragment>

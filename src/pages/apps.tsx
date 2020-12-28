@@ -43,12 +43,15 @@ const Apps: React.FC = () => {
       <SEO title="Apps" lang="ja" description="開発したアプリケーション一覧" />
       <IndexProfileDiv>
         <div>
-          <div className="h2 text-center"><FontAwesomeIcon icon={fas.faGhost} /> Apps <FontAwesomeIcon icon={fas.faGhost} /></div>
-          <div>
-            <ul className="list-unstyled m-0">
-                {displayAllLinks(AllApps)}
-            </ul>
-        </div>
+            <div className="h2 text-center"><FontAwesomeIcon icon={fas.faGhost} /> Apps <FontAwesomeIcon icon={fas.faGhost} /></div>
+            <div>
+                <ul className="list-unstyled m-0">
+                    {displayAllLinks(AllApps)}
+                </ul>
+            </div>
+            <div>
+                <a href='/'>Back to Top</a>
+            </div>
         </div>
       </IndexProfileDiv>
     </React.Fragment>

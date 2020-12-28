@@ -12,6 +12,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false
 library.add(fas, far, fab)
 import { IndexProfileDiv, ProfileTextList, H2Title } from ".";
+import SEO from "../components/seo";
 
 export interface LinkInterface {
   url: string,
@@ -46,7 +47,7 @@ const listOfUrlAndText: Array<LinkInterface> = [
   },
   {
     url: 'https://rrih.github.io/posts',
-    linkName: 'Blog',
+    linkName: 'Posts',
   },
   {
     url: 'https://wantedly.com/id/rrih',
@@ -85,14 +86,20 @@ export const displayAllLinks = (list: Array<LinkInterface>): JSX.Element => {
 
 const LinksPage: React.FC = () => {
   return (
-    <IndexProfileDiv>
-      <div>
-        <div className='h2'><FontAwesomeIcon icon={fas.faLink} /> External links</div>
-        <div className="text-center">
-          {displayAllLinks(listOfUrlAndText)}
+    <React.Fragment>
+      <SEO title="links" lang="ja" description="External links" />
+      <IndexProfileDiv>
+        <div>
+          <div className='h2'><FontAwesomeIcon icon={fas.faLink} /> External links</div>
+          <div>
+            {displayAllLinks(listOfUrlAndText)}
+          </div>
+          <div>
+            <a href='/'>Back to Top</a>
+          </div>
         </div>
-      </div>
-    </IndexProfileDiv>
+      </IndexProfileDiv>
+    </React.Fragment>
   )
 }
 
