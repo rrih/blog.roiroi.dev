@@ -42,7 +42,7 @@ export type Data = {
   }
 }
 
-const H2Title = styled.div`
+export const H2Title = styled.div`
   color: #f8f9fa;
   font-size: 120px;
   font-family: ヒラギノ角ゴ Std W8;
@@ -96,7 +96,7 @@ const Email = styled.div`
   font-size: 70px;
 `
 
-const IndexProfileDiv = styled.div`
+export const IndexProfileDiv = styled.div`
   height: 100vh;
   width: 100vw;
   background-color: #C0C0C0;
@@ -106,7 +106,7 @@ const IndexProfileDiv = styled.div`
   align-items: center;
 `
 
-const ProfileDiv = styled.div`
+export const ProfileDiv = styled.div`
   top: 30%;
   font-weight: bold;
   text-align: center;
@@ -126,7 +126,7 @@ const LinkIcons = styled.div`
   align-items: center;
 `
 
-const ProfileTextList = styled.ul`
+export const ProfileTextList = styled.ul`
   list-style: none;
   padding: 0;
   margin: 0;
@@ -134,11 +134,11 @@ const ProfileTextList = styled.ul`
   margin-bottom: 1rem;
 `
 
-const ProfileText = styled.li`
+export const ProfileText = styled.li`
   margin: 0;
 `
 
-const Circle = styled.div`
+export const Circle = styled.div`
   position: relative;
   width: 60px;
   height: 60px;
@@ -147,7 +147,7 @@ const Circle = styled.div`
   color: #212529;
 `
 
-const LinkDOM = styled.a`
+export const LinkDOM = styled.a`
   :hover {
     color: white;
     background-color: #212529;
@@ -205,6 +205,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
   useEffect(() => {
     getUserWithGitHub();
     console.log(wannaJobMessage)
+    console.log(location.pathname)
   }, []);
 
   return (
@@ -214,6 +215,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
           {isLoading && <MDSpinner />}
           {!isLoading
           &&
+            // プロフィール
             <div>
               <div className='pb-4'>
                 {avatarIcon}
@@ -222,50 +224,56 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                 <ProfileText>
                   {githubScreenName} - {myGitHubName}
                 </ProfileText>
-                <ProfileText>
+                {bio && <ProfileText>
                   {bio}
-                </ProfileText>
+                </ProfileText>}
               </ProfileTextList>
-                {/* icons for link */}
-              <LinkIcons>
-                <Circle className='mx-2'>
-                  <LinkDOM
-                    href={`https://twitter.com/${gbTwitterId}`}
-                    target='_blank'
-                    referrer-policy='no-referrer'
-                    rel='noopener'
-                  >
-                    <FontAwesomeIcon icon={fab.faTwitter} />
-                  </LinkDOM>
-                </Circle>
-                <Circle className='mx-2'>
-                  <LinkDOM
-                    href={`https://github.com/${githubScreenName}`}
-                    target='_blank'
-                    referrer-policy='no-referrer'
-                    rel='noopener'
-                  >
-                    <FontAwesomeIcon icon={fab.faGithub} />
-                  </LinkDOM>
-                </Circle>
-                <Circle className='mx-2'>
-                  <LinkDOM
-                    href='https://rrih.github.io/posts'
-                    target='_blank'
-                    referrer-policy='no-referrer'
-                    rel='noopener'
-                  >
-                    <FontAwesomeIcon icon={fas.faPenFancy} />
-                  </LinkDOM>
-                </Circle>
-              </LinkIcons>
-            </div>
+              {
+                // icons for link
+                location.pathname === '/'
+                &&
+                <LinkIcons>
+                  {/* Twitterのリンク */}
+                  <Circle className='mx-2'>
+                    <LinkDOM
+                      href={`https://twitter.com/${gbTwitterId}`}
+                      target='_blank'
+                      referrer-policy='no-referrer'
+                      rel='noopener'
+                    >
+                      <FontAwesomeIcon icon={fab.faTwitter} />
+                    </LinkDOM>
+                  </Circle>
+                  {/* GitHubのリンク */}
+                  <Circle className='mx-2'>
+                    <LinkDOM
+                      href={`https://github.com/${githubScreenName}`}
+                      target='_blank'
+                      referrer-policy='no-referrer'
+                      rel='noopener'
+                    >
+                      <FontAwesomeIcon icon={fab.faGithub} />
+                    </LinkDOM>
+                  </Circle>
+                  {/* その他関連リンク集へ遷移するリンク */}
+                  <Circle className='mx-2'>
+                    <LinkDOM
+                      href='/links'
+                    >
+                      <FontAwesomeIcon icon={fas.faLink} />
+                    </LinkDOM>
+                  </Circle>
+                </LinkIcons> 
+              }
+              {
+                location.pathname === '/links'
+                &&
+                <Links />
+              }
+            </div> // ~プロフィール
           }
         </ProfileDiv>
       </IndexProfileDiv>
-      {/* <footer>
-        &copy; {new Date().getFullYear()} {myGitHubName}.
-      </footer> */}
     </>
   )
 }
