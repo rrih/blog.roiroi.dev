@@ -255,6 +255,14 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                       <FontAwesomeIcon icon={fab.faGithub} />
                     </LinkDOM>
                   </Circle>
+                  {/* アプリケーション集へ遷移するリンク */}
+                  <Circle className='mx-2'>
+                    <LinkDOM
+                      href='/apps'
+                    >
+                      <FontAwesomeIcon icon={fas.faGhost} />
+                    </LinkDOM>
+                  </Circle>
                   {/* その他関連リンク集へ遷移するリンク */}
                   <Circle className='mx-2'>
                     <LinkDOM
@@ -264,11 +272,6 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     </LinkDOM>
                   </Circle>
                 </LinkIcons> 
-              }
-              {
-                location.pathname === '/links'
-                &&
-                <Links />
               }
             </div> // ~プロフィール
           }

@@ -13,7 +13,7 @@ config.autoAddCss = false
 library.add(fas, far, fab)
 import { IndexProfileDiv, ProfileTextList, H2Title } from ".";
 
-interface LinkInterface {
+export interface LinkInterface {
   url: string,
   linkName: string,
 }
@@ -58,7 +58,7 @@ const listOfUrlAndText: Array<LinkInterface> = [
   },
 ]
 
-const link = (louat: LinkInterface): JSX.Element => {
+export const link = (louat: LinkInterface): JSX.Element => {
   return (
     <li key={louat.linkName}>
       <a
@@ -73,7 +73,7 @@ const link = (louat: LinkInterface): JSX.Element => {
   )
 }
 
-const displayAllLinks = (list: Array<LinkInterface>): JSX.Element => {
+export const displayAllLinks = (list: Array<LinkInterface>): JSX.Element => {
   return (
     <ProfileTextList>
       {list.map((urlAndText: LinkInterface, index: number) => {
@@ -87,8 +87,8 @@ const LinksPage: React.FC = () => {
   return (
     <IndexProfileDiv>
       <div>
-        <div className='h2'>External links</div>
-        <div>
+        <div className='h2'><FontAwesomeIcon icon={fas.faLink} /> External links</div>
+        <div className="text-center">
           {displayAllLinks(listOfUrlAndText)}
         </div>
       </div>
