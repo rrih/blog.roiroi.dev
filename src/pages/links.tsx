@@ -13,6 +13,7 @@ config.autoAddCss = false
 library.add(fas, far, fab)
 import { IndexProfileDiv, ProfileTextList, H2Title } from ".";
 import SEO from "../components/seo";
+import { Link } from "gatsby";
 
 export interface LinkInterface {
   url: string,
@@ -95,7 +96,9 @@ const LinksPage: React.FC = () => {
             {displayAllLinks(listOfUrlAndText)}
           </div>
           <div>
-            <a href='/'>Back to Top</a>
+            <Link to='/'>
+              <FontAwesomeIcon icon={fas.faArrowLeft} /> Back to Top
+            </Link>
           </div>
         </div>
       </IndexProfileDiv>

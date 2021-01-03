@@ -257,19 +257,19 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                   </Circle>
                   {/* アプリケーション集へ遷移するリンク */}
                   <Circle className='mx-2'>
-                    <LinkDOM
-                      href='/apps'
-                    >
-                      <FontAwesomeIcon icon={fas.faGhost} />
-                    </LinkDOM>
+                    <Link to='/apps'>
+                      <LinkDOM>
+                        <FontAwesomeIcon icon={fas.faGhost} />
+                      </LinkDOM>
+                    </Link>
                   </Circle>
                   {/* その他関連リンク集へ遷移するリンク */}
                   <Circle className='mx-2'>
-                    <LinkDOM
-                      href='/links'
-                    >
-                      <FontAwesomeIcon icon={fas.faLink} />
-                    </LinkDOM>
+                    <Link to='/links'>
+                      <LinkDOM>
+                        <FontAwesomeIcon icon={fas.faLink} />
+                      </LinkDOM>
+                    </Link>
                   </Circle>
                 </LinkIcons> 
               }

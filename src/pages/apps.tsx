@@ -10,6 +10,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Link } from "gatsby";
 config.autoAddCss = false
 library.add(fas, far, fab)
 
@@ -50,7 +51,9 @@ const Apps: React.FC = () => {
                 </ul>
             </div>
             <div>
-                <a href='/'>Back to Top</a>
+              <Link to='/'>
+                <FontAwesomeIcon icon={fas.faArrowLeft} /> Back to Top
+              </Link>
             </div>
         </div>
       </IndexProfileDiv>
