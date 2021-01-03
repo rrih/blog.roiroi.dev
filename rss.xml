@@ -1,4 +1,219 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jan 2021 09:04:08 GMT</lastBuildDate><item><title><![CDATA[2021年開始]]></title><description><![CDATA[明けましておめでとうございます。 逃げ恥 2021 を見てシステムアーキテクトになりたくなりました。 2021 年は天才システムアーキテクトを目指そうと思います 🙂 よろしくお願いします。]]></description><link>https://rrih.github.io/20210102-new-yaer/</link><guid isPermaLink="false">https://rrih.github.io/20210102-new-yaer/</guid><pubDate>Sun, 03 Jan 2021 15:19:00 GMT</pubDate><content:encoded>&lt;p&gt;明けましておめでとうございます。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[rrih]]></title><description><![CDATA[rrih site]]></description><link>https://rrih.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 03 Jan 2021 18:04:27 GMT</lastBuildDate><item><title><![CDATA[man zsh 中身]]></title><link>https://rrih.github.io/20210104-man-zsh/</link><guid isPermaLink="false">https://rrih.github.io/20210104-man-zsh/</guid><pubDate>Mon, 04 Jan 2021 15:19:00 GMT</pubDate><content:encoded>&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;bash&quot;&gt;&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;NAME
+       &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; - the Z shell
+
+OVERVIEW
+       Because &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; contains many features, the &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; manual has been &lt;span class=&quot;token function&quot;&gt;split&lt;/span&gt; into a number of sections:
+
+       &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt;          Zsh overview &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;this section&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+       zshroadmap   Informal introduction to the manual
+       zshmisc      Anything not fitting into the other sections
+       zshexpn      Zsh &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; and parameter expansion
+       zshparam     Zsh parameters
+       zshoptions   Zsh options
+       zshbuiltins  Zsh built-in functions
+       zshzle       Zsh &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; line editing
+       zshcompwid   Zsh completion widgets
+       zshcompsys   Zsh completion system
+       zshcompctl   Zsh completion control
+       zshmodules   Zsh loadable modules
+       zshtcpsys    Zsh built-in TCP functions
+       zshzftpsys   Zsh built-in FTP client
+       zshcontrib   Additional &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; functions and utilities
+       zshall       Meta-man page containing all of the above
+
+DESCRIPTION
+       Zsh  is  a UNIX &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; interpreter &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;shell&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; usable as an interactive login shell and as a shell script &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; processor.  Of the standard shells, &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;most&lt;/span&gt; closely resembles ksh but includes many
+       enhancements.  It does not provide compatibility with POSIX or other shells &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; its default operating mode:  see the section Compatibility below.
+
+       Zsh has &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; line editing, &lt;span class=&quot;token builtin class-name&quot;&gt;builtin&lt;/span&gt; spelling correction, programmable &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; completion, shell functions &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;with autoloading&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, a &lt;span class=&quot;token function&quot;&gt;history&lt;/span&gt; mechanism, and a &lt;span class=&quot;token function&quot;&gt;host&lt;/span&gt; of other features.
+
+AUTHOR
+       Zsh was originally written by Paul Falstad &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pf@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.  Zsh is now maintained by the members of the zsh-workers mailing list &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-workers@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.  The development is currently coordinated  by
+       Peter Stephenson &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pws@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.  The coordinator can be contacted at &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;coordinator@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;, but matters relating to the code should generally go to the mailing list.
+
+AVAILABILITY
+       Zsh is available from the following HTTP and anonymous FTP site.
+
+       ftp://ftp.zsh.org/pub/
+       https://www.zsh.org/pub/
+       &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+       The  up-to-date  &lt;span class=&quot;token builtin class-name&quot;&gt;source&lt;/span&gt;  code  is  available  via  Git  from  Sourceforge.   See  https://sourceforge.net/projects/zsh/  &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;  details.   A  summary of instructions &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the archive can be found at
+       http://zsh.sourceforge.net/.
+
+MAILING LISTS
+       Zsh has &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt; mailing lists:
+
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-announce@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+              Announcements about releases, major changes &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the shell and the monthly posting of the Zsh FAQ.  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;moderated&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-users@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+              User discussions.
+
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-workers@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+              Hacking, development, bug reports and patches.
+
+       To subscribe or unsubscribe, send mail to the associated administrative address &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the mailing list.
+
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-announce-subscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-users-subscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-workers-subscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-announce-unsubscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-users-unsubscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+       &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;zsh-workers-unsubscribe@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+        YOU ONLY NEED TO JOIN ONE OF THE MAILING LISTS AS THEY ARE NESTED.  All submissions to zsh-announce are automatically forwarded to zsh-users.  All submissions to zsh-users are automatically  for-
+       warded to zsh-workers.
+
+       If you have problems subscribing/unsubscribing to any of the mailing lists, send mail to &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;listmaster@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.  The mailing lists are maintained by Karsten Thygesen &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;karthy@kom.auc.dk&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.
+
+       The  mailing  lists are archived&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; the archives can be accessed via the administrative addresses listed above.  There is also a hypertext archive, maintained by Geoff Wing &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;gcw@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;, available
+       at https://www.zsh.org/mla/.
+
+THE ZSH FAQ
+       Zsh has a list of Frequently Asked Questions &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;FAQ&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, maintained by Peter Stephenson &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;pws@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.  It is regularly posted to the newsgroup comp.unix.shell and the zsh-announce mailing list.   The
+       latest version can be found at any of the Zsh FTP sites, or at http://www.zsh.org/FAQ/.  The contact address &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; FAQ-related matters is &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;faqmaster@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.
+
+THE ZSH WEB PAGE
+       Zsh has a web page &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; is located at https://www.zsh.org/.  This is maintained by Karsten Thygesen &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;karthy@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;, of SunSITE Denmark.  The contact address &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; web-related matters is &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;webmas-
+       ter@zsh.org&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;.
+
+THE ZSH USERGUIDE
+       A userguide is currently &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; preparation.  It is intended to complement the manual, with explanations and hints on issues where the manual can be cabbalistic, hierographic, or downright mystifying
+       &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;for  example,  the  word &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;hierographic&apos; does not exist&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;.  It can be viewed &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; its current state at http://zsh.sourceforge.net/Guide/.  At the &lt;span class=&quot;token function&quot;&gt;time&lt;/span&gt; of writing, chapters dealing with startup files
+       and their contents and the new completion system were essentially complete.
+
+INVOCATION
+       The following flags are interpreted by the shell when invoked to determine where the shell will &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; commands from:
+
+       -c     Take the first argument as a &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; to execute, rather than reading commands from a script or standard input.  If any further arguments are given, the first one is assigned to $0,  rather
+              than being used as a positional parameter.
+
+       -i     Force shell to be interactive.  It is still possible to specify a script to execute.
+
+       -s     Force shell to &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; commands from the standard input.  If the -s flag is not present and an argument is given, the first argument is taken to be the pathname of a script to execute.
+
+       If  there are any remaining arguments after option processing, and neither of the options -c or -s was supplied, the first argument is taken as the &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; name of a script containing shell commands
+       to be executed.  If the option PATH_SCRIPT is set, and the &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; name does not contain a directory path &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;i.e. there is no &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;/&lt;span class=&quot;token string&quot;&gt;&apos; in the name), first the current directory and then  the  command  path
+       given by the variable PATH are searched for the script.  If the option is not set or the file name contains a &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;/&apos; it is used directly.
+
+       After the first one or two arguments have been appropriated as described above, the remaining arguments are assigned to the positional parameters.
+
+       For further options, &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; are common to invocation and the &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; builtin, see zshoptions&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;.
+
+       The  long  option  &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--emulate&apos;&lt;/span&gt; followed &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;in a separate word&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; by an emulation mode may be passed to the shell.  The emulation modes are those described &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the emulate builtin, see zshbuiltins&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;.
+       The &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;--emulate&apos; option must precede any other options &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;which might otherwise be overridden&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, but following options are honoured, so may be used to modify the requested emulation mode.  Note  that
+       certain  extra steps are taken to ensure a smooth emulation when this option is used compared with the emulate &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; within the shell: &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; example, variables that conflict with POSIX usage such
+       as path are not defined within the shell.
+
+       Options may be specified by name using the -o option.  -o acts like a single-letter option, but takes a following string as the option name.  For example,
+
+              &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; -x -o shwordsplit scr
+
+       runs the script scr, setting the XTRACE option by the corresponding letter &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-x&lt;span class=&quot;token string&quot;&gt;&apos; and the SH_WORD_SPLIT option by name.  Options may be turned off by name by using +o instead  of  -o.   -o  can  be
+       stacked up with preceding single-letter options, so for example &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-xo shwordsplit&apos; or &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-xoshwordsplit&apos;&lt;/span&gt; is equivalent to &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-x -o shwordsplit&apos;.
+
+       Options  may  also  be  specified  by  name  &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; GNU long option style, &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--option-name&lt;span class=&quot;token string&quot;&gt;&apos;.  When this is done, &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-&apos; characters &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the option name are permitted: they are translated into &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;_&apos;&lt;/span&gt;, and thus
+       ignored.  So, &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; example, &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; --sh-word-split&apos; invokes &lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; with the SH_WORD_SPLIT option turned on.  Like other option syntaxes, options can be turned off by replacing the initial  &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;token string&quot;&gt;&apos;  with  a
+       &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;+&apos;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;  thus &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;+-sh-word-split&apos;&lt;/span&gt; is equivalent to &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;--no-sh-word-split&apos;.  Unlike other option syntaxes, GNU-style long options cannot be stacked with any other options, so &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; example &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-x-shwordsplit&lt;span class=&quot;token string&quot;&gt;&apos;
+       is an error, rather than being treated like &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-x --shwordsplit&apos;.
+
+       The special GNU-style option &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--version&apos;&lt;/span&gt; is handled&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; it sends to standard output the shell&apos;s version information, &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; exits successfully.  &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;--help&apos; is also handled&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; it sends to standard output a
+       list of options that can be used when invoking the shell, &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; exits successfully.
+
+       Option  processing  may be finished, allowing following arguments that start with &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-&lt;span class=&quot;token string&quot;&gt;&apos; or &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;+&apos; to be treated as normal arguments, &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; two ways.  Firstly, a lone &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-&apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;or &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;+&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; as an argument by itself
+       ends option processing.  Secondly, a special option &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--&lt;span class=&quot;token string&quot;&gt;&apos; (or &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;+-&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; may be specified on its own &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;which is the standard POSIX usage&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; or may be stacked with preceding  options  &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;so  &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-x-&apos;&lt;/span&gt;  is
+       equivalent  to  &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-x  --&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;.   Options are not permitted to be stacked after &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--&lt;span class=&quot;token string&quot;&gt;&apos; (so &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-x-f&apos; is an error&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, but note the GNU-style option form discussed above, where &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--shwordsplit&apos;&lt;/span&gt; is permitted and
+       does not end option processing.
+
+       Except when the sh/ksh emulation single-letter options are &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; effect, the option &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-b&apos; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;or &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;+b&lt;span class=&quot;token string&quot;&gt;&apos;) ends option processing.  &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-b&apos; is like &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;--&apos;&lt;/span&gt;,  except  that  further  single-letter  options  can  be
+       stacked after the &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;-b&apos; and will take effect as normal.
+
+COMPATIBILITY
+       Zsh  tries  to emulate &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt; or ksh when it is invoked as &lt;span class=&quot;token function&quot;&gt;sh&lt;/span&gt; or ksh respectively&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;more&lt;/span&gt; precisely, it looks at the first letter of the name by &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; it was invoked, excluding any initial &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;r&lt;span class=&quot;token string&quot;&gt;&apos; (assumed
+       to stand for &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;restricted&apos;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, and &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; that is &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;b&apos;&lt;/span&gt;, &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;s&apos; or &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;k&lt;span class=&quot;token string&quot;&gt;&apos; it will emulate sh or ksh.  Furthermore, if invoked as su (which happens on certain systems when the shell is executed by  the  su  com-
+       mand), the shell will try to find an alternative name from the SHELL environment variable and perform emulation based on that.
+
+       In  sh  and  ksh  compatibility  modes  the following parameters are not special and not initialized by the shell: ARGC, argv, cdpath, fignore, fpath, HISTCHARS, mailpath, MANPATH, manpath, path,
+       prompt, PROMPT, PROMPT2, PROMPT3, PROMPT4, psvar, status, watch.
+
+       The usual zsh startup/shutdown scripts are not executed.  Login shells source /etc/profile followed by &lt;span class=&quot;token environment constant&quot;&gt;$HOME&lt;/span&gt;/.profile.  If the ENV environment variable is set on invocation, &lt;span class=&quot;token variable&quot;&gt;$ENV&lt;/span&gt; is sourced after
+       the profile scripts.  The value of ENV is subjected to parameter expansion, command substitution, and arithmetic expansion before being interpreted as a pathname.  Note that the PRIVILEGED option
+       also affects the execution of startup files.
+
+       The following options are set if the shell is invoked as sh or ksh: NO_BAD_PATTERN, NO_BANG_HIST,  NO_BG_NICE,  NO_EQUALS,  NO_FUNCTION_ARGZERO,  GLOB_SUBST,  NO_GLOBAL_EXPORT,  NO_HUP,  INTERAC-
+       TIVE_COMMENTS,  KSH_ARRAYS,  NO_MULTIOS,  NO_NOMATCH, NO_NOTIFY, POSIX_BUILTINS, NO_PROMPT_PERCENT, RM_STAR_SILENT, SH_FILE_EXPANSION, SH_GLOB, SH_OPTION_LETTERS, SH_WORD_SPLIT.  Additionally the
+       BSD_ECHO and IGNORE_BRACES options are set if zsh is invoked as sh.  Also, the KSH_OPTION_PRINT, LOCAL_OPTIONS, PROMPT_BANG, PROMPT_SUBST and SINGLE_LINE_ZLE options are set if zsh is invoked  as
+       ksh.
+
+RESTRICTED SHELL
+       When  the  basename of the command used to invoke zsh starts with the letter &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;r&apos; or the &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;-r&apos;&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; line option is supplied at invocation, the shell becomes restricted.  Emulation mode is deter-
+       mined after stripping the letter &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;r&lt;span class=&quot;token string&quot;&gt;&apos; from the invocation name.  The following are disabled in restricted mode:
+
+       o      changing directories with the cd builtin
+
+       o      changing or unsetting the EGID, EUID, GID, HISTFILE, HISTSIZE, IFS, LD_AOUT_LIBRARY_PATH, LD_AOUT_PRELOAD, LD_LIBRARY_PATH, LD_PRELOAD, MODULE_PATH, module_path, PATH, path, SHELL, UID and
+              USERNAME parameters
+
+       o      specifying command names containing /
+
+       o      specifying command pathnames using hash
+
+       o      redirecting output to files
+
+       o      using the exec builtin command to replace the shell with another command
+
+       o      using jobs -Z to overwrite the shell process&apos;&lt;/span&gt; argument and environment space
+
+       o      using the ARGV0 parameter to override argv&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; external commands
+
+       o      turning off restricted mode with &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; +r or unsetopt RESTRICTED
+
+       These  restrictions  are enforced after processing the startup files.  The startup files should &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; up &lt;span class=&quot;token environment constant&quot;&gt;PATH&lt;/span&gt; to point to a directory of commands &lt;span class=&quot;token function&quot;&gt;which&lt;/span&gt; can be safely invoked &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; the restricted envi-
+       ronment.  They may also &lt;span class=&quot;token function&quot;&gt;add&lt;/span&gt; further restrictions by disabling selected builtins.
+
+       Restricted mode can also be activated any &lt;span class=&quot;token function&quot;&gt;time&lt;/span&gt; by setting the RESTRICTED option.  This immediately enables all the restrictions described above even &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; the  shell  still  has  not  processed  all
+       startup files.
+
+STARTUP/SHUTDOWN FILES
+       Commands  are  first  &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; from /etc/zshenv&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; this cannot be overridden.  Subsequent behaviour is modified by the RCS and GLOBAL_RCS options&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; the former affects all startup files, &lt;span class=&quot;token keyword&quot;&gt;while&lt;/span&gt; the second
+       only affects global startup files &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;those shown here with an path starting with a /&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;.  If one of the options is &lt;span class=&quot;token builtin class-name&quot;&gt;unset&lt;/span&gt; at any point, any subsequent startup file&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;s&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; of the  corresponding  &lt;span class=&quot;token builtin class-name&quot;&gt;type&lt;/span&gt;  will
+       not be read.  It is also possible &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; a &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; $ZDOTDIR to re-enable GLOBAL_RCS. Both RCS and GLOBAL_RCS are &lt;span class=&quot;token builtin class-name&quot;&gt;set&lt;/span&gt; by default.
+
+       Commands  are  &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt;  &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; from $ZDOTDIR/.zshenv.  If the shell is a login shell, commands are &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; from /etc/zprofile and &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; $ZDOTDIR/.zprofile.  Then, &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; the shell is interactive, commands are
+       &lt;span class=&quot;token builtin class-name&quot;&gt;read&lt;/span&gt; from /etc/zshrc and &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; $ZDOTDIR/.zshrc.  Finally, &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; the shell is a login shell, /etc/zlogin and $ZDOTDIR/.zlogin are read.
+
+       When a login shell exits, the files $ZDOTDIR/.zlogout and &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; /etc/zlogout are read.  This happens with either an explicit &lt;span class=&quot;token builtin class-name&quot;&gt;exit&lt;/span&gt; via the &lt;span class=&quot;token builtin class-name&quot;&gt;exit&lt;/span&gt; or &lt;span class=&quot;token builtin class-name&quot;&gt;logout&lt;/span&gt; commands, or an implicit  &lt;span class=&quot;token builtin class-name&quot;&gt;exit&lt;/span&gt;  by  reading
+       end-of-file  from the terminal.  However, &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; the shell terminates due to exec&apos;ing another process, the &lt;span class=&quot;token builtin class-name&quot;&gt;logout&lt;/span&gt; files are not read.  These are also affected by the RCS and GLOBAL_RCS options.  Note
+       also that the RCS option affects the saving of &lt;span class=&quot;token function&quot;&gt;history&lt;/span&gt; files, i.e. &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; RCS is &lt;span class=&quot;token builtin class-name&quot;&gt;unset&lt;/span&gt; when the shell exits, no &lt;span class=&quot;token function&quot;&gt;history&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; will be saved.
+
+       If ZDOTDIR is unset, &lt;span class=&quot;token environment constant&quot;&gt;HOME&lt;/span&gt; is used instead.  Files listed above as being &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; /etc may be &lt;span class=&quot;token keyword&quot;&gt;in&lt;/span&gt; another directory, depending on the installation.
+
+       As /etc/zshenv is run &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; all instances of zsh, it is important that it be kept as small as possible.  In particular, it is a good idea to put code that does not need to be run &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt;  every  single
+       shell behind a &lt;span class=&quot;token builtin class-name&quot;&gt;test&lt;/span&gt; of the form &lt;span class=&quot;token variable&quot;&gt;`&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt; -o rcs &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;then&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;..&lt;/span&gt;.&lt;span class=&quot;token string&quot;&gt;&apos; so that it will not be executed when zsh is invoked with the `-f&apos;&lt;/span&gt; option.
+
+       Any  of  these  files  may be pre-compiled with the zcompile &lt;span class=&quot;token builtin class-name&quot;&gt;builtin&lt;/span&gt; &lt;span class=&quot;token builtin class-name&quot;&gt;command&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;see zshbuiltins&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;))&lt;/span&gt;.  If a compiled &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; exists &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;named &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; the original &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; plus the .zwc extension&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; and it is newer
+       than the original file, the compiled &lt;span class=&quot;token function&quot;&gt;file&lt;/span&gt; will be used instead.
+
+FILES
+       &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshenv
+       &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zprofile
+       &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zshrc
+       &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogin
+       &lt;span class=&quot;token variable&quot;&gt;$ZDOTDIR&lt;/span&gt;/.zlogout
+       &lt;span class=&quot;token variable&quot;&gt;${TMPPREFIX}&lt;/span&gt;*   &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;default is /tmp/zsh*&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+       /etc/zshenv
+       /etc/zprofile
+       /etc/zshrc
+       /etc/zlogin
+       /etc/zlogout    &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;installation-specific - /etc is the default&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+SEE ALSO
+       sh&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, csh&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, tcsh&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, rc&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, bash&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, ksh&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshall&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshbuiltins&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshcompwid&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshcompsys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshcompctl&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshcontrib&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshexpn&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshmisc&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshmodules&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;,  zshoptions&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;,  zsh-
+       param&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshroadmap&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshtcpsys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshzftpsys&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;, zshzle&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;
+
+       IEEE Standard &lt;span class=&quot;token keyword&quot;&gt;for&lt;/span&gt; information Technology - Portable Operating System Interface &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;POSIX&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; - Part &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;: Shell and Utilities, IEEE Inc, &lt;span class=&quot;token number&quot;&gt;1993&lt;/span&gt;, ISBN &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;-55937-255-9.
+
+&lt;span class=&quot;token function&quot;&gt;zsh&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;5.7&lt;/span&gt;.1                                                                                    February &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;, &lt;span class=&quot;token number&quot;&gt;2019&lt;/span&gt;                                                                                       ZSH&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</content:encoded></item><item><title><![CDATA[2021年開始]]></title><description><![CDATA[明けましておめでとうございます。 逃げ恥 2021 を見てシステムアーキテクトになりたくなりました。 2021 年は天才システムアーキテクトを目指そうと思います 🙂 よろしくお願いします。]]></description><link>https://rrih.github.io/20210102-new-yaer/</link><guid isPermaLink="false">https://rrih.github.io/20210102-new-yaer/</guid><pubDate>Sun, 03 Jan 2021 15:19:00 GMT</pubDate><content:encoded>&lt;p&gt;明けましておめでとうございます。&lt;/p&gt;
 &lt;p&gt;逃げ恥 2021 を見てシステムアーキテクトになりたくなりました。&lt;/p&gt;
 &lt;p&gt;2021 年は天才システムアーキテクトを目指そうと思います 🙂&lt;/p&gt;
 &lt;p&gt;よろしくお願いします。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[一番最初のリポジトリに2年ぶりにcommitした]]></title><description><![CDATA[現状、一番最初のリポジトリはこちらなんですが、2 年ぶりに commit してみました。 簡単な html,css,js の練習みたいなサイトです。フィボナッチ数列のサイトですが、アイデア的にも世に溢れてそうですね。簡単すぎるのでおそらく現代の IT…]]></description><link>https://rrih.github.io/20201227-first-repo/</link><guid isPermaLink="false">https://rrih.github.io/20201227-first-repo/</guid><pubDate>Sun, 27 Dec 2020 19:19:00 GMT</pubDate><content:encoded>&lt;p&gt;現状、一番最初のリポジトリは&lt;a href=&quot;https://github.com/rrih/fibonacci-sequence&quot;&gt;こちら&lt;/a&gt;なんですが、2 年ぶりに commit してみました。&lt;/p&gt;
