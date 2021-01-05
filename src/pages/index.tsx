@@ -149,13 +149,16 @@ export const Circle = styled.div`
 
 export const LinkDOM = styled.a`
   :hover {
-    color: white;
-    background-color: #212529;
+    color: #212529;
+    // background-color: #212529;
     border: none;
   }
   svg {
     height: 100%;
     font-size: 150%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
   position: absolute;
   top: 0;
@@ -165,6 +168,23 @@ export const LinkDOM = styled.a`
   border-radius: 50%;
   color: #212529;
   
+`
+
+export const NewLinkCircle = styled.div`
+  position: relative;
+  width: 60px;
+  height: 60px;
+
+  border-radius: 108px;
+  background: #C0C0C0;
+  box-shadow:  13px 13px 26px #a3a3a3,
+              -13px -13px 26px #dddddd;
+  :hover {
+    border-radius: 108px;
+    background: #C0C0C0;
+    box-shadow: inset 13px 13px 26px #a3a3a3,
+                inset -13px -13px 26px #dddddd;
+  }
 `
 
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
@@ -234,7 +254,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                 &&
                 <LinkIcons>
                   {/* Twitterのリンク */}
-                  <Circle className='mx-2'>
+                  <NewLinkCircle className="mx-2">
                     <LinkDOM
                       href={`https://twitter.com/${gbTwitterId}`}
                       target='_blank'
@@ -243,9 +263,22 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     >
                       <FontAwesomeIcon icon={fab.faTwitter} />
                     </LinkDOM>
-                  </Circle>
+                    </NewLinkCircle>
+
+                  {/* NEW */}
+                  {/* <NewLinkCircle>
+                    <LinkDOM
+                      href={`https://twitter.com/${gbTwitterId}`}
+                      target='_blank'
+                      referrer-policy='no-referrer'
+                      rel='noopener'
+                    >
+                      <FontAwesomeIcon icon={fab.faTwitter} />
+                    </LinkDOM>
+                  </NewLinkCircle> */}
+
                   {/* GitHubのリンク */}
-                  <Circle className='mx-2'>
+                  <NewLinkCircle className='mx-2'>
                     <LinkDOM
                       href={`https://github.com/${githubScreenName}`}
                       target='_blank'
@@ -254,23 +287,23 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     >
                       <FontAwesomeIcon icon={fab.faGithub} />
                     </LinkDOM>
-                  </Circle>
+                  </NewLinkCircle>
                   {/* アプリケーション集へ遷移するリンク */}
-                  <Circle className='mx-2'>
+                  <NewLinkCircle className='mx-2'>
                     <Link to='/apps'>
                       <LinkDOM>
                         <FontAwesomeIcon icon={fas.faGhost} />
                       </LinkDOM>
                     </Link>
-                  </Circle>
+                  </NewLinkCircle>
                   {/* その他関連リンク集へ遷移するリンク */}
-                  <Circle className='mx-2'>
+                  <NewLinkCircle className='mx-2'>
                     <Link to='/links'>
                       <LinkDOM>
                         <FontAwesomeIcon icon={fas.faLink} />
                       </LinkDOM>
                     </Link>
-                  </Circle>
+                  </NewLinkCircle>
                 </LinkIcons> 
               }
             </div> // ~プロフィール

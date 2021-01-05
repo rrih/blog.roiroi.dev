@@ -24,6 +24,10 @@ const AllApps: Array<LinkInterface>  = [
         url: 'https://rrih.github.io/cakephp-baked-code-formatter/',
         linkName: 'コードフォーマッタ',
     },
+    {
+      url: 'https://rrih.github.io/jobhunt',
+      linkName: '就活シミュレーター',
+    }
     // {
     //     url: 'https://rrih.github.io/kyugyo',
     //     linkName: '休業.com',
