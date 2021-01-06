@@ -11,9 +11,10 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false
 library.add(fas, far, fab)
-import { IndexProfileDiv, ProfileTextList, H2Title } from ".";
+import { IndexProfileDiv, ProfileTextList, H2Title, NewLinkCircle } from ".";
 import SEO from "../components/seo";
 import { Link } from "gatsby";
+import styled from "styled-components";
 
 export interface LinkInterface {
   url: string,
@@ -29,6 +30,10 @@ const listOfUrlAndText: Array<LinkInterface> = [
   {
     url: 'https://zenn.dev/ro',
     linkName: 'Zenn',
+  },
+  {
+    url: 'https://www.npmjs.com/~rrih',
+    linkName: 'npm',
   },
   {
     url: 'https://facebook.com/rsklv',
@@ -60,17 +65,47 @@ const listOfUrlAndText: Array<LinkInterface> = [
   },
 ]
 
+const PNewLinkCircle = styled.div`
+  position: relative;
+  width: 120%;
+  padding: 10px 0px;
+  text-align: center;
+
+  border-radius: 108px;
+  background: #C0C0C0;
+  box-shadow:  13px 13px 26px #a3a3a3,
+              -13px -13px 26px #dddddd;
+  :hover {
+    border-radius: 108px;
+    background: #C0C0C0;
+    box-shadow: inset 13px 13px 26px #a3a3a3,
+                inset -13px -13px 26px #dddddd;
+  }
+`
+
+const InnerLink = styled.a`
+  text-decoration: none;
+  color: #212529;
+  // padding: 10px 100%;
+  width: 100%
+  :hover {
+    color: #212529;
+  }
+`
+
 export const link = (louat: LinkInterface): JSX.Element => {
   return (
     <li key={louat.linkName}>
-      <a
-        href={louat.url}
-        target='_blank'
-        referrer-policy='no-referrer'
-        rel='noopener'
-      >
-        {louat.linkName} <FontAwesomeIcon icon={fas.faExternalLinkAlt} />
-      </a>
+      <PNewLinkCircle className="mx-2">
+        <InnerLink
+          href={louat.url}
+          target='_blank'
+          referrer-policy='no-referrer'
+          rel='noopener'
+        >
+          {louat.linkName} {/* <FontAwesomeIcon icon={fas.faExternalLinkAlt} /> */}
+        </InnerLink>
+      </PNewLinkCircle>
     </li>
   )
 }

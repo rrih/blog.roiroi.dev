@@ -263,7 +263,7 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
                     >
                       <FontAwesomeIcon icon={fab.faTwitter} />
                     </LinkDOM>
-                    </NewLinkCircle>
+                  </NewLinkCircle>
 
                   {/* NEW */}
                   {/* <NewLinkCircle>
