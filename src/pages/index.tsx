@@ -107,7 +107,7 @@ export const IndexProfileDiv = styled.div`
 `
 
 export const ProfileDiv = styled.div`
-  top: 30%;
+  // top: 30%;
   font-weight: bold;
   text-align: center;
   position: absolute;
@@ -187,12 +187,18 @@ export const NewLinkCircle = styled.div`
   }
 `
 
+export const NormalFontDiv = styled.div`
+system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+`
+
 const BlogIndex = ({ data, location }: PageProps<Data>) => {
   const siteTitle = data.site.siteMetadata.title
   const birthday = moment('1997/09/11', 'YYYY/MM/DD') // 誕生日
   const today = moment()
   const age = today.diff(birthday, 'years')
   const [isLoading, setIsLoading] = useState(false)
+  // facebook profile image
+  const [fbProfileImg, setFbProfileImg] = useState()
   // TODO あとで github のプロフィールの型定義する
   const [avatarIcon, setAvatarIcon] = useState();
   const [myGitHubName, setMyGitHubName] = useState();
@@ -219,11 +225,29 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
         console.log(err);
       })
       .finally(() => {
-        setIsLoading(false)
+        // setIsLoading(false)
       })
   };
+
+  const getFBProfileImg = async () => {
+    await axios.get(`https://graph.facebook.com/902058870538493/picture?width=1000&amp;height=1000`)
+      .then((res) => {
+        const url = res.request.responseURL
+        const image = <img className="mb-0 rounded-pill" src={url} alt="rrih-fb-avatar-url" width={90}/>
+        setFbProfileImg(image)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+      .finally(() => {
+        // console.log('final')
+        setIsLoading(false)
+      })
+  }
+
   useEffect(() => {
     getUserWithGitHub();
+    getFBProfileImg()
     console.log(wannaJobMessage)
   }, []);
 
@@ -239,6 +263,10 @@ const BlogIndex = ({ data, location }: PageProps<Data>) => {
             <div>
               <div className='pb-4'>
                 {avatarIcon}
+                
+              </div>
+              <div>
+              {fbProfileImg}
               </div>
               <ProfileTextList>
                 <ProfileText>

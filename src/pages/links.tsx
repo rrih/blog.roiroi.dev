@@ -96,7 +96,7 @@ const InnerLink = styled.a`
 export const link = (louat: LinkInterface): JSX.Element => {
   return (
     <li key={louat.linkName}>
-      <PNewLinkCircle className="mx-2">
+      {/* <PNewLinkCircle className="mx-2"> */}
         <InnerLink
           href={louat.url}
           target='_blank'
@@ -105,18 +105,20 @@ export const link = (louat: LinkInterface): JSX.Element => {
         >
           {louat.linkName} {/* <FontAwesomeIcon icon={fas.faExternalLinkAlt} /> */}
         </InnerLink>
-      </PNewLinkCircle>
+      {/* </PNewLinkCircle> */}
     </li>
   )
 }
 
 export const displayAllLinks = (list: Array<LinkInterface>): JSX.Element => {
   return (
-    <ProfileTextList>
+    // <ProfileTextList>
+    <>
       {list.map((urlAndText: LinkInterface, index: number) => {
         return link(urlAndText)
       })}
-    </ProfileTextList>
+    </>
+    // </ProfileTextList>
   )
 }
 
@@ -124,9 +126,9 @@ const LinksPage: React.FC = () => {
   return (
     <React.Fragment>
       <SEO title="links" lang="ja" description="External links" />
-      <IndexProfileDiv>
-        <div>
-          <div className='h2'><FontAwesomeIcon icon={fas.faLink} /> External links</div>
+      {/* <IndexProfileDiv> */}
+        <div className="ml-4 mt-3">
+          <div className='h2'><FontAwesomeIcon icon={fas.faLink} /> Links</div>
           <div>
             {displayAllLinks(listOfUrlAndText)}
           </div>
@@ -136,7 +138,7 @@ const LinksPage: React.FC = () => {
             </Link>
           </div>
         </div>
-      </IndexProfileDiv>
+      {/* </IndexProfileDiv> */}
     </React.Fragment>
   )
 }
