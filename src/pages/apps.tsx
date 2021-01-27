@@ -27,6 +27,10 @@ const AllApps: Array<LinkInterface>  = [
     {
       url: 'https://rrih.github.io/jobhunt',
       linkName: '就活シミュレーター',
+    },
+    {
+      url: 'https://rrih.github.io/twir',
+      linkName: 'Twitterクライアント',
     }
     // {
     //     url: 'https://rrih.github.io/kyugyo',
