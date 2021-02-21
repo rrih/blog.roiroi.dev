@@ -1,24 +1,14 @@
-import React, { FC } from 'react'
-import { theme } from '../utils/theme'
-import { Layout } from '../components/Layout'
-import { MuiThemeProvider } from '@material-ui/core'
-// import { signIn, signOut, useSession } from 'next-auth/client'
+import Link from 'next/link'
 
-const Index: FC = () => {
-	// const [session, loading] = useSession()
+const IndexPage = () => (
+  <>
+    <h1>Hello Next.js 👋</h1>
+    <p>
+      <Link href="/about">
+        <a>About</a>
+      </Link>
+    </p>
+  </>
+)
 
-	return (
-		<MuiThemeProvider theme={theme}>
-			<Layout title="twir">
-				<h1>twir</h1>
-				Twitterクライアント用アプリケーションです(´･_･`)
-				<br />
-				きまぐれで実験的に作っているので色々と変わります
-				<br />
-				<a href="https://github.com/rrih/twir">GitHub</a>
-			</Layout>
-		</MuiThemeProvider>
-	)
-}
-
-export default Index
+export default IndexPage
