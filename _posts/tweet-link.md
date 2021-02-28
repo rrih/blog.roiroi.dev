@@ -11,4 +11,6 @@ ogImage:
 ---
 
 ツイートを埋め込んでみるだけの記事
-<blockquote class="twitter-tweet"><p lang="und" dir="ltr"><a href="https://t.co/g1KamxUxFK">pic.twitter.com/g1KamxUxFK</a></p>&mdash; kawa (@rrih_dev) <a href="https://twitter.com/rrih_dev/status/1365884968455467009?ref_src=twsrc%5Etfw">February 28, 2021</a></blockquote>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">書きました。<br><br>チーム個々人のテックブログをRSSで集約するサイトをNext.jsで作った｜catnose <a href="https://t.co/UNmiIO4a5e">https://t.co/UNmiIO4a5e</a></p>&mdash; catnose (@catnose99) <a href="https://twitter.com/catnose99/status/1319921179084222466?ref_src=twsrc%5Etfw">October 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+おしまい
