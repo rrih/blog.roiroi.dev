@@ -7,12 +7,10 @@ author:
   name: ろい
   picture: 'https://pbs.twimg.com/profile_images/1360265464488710150/9tFz-ycm_400x400.jpg'
 ogImage:
-  url: 'https://github.com/rrih.png'
+  url: 'https://pbs.twimg.com/profile_banners/636879657/1606257712/1500x500'
 ---
 
-[rrih.github.io](https://rrih.github.io) を破壊してNextで作り直しました。暇なので。
-
-やったことは以下のコマンドを叩いただけです。  
+当サイトにてやったことは以下のコマンドを叩いただけです。  
 簡単なので赤ちゃんでもできます。
 
 ```bash
