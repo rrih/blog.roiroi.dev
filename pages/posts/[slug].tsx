@@ -30,28 +30,30 @@ const Post = ({ post, morePosts, preview }: Props) => {
           <PostTitle>Loading…</PostTitle>
         ) : (
           <>
-            <article className="mb-32 whitespace-normal">
+            <article className="mb-32 lg:w-3/5 mx-auto text-center">
               <Head>
                 <title>
                   {post.title} | ろいろぐ
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
-              <PostHeader
-                title={post.title}
-                coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
-              />
-              <PostBody content={post.content} />
-              <div>
-                <a
-                  href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                  className="twitter-share-button"
-                  data-show-count="false"
-                >
-                  Tweet
-                </a>
+              <div className="text-left">
+                <PostHeader
+                  title={post.title}
+                  coverImage={post.coverImage}
+                  date={post.date}
+                  author={post.author}
+                />
+                <PostBody content={post.content} />
+                <div>
+                  <a
+                    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+                    className="twitter-share-button"
+                    data-show-count="false"
+                  >
+                    Tweet
+                  </a>
+                </div>
               </div>
             </article>
           </>
