@@ -1,11 +1,12 @@
 {
-  "name": "website",
-  "version": "1.0.0",
+  "name": "rrih.github.io",
+  "version": "1.0.2",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "export": "next export"
   },
   "dependencies": {
     "classnames": "2.2.6",
