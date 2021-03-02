@@ -1,6 +1,13 @@
 {
   "name": "rrih.github.io",
+  "private": true,
   "version": "1.0.2",
+  "author": "rrih",
+  "description": "blog roiroi dev",
+  "bugs": {
+    "email": "ifoldedpaper@gmail.com",
+    "url": "https://github.com/rrih/blog.roiroi.dev/issues"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
