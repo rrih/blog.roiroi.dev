@@ -22,14 +22,14 @@ const PostPreview = ({
 }: Props) => {
   return (
     <div className="pb-10">
-      <div className="mb-5">
+      {/* <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
-      </div>
-      <h3 className="text-3xl mb-3 leading-snug text-left">
+      </div> */}
+      <h4 className="text-2xl mb-3 leading-snug text-left">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
           <a className="hover:underline">{title}</a>
         </Link>
-      </h3>
+      </h4>
       <div className="text-left text-lg mb-4 flex items-center">
         <Avatar name={author.name} picture={author.picture} />
         <DateFormatter dateString={date} />

@@ -12,7 +12,7 @@ type Props = {
  */
 const DateFormatter = ({ dateString }: Props) => {
   const date = parseISO(dateString)
-  return <div><time dateTime={dateString}>{format(date, 'yyyy年L月d日h時m分')}</time></div>
+  return <div><time dateTime={dateString}>{format(date, 'yyyy年L月d日h時m分更新')}</time></div>
 }
 
 export default DateFormatter
