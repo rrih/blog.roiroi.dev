@@ -9,7 +9,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="text-center mt-5">
-        ぺちぱー歴半年です。<br/>
+        ただのソフトウェアエンジニア(仮)<br />ここに140字以上のメモ書きを記しておきます
       </div>
     </section>
   )
