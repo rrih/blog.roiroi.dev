@@ -16,3 +16,11 @@
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
 }
+
+.markdown code {
+  @apply whitespace-normal;
+}
+
+.markdown pre {
+  @apply bg-gray-700 text-gray-200 p-5;
+}
