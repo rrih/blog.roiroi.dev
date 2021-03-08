@@ -18,9 +18,9 @@
 }
 
 .markdown a {
-  @apply underline;
+  @apply underline break-words;
 }
 
-.markdown code {
+.markdown p code {
   @apply bg-black text-white rounded-md p-1 text-sm;
 }

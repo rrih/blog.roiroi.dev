@@ -1,7 +1,6 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
-// import "highlight.js/styles/github.css"
-import 'highlight.js/styles/tomorrow-night.css';
+import 'highlight.js/styles/a11y-dark.css';
 
 import { useEffect } from 'react'
 
