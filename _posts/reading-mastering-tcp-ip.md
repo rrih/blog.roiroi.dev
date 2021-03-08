@@ -16,3 +16,6 @@ ogImage:
 よろしくお願いします。
 
 ![test](https://pbs.twimg.com/media/Cjb2LdIUkAAZTyS?format=jpg&name=small)
+
+## 【追記】実際に読み終えた感想
+TBD
