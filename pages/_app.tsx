@@ -1,16 +1,26 @@
 import { AppProps } from 'next/app'
 import '../styles/index.css'
 import 'highlight.js/styles/a11y-dark.css';
-
 import { useEffect } from 'react'
+import { useRouter } from 'next/router';
+import { pageview } from  '../lib/gtag';
 
-export default function MyApp({ Component, pageProps }: AppProps) {
+const CustomApp = ({ Component, pageProps }: AppProps): JSX.Element => {
+  // Google Analyticsをページ遷移時にも対応させる
+  const router = useRouter();
   useEffect(() => {
-    const tweet = document.createElement('script')
-    tweet.setAttribute('src', 'https://platform.twitter.com/widgets.js');
-    tweet.setAttribute('defer', 'true');
-    document.head.appendChild(tweet);
-  })
+    const handleRouteChange = (url: string) => {
+      pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
 
-  return <Component {...pageProps} />
-}
+  return (
+    <Component {...pageProps} />
+  );
+};
+
+export default CustomApp;
