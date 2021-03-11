@@ -3,6 +3,7 @@ import { GA_TRACKING_ID } from '../lib/gtag';
 
 class CustomDocument extends Document {
   render(): JSX.Element {
+    console.log(GA_TRACKING_ID)
     return (
       <Html lang='ja'>
         <Head>
