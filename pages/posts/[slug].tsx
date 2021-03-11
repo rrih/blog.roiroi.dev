@@ -10,6 +10,18 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
+import {
+  TwitterTimelineEmbed,
+  TwitterShareButton,
+  TwitterFollowButton,
+  TwitterHashtagButton,
+  TwitterMentionButton,
+  TwitterTweetEmbed,
+  TwitterMomentShare,
+  TwitterDMButton,
+  TwitterVideoEmbed,
+  TwitterOnAirButton
+} from 'react-twitter-embed'
 
 type Props = {
   post: PostType
@@ -19,6 +31,7 @@ type Props = {
 
 const Post = ({ post, morePosts, preview }: Props) => {
   const router = useRouter()
+  console.log(router)
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -46,13 +59,10 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 />
                 <PostBody content={post.content} />
                 <div>
-                  <a
-                    href="https://twitter.com/share?ref_src=twsrc%5Etfw"
-                    className="twitter-share-button"
-                    data-show-count="false"
-                  >
-                    Tweet
-                  </a>
+                  <TwitterShareButton
+                    url={`https://blog.roiroi.dev${router.asPath}`}
+                    options={{ text: `${post.title} | ろいろぐ`, via: 'roiroidev' }}
+                  />
                 </div>
               </div>
             </article>
