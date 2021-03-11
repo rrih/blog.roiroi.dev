@@ -11,17 +11,13 @@ import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
 import {
-  TwitterTimelineEmbed,
-  TwitterShareButton,
-  TwitterFollowButton,
-  TwitterHashtagButton,
-  TwitterMentionButton,
-  TwitterTweetEmbed,
-  TwitterMomentShare,
-  TwitterDMButton,
-  TwitterVideoEmbed,
-  TwitterOnAirButton
-} from 'react-twitter-embed'
+  // Timeline,
+  Share,
+  // Follow,
+  // Hashtag,
+  // Mention,
+  // Tweet
+} from "react-twitter-widgets";
 
 type Props = {
   post: PostType
@@ -59,9 +55,9 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 />
                 <PostBody content={post.content} />
                 <div>
-                  <TwitterShareButton
+                  <Share
                     url={`https://blog.roiroi.dev${router.asPath}`}
-                    options={{ text: `${post.title} | ろいろぐ`, via: 'roiroidev' }}
+                    options={{ via: 'roiroidev' }}
                   />
                 </div>
               </div>

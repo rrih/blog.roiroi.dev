@@ -23,6 +23,7 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-twitter-embed": "^3.0.3",
+    "react-twitter-widgets": "^1.9.5",
     "remark": "11.0.2",
     "remark-code-titles": "^0.1.1",
     "remark-highlight.js": "^6.0.0",
