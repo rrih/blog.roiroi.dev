@@ -11,12 +11,12 @@ import Head from 'next/head'
 import markdownToHtml from '../../lib/markdownToHtml'
 import PostType from '../../types/post'
 import {
-  // Timeline,
+  Timeline,
   Share,
-  // Follow,
-  // Hashtag,
-  // Mention,
-  // Tweet
+  Follow,
+  Hashtag,
+  Mention,
+  Tweet
 } from "react-twitter-widgets";
 
 type Props = {
@@ -27,7 +27,6 @@ type Props = {
 
 const Post = ({ post, morePosts, preview }: Props) => {
   const router = useRouter()
-  console.log(router)
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
