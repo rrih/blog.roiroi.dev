@@ -1,5 +1,5 @@
 ---
-title: 'CakePHP[2.8/4] インタラクティブ・コンソール (REPL) 使い方'
+title: 'CakePHP[2/4] インタラクティブ・コンソール (REPL) 使い方'
 excerpt: ''
 coverImage: 'https://pbs.twimg.com/profile_banners/636879657/1606257712/1500x500'
 date: '2021-04-28T01:02:07.322+09:00'
@@ -9,6 +9,12 @@ author:
 ogImage:
   url: 'https://pbs.twimg.com/profile_banners/636879657/1606257712/1500x500'
 ---
+
+### CakePHP の REPL とは？  
+rails console の CakePHP 版のようなものです。ORM で DB アクセスもできたりします。  
+CakePHP 上のコントローラなどからメソッドや変数を呼び出せるし、PHP の組み込み関数を呼び出すのもできます。
+
+CakePHP でバッチやサービスメソッドなど作る際のデバッグとかで使えます
 
 ### cakephp2系の場合
 起動、メソッド等の実行について
