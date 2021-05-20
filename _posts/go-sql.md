@@ -34,5 +34,6 @@ func dbConn() (db *sql.DB) {
 dbConn()の返り値を各db読み書きの処理の前に変数`db`に入れればよい？  
 ディレクトリどう切ってくかとかわかってない
 
+
 ## 参考文献
 - https://blog.p1ass.com/posts/go-database-sql-wrapper
