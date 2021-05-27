@@ -2,7 +2,7 @@
 title: 'brew install *** したら `code .` で `No such file or directory`'
 excerpt: ''
 coverImage: 'https://pbs.twimg.com/profile_banners/636879657/1606257712/1500x500'
-date: '2021-03-07T12:47:07.322+09:00'
+date: '2021-05-23T12:47:07.322+09:00'
 author:
   name: ろい
   picture: 'https://github.com/rrih.png'
