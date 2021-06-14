@@ -56,8 +56,8 @@ const Post = ({ post, morePosts, preview }: Props) => {
                 <div>
                   <Share
                     url={`https://blog.roiroi.dev${router.asPath}`}
-                    options={{ via: 'roiroidev' }}
                   />
+                  <a href="https://github.com/rrih/blog.roiroi.dev/issues/new" style={{textDecoration: 'underline'}}>当記事へのコメント、意見、文句、修正依頼はこちらからどうぞ</a>
                 </div>
               </div>
             </article>

@@ -8,7 +8,6 @@ const Header = () => {
           <a
             style={{
               textDecoration: 'none'
-              
             }}
           >
             ろいろぐ
@@ -16,7 +15,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="text-center mt-5">
-        ただのソフトウェアエンジニア(仮)<br />人生が終わってしまうまでのログ
+        雑なログ
       </div>
     </section>
   )
