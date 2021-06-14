@@ -4,7 +4,7 @@ import { GA_TRACKING_ID } from '../lib/gtag';
 class CustomDocument extends Document {
   render(): JSX.Element {
     return (
-      <Html lang='ja'>
+      <Html lang='ja' style={{backgroundColor: '#24292E', color: '#9DA5B4'}}>
         <Head>
           {/* Google Analytics */}
           {GA_TRACKING_ID && (
